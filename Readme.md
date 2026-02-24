@@ -36,11 +36,24 @@ date_time – Timestamp of traffic observation
 
 traffic_volume – Number of vehicles observed
 
+installing-python-and-anaconda-on-the-local-machine
+
 Weather-related features (temperature, rain, snow, etc.)
 
 This dataset supports time-based analysis and pattern recognition for traffic congestion studies.
+main
 
 4. Tech Stack
+
+installing-python-and-anaconda-on-the-local-machine
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
+
+
 
 The project was developed using the following technologies:
 
@@ -49,6 +62,7 @@ Python
 NumPy
 
 Pandas
+main
 
 Matplotlib
 
@@ -73,6 +87,12 @@ Extracted time-based features
 
 5.3 Feature Engineering
 
+installing-python-and-anaconda-on-the-local-machine
+- Hour of the day
+- Day of the week
+- Month and year
+- Congestion flag (75th percentile threshold)
+
 The following features were created:
 
 Hour of the day
@@ -80,16 +100,25 @@ Hour of the day
 Day of the week
 
 Month and year
+ main
 
 Congestion flag (based on the 75th percentile traffic volume threshold)
 
 5.4 Exploratory Data Analysis (EDA)
+
+ installing-python-and-anaconda-on-the-local-machine
+- Peak hour analysis
+- Monthly traffic trend analysis
+- Weekly traffic pattern detection
+- Bottleneck detection (Day + Hour level)
+- Correlation analysis
 
 The following analyses were conducted:
 
 Peak hour analysis
 
 Monthly traffic trend analysis
+main
 
 Weekly traffic pattern detection
 
@@ -100,21 +129,27 @@ Correlation analysis
 6. Key Insights
 Peak Hours
 
-Rush hours were identified using average traffic volume per hour. These periods consistently show higher congestion levels.
+Rush hours consistently show higher congestion levels.
 
 Monthly Trends
 
-Certain months demonstrate higher average traffic volumes, indicating seasonal congestion patterns.
+Certain months demonstrate higher traffic volumes, indicating seasonal congestion patterns.
 
 Recurring Bottlenecks
 
-Specific combinations of day and hour repeatedly show congestion spikes, helping identify predictable traffic bottlenecks.
+Specific combinations of day and hour repeatedly show congestion spikes.
 
 7. Recommendations
+ installing-python-and-anaconda-on-the-local-machine
+- Optimize traffic signal timings during peak hours
+- Deploy traffic personnel during high-congestion periods
+- Improve infrastructure in high-volume corridors
+- Encourage public transportation during heavy traffic seasons
 
 Based on the findings, the following recommendations are proposed:
 
 Optimize traffic signal timings during peak hours
+ main
 
 Deploy traffic personnel during high-congestion periods
 
@@ -124,6 +159,12 @@ Encourage public transportation during heavy traffic seasons
 
 8. Learning Outcomes
 
+ installing-python-and-anaconda-on-the-local-machine
+- Experience working with real-world datasets
+- Strong understanding of EDA
+- Congestion detection logic development
+- Actionable insight generation
+
 Through this project, the team gained:
 
 Practical experience working with real-world datasets
@@ -131,10 +172,30 @@ Practical experience working with real-world datasets
 Strong understanding of Exploratory Data Analysis (EDA)
 
 Experience in congestion detection logic development
+ main
 
 Ability to generate actionable insights for urban planning
 
 9. Conclusion
+
+ installing-python-and-anaconda-on-the-local-machine
+Signal Sync demonstrates how raw traffic data can be transformed into actionable insights for smarter traffic management and infrastructure planning.
+
+
+
+# 🧪 Environment Setup Documentation (Milestone 1)
+
+This section documents the local development environment used for the Data Science sprint.
+
+## Operating System
+
+- Windows / macOS / Linux (update with your OS)
+
+## Python Version
+
+```bash
+python --version
+```
 
 Signal Sync demonstrates how raw traffic data can be transformed into actionable insights through systematic analysis.
 
@@ -155,3 +216,4 @@ Conda environments function correctly
 Jupyter Notebook/Lab launches and runs Python code
 
 The setup is stable and reusable throughout the sprint
+ main
