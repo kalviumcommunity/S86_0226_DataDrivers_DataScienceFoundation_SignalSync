@@ -288,3 +288,54 @@ Jupyter Notebook/Lab launches and runs Python code
 
 The setup is stable and reusable throughout the sprint
  main
+
+---
+
+## 📓 Milestone: Understanding Code Cells vs Markdown Cells
+
+**Completed:** February 25, 2026
+
+### What Was Accomplished
+
+This milestone focused on mastering one of the most fundamental skills in Jupyter Notebooks: distinguishing between **Code cells** and **Markdown cells**, and using each intentionally for professional Data Science work.
+
+### Key Deliverables
+
+1. **Created Interactive Notebook:** `Code_vs_Markdown_Cells.ipynb`
+   - Demonstrates the difference between Code and Markdown cells
+   - Shows when and why to use each cell type
+   - Includes practical examples relevant to the Signal Sync project
+
+2. **Notebook Structure Includes:**
+   - Code cells with executable Python statements (variables, calculations, lists)
+   - Markdown cells with formatted explanations, headings, and bullet points
+   - Examples of proper notebook organization combining both cell types
+   - Step-by-step guide on switching between cell types
+   - Best practices for professional notebook writing
+
+3. **Skills Demonstrated:**
+   - Creating and executing Code cells
+   - Creating and rendering Markdown cells with formatting
+   - Converting cells between types using keyboard shortcuts
+   - Structuring notebooks for readability and collaboration
+   - Separating execution logic from narrative explanation
+
+### Why This Matters
+
+In professional Data Science work:
+- **Code cells** show *what* you did (the logic and computations)
+- **Markdown cells** explain *why* you did it and *what it means* (the reasoning and insights)
+
+This milestone ensures that all notebooks created throughout the Signal Sync project are:
+- ✅ Readable and reviewable by teammates
+- ✅ Well-documented with clear explanations
+- ✅ Structured for professional collaboration
+- ✅ Easy to debug and extend in the future
+
+### Next Steps
+
+Moving forward, all analysis notebooks in the Signal Sync project will follow these best practices:
+- Using Markdown for section headers and explanations
+- Using Code for all executable logic
+- Maintaining clear separation between computation and narrative
+- Building notebooks that communicate insights, not just compute them
