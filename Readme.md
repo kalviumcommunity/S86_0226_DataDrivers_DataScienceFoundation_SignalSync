@@ -72,12 +72,79 @@ Jupyter Notebook
 
 These tools were used for data cleaning, feature engineering, visualization, and exploratory data analysis (EDA).
 
-5. Project Workflow
-5.1 Data Collection
+## 5. Project Setup Instructions
+
+### Prerequisites
+
+Before setting up the project, ensure you have:
+
+- **Python 3.8+** installed on your system
+- **Anaconda** or **Miniconda** for environment management
+- **Git** for version control
+
+### Installation Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/kalviumcommunity/S86_0226_DataDrivers_DataScienceFoundation_SignalSync.git
+   cd S86_0226_DataDrivers_DataScienceFoundation_SignalSync
+   ```
+
+2. **Create Conda Environment**
+   ```bash
+   conda create -n signalsync python=3.9
+   conda activate signalsync
+   ```
+
+3. **Install Required Packages**
+   ```bash
+   pip install pandas numpy matplotlib seaborn jupyter kagglehub
+   ```
+   
+   Or install from requirements (if available):
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Environment Verification
+
+4. **Verify Installation**
+   ```bash
+   python -c "import pandas, numpy, matplotlib, seaborn; print('✅ All packages installed successfully')"
+   ```
+
+5. **Launch Jupyter Notebook**
+   ```bash
+   jupyter notebook
+   ```
+   - Navigate to the notebooks folder in the Jupyter interface
+   - Open the project notebooks to begin analysis
+
+### Dataset Setup
+
+6. **Download Dataset** (When ready for analysis)
+   ```python
+   import kagglehub
+   path = kagglehub.dataset_download("galenchen/highway-traffic-volume")
+   print("Dataset downloaded to:", path)
+   ```
+
+### Project Structure
+```
+SignalSync/
+├── notebooks/          # Jupyter notebooks for analysis
+├── data/              # Dataset storage
+├── scripts/           # Python scripts
+├── visualizations/    # Generated plots and charts
+└── README.md         # Project documentation
+```
+
+7. Project Workflow
+7.1 Data Collection
 
 The dataset was obtained using the KaggleHub API.
 
-5.2 Data Cleaning
+7.2 Data Cleaning
 
 Converted timestamps to datetime format
 
@@ -85,7 +152,7 @@ Checked and handled missing values
 
 Extracted time-based features
 
-5.3 Feature Engineering
+7.3 Feature Engineering
 
 installing-python-and-anaconda-on-the-local-machine
 - Hour of the day
@@ -104,7 +171,7 @@ Month and year
 
 Congestion flag (based on the 75th percentile traffic volume threshold)
 
-5.4 Exploratory Data Analysis (EDA)
+7.4 Exploratory Data Analysis (EDA)
 
  installing-python-and-anaconda-on-the-local-machine
 - Peak hour analysis
@@ -126,7 +193,7 @@ Bottleneck detection (Day + Hour level)
 
 Correlation analysis
 
-6. Key Insights
+8. Key Insights
 Peak Hours
 
 Rush hours consistently show higher congestion levels.
@@ -139,12 +206,16 @@ Recurring Bottlenecks
 
 Specific combinations of day and hour repeatedly show congestion spikes.
 
+ Launching-Jupyter-Notebook
+9. Recommendations
+
 7. Recommendations
  installing-python-and-anaconda-on-the-local-machine
 - Optimize traffic signal timings during peak hours
 - Deploy traffic personnel during high-congestion periods
 - Improve infrastructure in high-volume corridors
 - Encourage public transportation during heavy traffic seasons
+ main
 
 Based on the findings, the following recommendations are proposed:
 
@@ -157,7 +228,7 @@ Improve infrastructure in high-volume corridors
 
 Encourage public transportation during heavy traffic seasons
 
-8. Learning Outcomes
+10. Learning Outcomes
 
  installing-python-and-anaconda-on-the-local-machine
 - Experience working with real-world datasets
@@ -176,7 +247,7 @@ Experience in congestion detection logic development
 
 Ability to generate actionable insights for urban planning
 
-9. Conclusion
+11. Conclusion
 
  installing-python-and-anaconda-on-the-local-machine
 Signal Sync demonstrates how raw traffic data can be transformed into actionable insights for smarter traffic management and infrastructure planning.
