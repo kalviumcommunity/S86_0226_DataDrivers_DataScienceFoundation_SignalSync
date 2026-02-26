@@ -213,6 +213,59 @@ Provides documentation for the project including:
 - Setup instructions
 - Collaboration guidelines
 
+## 🗂️ Data Organization (Raw, Processed, and Outputs)
+
+This project follows a clear separation of data across its lifecycle to ensure data integrity, reproducibility, and maintainability.
+
+### 📁 Raw Data (`data/raw/`)
+
+- Contains the original datasets exactly as received
+- These files are treated as **read-only**
+- Raw data is never modified or cleaned directly
+- Serves as the single source of truth for the project
+
+This preserves data integrity and allows results to be reproduced at any time.
+
+---
+
+### 📁 Processed Data (`data/processed/`)
+
+- Contains cleaned and transformed datasets derived from raw data
+- Files are generated programmatically from the raw data
+- Uses clear and descriptive filenames to indicate processing stage
+- Can always be recreated from the raw data
+
+This ensures traceability between raw inputs and processed outputs.
+
+---
+
+### 📁 Output Artifacts (`outputs/`)
+
+- Stores final and intermediate results such as:
+  - Plots and visualizations
+  - Tables and reports
+  - Exported CSV files
+  - Model outputs (if any)
+- Outputs are never mixed with raw or processed data
+- Uses descriptive names for easy identification
+
+This keeps results easy to locate and review.
+
+---
+
+### 🔄 Data Flow Discipline
+
+The project enforces a one-directional data flow:
+
+**Raw Data → Processed Data → Outputs**
+
+- Scripts read only from `data/raw/`
+- Processed files are saved in `data/processed/`
+- Results are saved in `outputs/`
+- Raw data is never overwritten
+
+This prevents data contamination and ensures reproducibility.
+
 7. Project Workflow
    7.1 Data Collection
 
