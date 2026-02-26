@@ -36,11 +36,23 @@ date_time – Timestamp of traffic observation
 
 traffic_volume – Number of vehicles observed
 
+installing-python-and-anaconda-on-the-local-machine
+
 Weather-related features (temperature, rain, snow, etc.)
 
 This dataset supports time-based analysis and pattern recognition for traffic congestion studies.
+main
 
 4. Tech Stack
+
+installing-python-and-anaconda-on-the-local-machine
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
 The project was developed using the following technologies:
 
@@ -49,6 +61,7 @@ Python
 NumPy
 
 Pandas
+main
 
 Matplotlib
 
@@ -71,23 +84,27 @@ Before setting up the project, ensure you have:
 ### Installation Steps
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/kalviumcommunity/S86_0226_DataDrivers_DataScienceFoundation_SignalSync.git
    cd S86_0226_DataDrivers_DataScienceFoundation_SignalSync
    ```
 
 2. **Create Conda Environment**
+
    ```bash
    conda create -n signalsync python=3.9
    conda activate signalsync
    ```
 
 3. **Install Required Packages**
+
    ```bash
    pip install pandas numpy matplotlib seaborn jupyter kagglehub
    ```
-   
+
    Or install from requirements (if available):
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -95,14 +112,17 @@ Before setting up the project, ensure you have:
 ### Environment Verification
 
 4. **Verify Installation**
+
    ```bash
    python -c "import pandas, numpy, matplotlib, seaborn; print('✅ All packages installed successfully')"
    ```
 
 5. **Launch Jupyter Notebook**
+
    ```bash
    jupyter notebook
    ```
+
    - Navigate to the notebooks folder in the Jupyter interface
    - Open the project notebooks to begin analysis
 
@@ -116,6 +136,7 @@ Before setting up the project, ensure you have:
    ```
 
 ### Project Structure
+
 ```
 SignalSync/
 ├── notebooks/          # Jupyter notebooks for analysis
@@ -126,7 +147,7 @@ SignalSync/
 ```
 
 7. Project Workflow
-7.1 Data Collection
+   7.1 Data Collection
 
 The dataset was obtained using the KaggleHub API.
 
@@ -140,6 +161,13 @@ Extracted time-based features
 
 7.3 Feature Engineering
 
+installing-python-and-anaconda-on-the-local-machine
+
+- Hour of the day
+- Day of the week
+- Month and year
+- Congestion flag (75th percentile threshold)
+
 The following features were created:
 
 Hour of the day
@@ -147,16 +175,26 @@ Hour of the day
 Day of the week
 
 Month and year
+main
 
 Congestion flag (based on the 75th percentile traffic volume threshold)
 
 7.4 Exploratory Data Analysis (EDA)
+
+installing-python-and-anaconda-on-the-local-machine
+
+- Peak hour analysis
+- Monthly traffic trend analysis
+- Weekly traffic pattern detection
+- Bottleneck detection (Day + Hour level)
+- Correlation analysis
 
 The following analyses were conducted:
 
 Peak hour analysis
 
 Monthly traffic trend analysis
+main
 
 Weekly traffic pattern detection
 
@@ -165,23 +203,33 @@ Bottleneck detection (Day + Hour level)
 Correlation analysis
 
 8. Key Insights
-Peak Hours
+   Peak Hours
 
-Rush hours were identified using average traffic volume per hour. These periods consistently show higher congestion levels.
+Rush hours consistently show higher congestion levels.
 
 Monthly Trends
 
-Certain months demonstrate higher average traffic volumes, indicating seasonal congestion patterns.
+Certain months demonstrate higher traffic volumes, indicating seasonal congestion patterns.
 
 Recurring Bottlenecks
 
-Specific combinations of day and hour repeatedly show congestion spikes, helping identify predictable traffic bottlenecks.
+Specific combinations of day and hour repeatedly show congestion spikes.
 
-9. Recommendations
+Launching-Jupyter-Notebook 9. Recommendations
+
+7. Recommendations
+   installing-python-and-anaconda-on-the-local-machine
+
+- Optimize traffic signal timings during peak hours
+- Deploy traffic personnel during high-congestion periods
+- Improve infrastructure in high-volume corridors
+- Encourage public transportation during heavy traffic seasons
+  main
 
 Based on the findings, the following recommendations are proposed:
 
 Optimize traffic signal timings during peak hours
+main
 
 Deploy traffic personnel during high-congestion periods
 
@@ -191,6 +239,13 @@ Encourage public transportation during heavy traffic seasons
 
 10. Learning Outcomes
 
+installing-python-and-anaconda-on-the-local-machine
+
+- Experience working with real-world datasets
+- Strong understanding of EDA
+- Congestion detection logic development
+- Actionable insight generation
+
 Through this project, the team gained:
 
 Practical experience working with real-world datasets
@@ -198,10 +253,28 @@ Practical experience working with real-world datasets
 Strong understanding of Exploratory Data Analysis (EDA)
 
 Experience in congestion detection logic development
+main
 
 Ability to generate actionable insights for urban planning
 
 11. Conclusion
+
+installing-python-and-anaconda-on-the-local-machine
+Signal Sync demonstrates how raw traffic data can be transformed into actionable insights for smarter traffic management and infrastructure planning.
+
+# 🧪 Environment Setup Documentation (Milestone 1)
+
+This section documents the local development environment used for the Data Science sprint.
+
+## Operating System
+
+- Windows / macOS / Linux (update with your OS)
+
+## Python Version
+
+```bash
+python --version
+```
 
 Signal Sync demonstrates how raw traffic data can be transformed into actionable insights through systematic analysis.
 
@@ -318,7 +391,7 @@ You should:
 
 This creates a smooth narrative flow in notebooks.
 
----
+
 
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
@@ -328,7 +401,119 @@ This is a verification checkpoint — not an installation task.
 
 The goal is to confirm that:
 
+ Writing-Markdown-for-Headings-Lists
 - Python is installed and callable
 - Conda environments function correctly
 - Jupyter Notebook/Lab launches and runs Python code
 - The setup is stable and reusable throughout the sprint
+
+The setup is stable and reusable throughout the sprint
+main
+
+
+
+## 📓 Milestone: Understanding Code Cells vs Markdown Cells
+
+**Completed:** February 25, 2026
+
+### What Was Accomplished
+
+This milestone focused on mastering one of the most fundamental skills in Jupyter Notebooks: distinguishing between **Code cells** and **Markdown cells**, and using each intentionally for professional Data Science work.
+
+### Key Deliverables
+
+1. **Created Interactive Notebook:** `Code_vs_Markdown_Cells.ipynb`
+   - Demonstrates the difference between Code and Markdown cells
+   - Shows when and why to use each cell type
+   - Includes practical examples relevant to the Signal Sync project
+
+2. **Notebook Structure Includes:**
+   - Code cells with executable Python statements (variables, calculations, lists)
+   - Markdown cells with formatted explanations, headings, and bullet points
+   - Examples of proper notebook organizatioan combining both cell types
+   - Step-by-step guide on switching between cell types
+   - Best practices for professional notebook writing
+
+3. **Skills Demonstrated:**
+   - Creating and executing Code cells
+   - Creating and rendering Markdown cells with formatting
+   - Converting cells between types using keyboard shortcuts
+   - Structuring notebooks for readability and collaboration
+   - Separating execution logic from narrative explanation
+
+### Why This Matters
+
+In professional Data Science work:
+
+- **Code cells** show _what_ you did (the logic and computations)
+- **Markdown cells** explain _why_ you did it and _what it means_ (the reasoning and insights)
+
+This milestone ensures that all notebooks created throughout the Signal Sync project are:
+
+- ✅ Readable and reviewable by teammates
+- ✅ Well-documented with clear explanations
+- ✅ Structured for professional collaboration
+- ✅ Easy to debug and extend in the future
+
+### Next Steps
+
+Moving forward, all analysis notebooks in the Signal Sync project will follow these best practices:
+
+- Using Markdown for section headers and explanations
+- Using Code for all executable logic
+- Maintaining clear separation between computation and narrative
+- Building notebooks that communicate insights, not just compute them
+
+# 📓 Milestone: Running, Restarting, and Interrupting Jupyter Kernels
+
+## Objective
+
+- Run notebook cells in a controlled and sequential manner
+- Restart the kernel to reset notebook state
+- Interrupt long-running or stuck executions safely
+- Understand the difference between interrupting and restarting a kernel
+
+---
+
+## What Was Accomplished
+
+- Executed notebook cells one by one to observe execution order
+- Observed that variables persist in memory until the kernel is restarted
+- Interrupted a deliberately long-running execution
+- Restarted the kernel and confirmed that all variables and memory were cleared
+- Reran all cells from the top to ensure reproducibility
+
+---
+
+## Key Activities
+
+### Running Cells and Execution Order
+
+- Ran cells sequentially
+- Observed how outputs depend on execution order
+
+### Interrupting Execution
+
+- Safely interrupted a long-running cell
+- Verified the notebook remained responsive
+
+### Restarting the Kernel
+
+- Restarted the kernel from the Jupyter menu
+- Cleared all variables and memory
+- Reran all cells from the beginning
+
+### Restart vs Interrupt
+
+- Identified scenarios where interrupting execution is sufficient
+- Identified scenarios where restarting the kernel is safer
+
+---
+
+## Skills Demonstrated
+
+- Understanding kernel states (idle, running, interrupted)
+- Safe interruption of stuck executions
+- Proper kernel restart and memory reset
+- Clean and reproducible notebook execution
+ main
