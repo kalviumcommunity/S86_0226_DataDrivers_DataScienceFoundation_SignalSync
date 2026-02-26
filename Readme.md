@@ -141,10 +141,77 @@ Before setting up the project, ensure you have:
 SignalSync/
 ├── notebooks/          # Jupyter notebooks for analysis
 ├── data/              # Dataset storage
+├── raw/
+│ └── processed/
 ├── scripts/           # Python scripts
 ├── visualizations/    # Generated plots and charts
 └── README.md         # Project documentation
 ```
+
+---
+
+## Folder Description
+
+### `data/`
+
+Stores all datasets used in the project.
+
+- `raw/`  
+  Contains original, unmodified datasets. These files should never be edited directly.
+
+- `processed/`  
+  Contains cleaned or transformed datasets generated from raw data.
+
+This separation prevents accidental corruption of original data.
+
+---
+
+### `notebooks/`
+
+Contains Jupyter Notebook files (`.ipynb`) used for:
+
+- Data exploration
+- Analysis
+- Visualization
+- Documentation using Markdown
+
+Keeps analysis separate from reusable scripts.
+
+---
+
+### `scripts/`
+
+Contains Python scripts (`.py`) for:
+
+- Data preprocessing
+- Utility functions
+- Reusable logic
+
+Helps maintain clean and modular code.
+
+---
+
+### `outputs/`
+
+Stores generated results such as:
+
+- Charts and plots
+- Reports
+- Exported CSV files
+- Model outputs
+
+Keeps results separate from raw and processed data.
+
+---
+
+### `README.md`
+
+Provides documentation for the project including:
+
+- Project purpose
+- Folder structure explanation
+- Setup instructions
+- Collaboration guidelines
 
 7. Project Workflow
    7.1 Data Collection
@@ -339,7 +406,7 @@ You are expected to:
 - Focus on clarity and structure, not complex analysis
 - Use simple examples to demonstrate formatting
 
-*No datasets or advanced computations are required.*
+_No datasets or advanced computations are required._
 
 #### Key Components
 
@@ -348,6 +415,7 @@ You are expected to:
 Use headings to organize notebook sections.
 
 You should:
+
 - Create top-level headings for major sections
 - Use subheadings to break content into steps
 - Maintain a logical, readable hierarchy
@@ -360,6 +428,7 @@ This helps readers understand the notebook flow instantly.
 Use lists to explain steps, assumptions, or results.
 
 You should:
+
 - Write unordered lists for general points
 - Write ordered lists for step-by-step processes
 - Keep list items concise and meaningful
@@ -372,6 +441,7 @@ Lists make explanations easier to scan and understand.
 Use code formatting inside Markdown to explain syntax.
 
 You should:
+
 - Use `inline code` for variable names or functions
 - Use fenced code blocks for longer snippets
 - Ensure code blocks are readable and relevant
@@ -384,14 +454,13 @@ This allows you to explain code without executing it.
 Learn when to use Markdown vs code.
 
 You should:
+
 - Use Markdown before code to explain intent
 - Use Markdown after code to interpret output
 - Avoid placing explanations inside code comments
 - Maintain a clean alternation between text and code
 
 This creates a smooth narrative flow in notebooks.
-
-
 
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
@@ -401,7 +470,8 @@ This is a verification checkpoint — not an installation task.
 
 The goal is to confirm that:
 
- Writing-Markdown-for-Headings-Lists
+Writing-Markdown-for-Headings-Lists
+
 - Python is installed and callable
 - Conda environments function correctly
 - Jupyter Notebook/Lab launches and runs Python code
@@ -409,8 +479,6 @@ The goal is to confirm that:
 
 The setup is stable and reusable throughout the sprint
 main
-
-
 
 ## 📓 Milestone: Understanding Code Cells vs Markdown Cells
 
@@ -516,4 +584,4 @@ Moving forward, all analysis notebooks in the Signal Sync project will follow th
 - Safe interruption of stuck executions
 - Proper kernel restart and memory reset
 - Clean and reproducible notebook execution
- main
+  main
