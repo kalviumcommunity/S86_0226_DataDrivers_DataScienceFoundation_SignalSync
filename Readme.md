@@ -280,7 +280,120 @@ Signal Sync demonstrates how raw traffic data can be transformed into actionable
 
 By identifying congestion patterns and recurring bottlenecks, this project supports smarter, data-driven traffic management and infrastructure planning decisions.
 
-🔧 Environment Verification (Sprint Hygiene Milestone)
+## 12. Documentation and Communication Milestone
+
+### 📝 Writing Clear Documentation in Jupyter Notebooks Using Markdown
+
+This milestone focuses on writing clear, readable documentation inside Jupyter Notebooks using Markdown. While code performs the analysis, Markdown explains the intent, logic, and results—making notebooks understandable to others and to your future self.
+
+Well-written Markdown transforms notebooks from messy scratchpads into professional, review-ready artifacts that clearly communicate your thinking throughout the Data Science sprint.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand what Markdown cells are and how they differ from code cells
+- Write headings to structure notebooks logically
+- Create ordered and unordered lists for clarity
+- Add inline code and code blocks for explanation
+- Combine text and code to tell a clear data story
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Structure notebooks using meaningful headings
+- Document steps and assumptions using Markdown text
+- Use lists to explain workflows and results
+- Format code snippets inside Markdown cells
+- Create notebooks that are readable and review-friendly
+
+#### Why This Matters
+
+Common notebook issues include:
+
+- Notebooks that are hard to follow or review
+- No explanation of what the code is doing
+- Results shown without context or interpretation
+- Confusing execution flow with no structure
+
+These issues are not technical failures—they are **communication failures**.
+
+This milestone ensures that:
+
+- Your reasoning is clearly documented
+- Reviewers can understand your approach
+- Teammates can follow and reuse your work
+- Your notebooks look professional and intentional
+
+Think of Markdown as the narration of your analysis—this lesson teaches you how to write that narration clearly.
+
+#### What You Are Expected to Do
+
+This is a documentation and communication milestone, not a data analysis task.
+
+You are expected to:
+
+- Create Markdown cells alongside code cells
+- Practice formatting text using Markdown syntax
+- Focus on clarity and structure, not complex analysis
+- Use simple examples to demonstrate formatting
+
+*No datasets or advanced computations are required.*
+
+#### Key Components
+
+##### 1. Writing Headings in Markdown
+
+Use headings to organize notebook sections.
+
+You should:
+- Create top-level headings for major sections
+- Use subheadings to break content into steps
+- Maintain a logical, readable hierarchy
+- Avoid overly long or vague headings
+
+This helps readers understand the notebook flow instantly.
+
+##### 2. Creating Lists for Structured Explanations
+
+Use lists to explain steps, assumptions, or results.
+
+You should:
+- Write unordered lists for general points
+- Write ordered lists for step-by-step processes
+- Keep list items concise and meaningful
+- Use lists where structure improves readability
+
+Lists make explanations easier to scan and understand.
+
+##### 3. Writing Inline Code and Code Blocks
+
+Use code formatting inside Markdown to explain syntax.
+
+You should:
+- Use `inline code` for variable names or functions
+- Use fenced code blocks for longer snippets
+- Ensure code blocks are readable and relevant
+- Avoid duplicating executable code unnecessarily
+
+This allows you to explain code without executing it.
+
+##### 4. Combining Markdown and Code Cells Effectively
+
+Learn when to use Markdown vs code.
+
+You should:
+- Use Markdown before code to explain intent
+- Use Markdown after code to interpret output
+- Avoid placing explanations inside code comments
+- Maintain a clean alternation between text and code
+
+This creates a smooth narrative flow in notebooks.
+
+
+
+🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 This milestone verifies that the local Data Science environment is correctly configured and ready for the sprint.
 
@@ -288,16 +401,16 @@ This is a verification checkpoint — not an installation task.
 
 The goal is to confirm that:
 
-Python is installed and callable
-
-Conda environments function correctly
-
-Jupyter Notebook/Lab launches and runs Python code
+ Writing-Markdown-for-Headings-Lists
+- Python is installed and callable
+- Conda environments function correctly
+- Jupyter Notebook/Lab launches and runs Python code
+- The setup is stable and reusable throughout the sprint
 
 The setup is stable and reusable throughout the sprint
 main
 
----
+
 
 ## 📓 Milestone: Understanding Code Cells vs Markdown Cells
 
@@ -403,3 +516,4 @@ Moving forward, all analysis notebooks in the Signal Sync project will follow th
 - Safe interruption of stuck executions
 - Proper kernel restart and memory reset
 - Clean and reproducible notebook execution
+ main
