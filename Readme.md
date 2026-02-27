@@ -790,3 +790,181 @@ Moving forward, all analysis notebooks in the Signal Sync project will follow th
 - Proper kernel restart and memory reset
 - Clean and reproducible notebook execution
   main
+
+---
+
+# 📊 Milestone: Python Data Types - Numeric and String Fundamentals
+
+## 🎯 Milestone Overview
+
+This milestone focuses on understanding Python's core numeric and string data types, which form the foundation of all data processing and analysis. Before working with datasets, you must be comfortable representing numbers, text, and basic operations correctly.
+
+Clear understanding of data types prevents logical errors and makes your code predictable, readable, and reliable.
+
+---
+
+## 🎓 Learning Objectives
+
+This lesson is to help you:
+
+- Understand numeric data types like integers and floats
+- Understand string data and text representation
+- Perform basic operations on numbers and strings
+- Identify type-related issues early
+- Use data types intentionally in programs
+
+---
+
+## 📋 Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Differentiate between numeric and string data types
+- Perform arithmetic using Python numbers
+- Manipulate and format strings correctly
+- Identify data type mismatches
+- Write clearer and safer Python code
+
+---
+
+## ⚠️ Why This Matters
+
+Common beginner issues include:
+
+- Treating numbers as strings accidentally
+- Unexpected results from arithmetic operations
+- Concatenation errors with text and numbers
+- Confusion when printing or formatting outputs
+
+These issues usually come from misunderstanding data types.
+
+This milestone ensures that:
+
+- Your calculations behave as expected
+- Your text data is handled correctly
+- Errors are easier to debug
+- Your programs are logically sound
+
+**Think of data types as the language Python uses to understand your data.**
+
+---
+
+## 📝 What You Are Expected to Do
+
+This is a Python fundamentals milestone, not a data analysis task.
+
+You are expected to:
+
+- Work with numeric and string variables
+- Perform simple operations using each type
+- Print results to observe behavior
+- Identify differences between numbers and text
+
+**No datasets or advanced libraries are required.**
+
+---
+
+## 🔢 1. Working with Numeric Data Types
+
+Learn how Python represents numbers.
+
+You should:
+
+- Use integers and floating-point numbers
+- Perform basic arithmetic operations
+- Observe how Python handles division
+- Understand numeric precision at a basic level
+
+This builds confidence in numerical computations.
+
+---
+
+## 📝 2. Understanding String Data Types
+
+Learn how Python represents text.
+
+You should:
+
+- Create string variables
+- Concatenate strings
+- Access string values
+- Print strings clearly
+
+Strings are essential for labels, messages, and data fields.
+
+---
+
+## 🔀 3. Mixing Numbers and Strings Safely
+
+Understand how Python treats mixed types.
+
+You should:
+
+- Observe errors when mixing types incorrectly
+- Convert numbers to strings when needed
+- Convert strings to numbers carefully
+- Understand when explicit conversion is required
+
+This prevents runtime errors.
+
+---
+
+## 🔍 4. Inspecting Data Types
+
+Learn how to check variable types.
+
+You should:
+
+- Inspect variable types during execution
+- Understand why type awareness matters
+- Use type checks to debug issues
+- Build habits of validating data early
+
+Type awareness improves code correctness.
+
+---
+
+## 🎥 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating numeric and string data types.
+
+Your video must include:
+
+- Numeric variable examples
+- String variable examples
+- Operations on both types
+- Explanation of type differences and behavior
+
+---
+
+## 📤 Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+---
+
+## 📌 Important Notes
+
+- This milestone focuses on fundamentals
+- Keep examples simple and intentional
+- Avoid complex logic or edge cases
+- Strong basics prevent larger bugs later
+
+Understanding data types is a core programming skill. This milestone ensures you can work confidently with numbers and text throughout the Data Science sprint.
+
+---
+
+## 🎁 Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below.
+
+- [Python Numeric Types](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
+- [Python Strings Explained](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)
+- [Type Conversion in Python](https://docs.python.org/3/library/functions.html#int)
+
+---
+
+**Good luck with your milestone!**
