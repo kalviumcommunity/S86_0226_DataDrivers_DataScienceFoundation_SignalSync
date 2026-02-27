@@ -515,8 +515,7 @@ You should:
 
 This creates a smooth narrative flow in notebooks.
 
- Creating-First-Python-Script
----
+## Creating-First-Python-Script
 
 ## 13. Python Script Development Milestone
 
@@ -577,7 +576,7 @@ You are expected to:
 - Run the script successfully
 - Observe and explain the output
 
-*No large datasets or advanced libraries are required.*
+_No large datasets or advanced libraries are required._
 
 #### Key Components
 
@@ -586,6 +585,7 @@ You are expected to:
 Create a .py file for your analysis.
 
 You should:
+
 - Name the script clearly
 - Place it in the appropriate project folder
 - Write valid Python code inside the file
@@ -598,6 +598,7 @@ This introduces script-based development.
 Add basic logic to the script.
 
 You should:
+
 - Define variables and simple calculations
 - Work with small sample data
 - Print results to the console
@@ -610,6 +611,7 @@ The focus is execution, not complexity.
 Execute the script.
 
 You should:
+
 - Run the script from a terminal or editor
 - Observe printed output
 - Fix basic errors if execution fails
@@ -622,6 +624,7 @@ This builds confidence in running code independently.
 Learn the differences.
 
 You should:
+
 - Understand when to use scripts vs notebooks
 - Recognize the lack of persistent state in scripts
 - Appreciate scripts for automation and reuse
@@ -634,6 +637,7 @@ This distinction is critical for real projects.
 Record a short screen-capture video demonstrating your script.
 
 Your video must include:
+
 - The .py file in the project
 - Running the script
 - Observing and explaining output
@@ -666,7 +670,7 @@ This section is optional, and learners who want to explore the topics covered so
 ---
 
 =======
- main
+main
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 This milestone verifies that the local Data Science environment is correctly configured and ready for the sprint.
@@ -968,3 +972,72 @@ This section is optional, and learners who want to explore the topics covered so
 ---
 
 **Good luck with your milestone!**
+
+## 🧩 Python Collections: Lists, Tuples, and Dictionaries
+
+This milestone demonstrates the use of Python’s core collection data structures: **lists**, **tuples**, and **dictionaries**.  
+The goal is to understand how each structure stores data, how to access elements, and how mutability affects their behavior.
+
+This milestone focuses on Python fundamentals and does not involve data analysis or external libraries.
+
+---
+
+### 📌 Lists (Mutable Collection)
+
+Lists are ordered and mutable collections used to store multiple values that may change over time.
+
+Key characteristics:
+
+- Elements are accessed using indexes
+- Items can be added, removed, or modified
+- Suitable for dynamic data
+
+Example use cases:
+
+- Storing a list of items
+- Updating values during program execution
+
+---
+
+### 📌 Tuples (Immutable Collection)
+
+Tuples are ordered but immutable collections.
+
+Key characteristics:
+
+- Elements are accessed using indexes
+- Values cannot be modified after creation
+- Protects data from accidental changes
+
+Example use cases:
+
+- Fixed configuration values
+- Coordinates or constant records
+
+---
+
+### 📌 Dictionaries (Key-Value Pairs)
+
+Dictionaries store data as key-value pairs and model real-world entities effectively.
+
+Key characteristics:
+
+- Values are accessed using keys, not indexes
+- Keys are unique and meaningful
+- Values can be modified or added
+
+Example use cases:
+
+- Storing structured information such as student records or settings
+
+---
+
+### 🔍 Choosing the Right Data Structure
+
+- **Lists** are used when data needs to change frequently
+- **Tuples** are used when data should remain constant
+- **Dictionaries** are used when data has named attributes and relationships
+
+Selecting the appropriate data structure improves code clarity and reduces errors.
+
+---
