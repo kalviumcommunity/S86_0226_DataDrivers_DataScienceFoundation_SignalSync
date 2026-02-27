@@ -320,6 +320,153 @@ This creates a smooth narrative flow in notebooks.
 
 ---
 
+## 13. Python Script Development Milestone
+
+### 🐍 Creating and Running Your First Standalone Python Script
+
+This milestone focuses on creating and running your first standalone Python script for data analysis. While notebooks are great for exploration, scripts are essential for repeatable, shareable, and automation-friendly workflows.
+
+Learning how to move from notebooks to scripts is a key step toward writing real-world Data Science code.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand what a Python script is and when to use it
+- Create a .py file for data analysis
+- Run a Python script from the command line or editor
+- Print outputs and observe results
+- Build confidence executing code outside notebooks
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Create a basic Python script for data-related tasks
+- Run scripts reliably from the terminal or editor
+- Understand script execution flow from top to bottom
+- Debug simple execution issues
+- Use scripts alongside notebooks effectively
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Relying only on notebooks for all tasks
+- Not knowing how to run code outside Jupyter
+- Difficulty automating or reusing analysis
+- Confusion between interactive and script-based workflows
+
+**Scripts solve these problems.**
+
+This milestone ensures that:
+
+- Your work is repeatable and reusable
+- You can automate simple data tasks
+- Your code runs consistently end to end
+- You are comfortable working outside notebooks
+
+Think of scripts as the production version of your analysis.
+
+#### What You Are Expected to Do
+
+This is a scripting fundamentals milestone, not a complex data analysis task.
+
+You are expected to:
+
+- Create a Python script file
+- Write simple data-related logic
+- Run the script successfully
+- Observe and explain the output
+
+*No large datasets or advanced libraries are required.*
+
+#### Key Components
+
+##### 1. Creating a Python Script
+
+Create a .py file for your analysis.
+
+You should:
+- Name the script clearly
+- Place it in the appropriate project folder
+- Write valid Python code inside the file
+- Avoid notebook-only features
+
+This introduces script-based development.
+
+##### 2. Writing Simple Data Logic
+
+Add basic logic to the script.
+
+You should:
+- Define variables and simple calculations
+- Work with small sample data
+- Print results to the console
+- Keep logic simple and readable
+
+The focus is execution, not complexity.
+
+##### 3. Running the Script
+
+Execute the script.
+
+You should:
+- Run the script from a terminal or editor
+- Observe printed output
+- Fix basic errors if execution fails
+- Understand how Python executes scripts top to bottom
+
+This builds confidence in running code independently.
+
+##### 4. Understanding Script vs Notebook Execution
+
+Learn the differences.
+
+You should:
+- Understand when to use scripts vs notebooks
+- Recognize the lack of persistent state in scripts
+- Appreciate scripts for automation and reuse
+- Avoid treating scripts like interactive notebooks
+
+This distinction is critical for real projects.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating your script.
+
+Your video must include:
+- The .py file in the project
+- Running the script
+- Observing and explaining output
+- Brief explanation of why scripts are useful
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Keep scripts simple and focused
+- Avoid unnecessary complexity
+- Use print statements for visibility
+- Scripts are a foundation for automation
+
+Being able to create and run Python scripts is a core professional skill. This milestone ensures you can move beyond notebooks and execute data workflows confidently.
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
+- How to Run Python Scripts
+- Python Scripts vs Jupyter Notebooks
+- Writing Your First Python Program
+
+---
+
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 This milestone verifies that the local Data Science environment is correctly configured and ready for the sprint.
