@@ -645,6 +645,7 @@ Your video must include:
 #### Implementation
 
 The conditional statements milestone has been implemented in the file:
+
 - [conditional_statements_demo.py](conditional_statements_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -1203,3 +1204,79 @@ Example use cases:
 Selecting the appropriate data structure improves code clarity and reduces errors.
 
 ---
+
+## 🧱 Python Functions: Defining and Calling Functions
+
+This milestone demonstrates how to define and use Python functions to organize code into reusable and logical blocks.  
+Functions help reduce repetition, improve readability, and make programs easier to maintain and debug.
+
+This milestone focuses on Python fundamentals and does not involve data analysis or external libraries.
+
+---
+
+### 📌 Defining Functions
+
+Functions are defined using the `def` keyword and contain a block of reusable logic.
+
+Key characteristics:
+
+- Functions are named clearly based on their purpose
+- Each function performs a single, focused task
+- Code inside the function is properly indented
+
+This introduces modular and structured programming.
+
+---
+
+### 📌 Calling Functions
+
+Functions are executed by calling them using their name.
+
+Key points:
+
+- Functions are called after they are defined
+- Execution flows into the function and returns after completion
+- Output is printed to observe behavior
+
+This shows how functions integrate into a program.
+
+---
+
+### 📌 Parameters and Arguments
+
+Functions accept input through parameters and receive values through arguments when called.
+
+Key characteristics:
+
+- Parameters are defined in the function signature
+- Arguments are passed during function calls
+- Meaningful parameter names improve readability
+- Functions become flexible and reusable
+
+---
+
+### 📌 Understanding Function Scope (Basics)
+
+Variables defined inside a function are local to that function.
+
+Key concepts:
+
+- Local variables exist only within the function
+- Global variables are avoided when not necessary
+- Function logic remains self-contained
+- Prevents unintended side effects
+
+This helps avoid subtle bugs and improves code reliability.
+
+---
+
+### 🔍 Why Functions Matter
+
+Using functions ensures that:
+
+- Code is modular and organized
+- Logic is written once and reused safely
+- Programs are easier to debug and extend
+- Code intent is clearer and more readable
+
+Functions act as building blocks for clean programming.
