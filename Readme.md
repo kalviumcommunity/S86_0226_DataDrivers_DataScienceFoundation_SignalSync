@@ -517,7 +517,169 @@ This creates a smooth narrative flow in notebooks.
 
 ## Creating-First-Python-Script
 
-## 13. Python Script Development Milestone
+## 13. Python Conditional Statements Milestone
+
+### 🔀 Mastering Decision Logic and Program Flow Control
+
+This milestone focuses on writing conditional statements to control program flow based on data-driven logic. Conditions allow your code to make decisions, which is essential for validation, branching workflows, and real-world data handling.
+
+Understanding conditional logic is a core programming skill that enables you to move beyond linear scripts and build intelligent behavior into your code.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand how conditional statements work in Python
+- Use if, elif, and else correctly
+- Write conditions based on numeric and string data
+- Combine conditions using logical operators
+- Apply conditionals to simple data scenarios
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Write clear and correct conditional statements
+- Control program flow based on data values
+- Handle multiple conditions safely
+- Avoid common logic and indentation errors
+- Use conditionals confidently in data workflows
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Code that runs but produces incorrect results
+- Conditions that never trigger as expected
+- Incorrect indentation causing logic bugs
+- Overly complex or unreadable condition blocks
+
+These problems usually stem from weak conditional logic.
+
+This milestone ensures that:
+
+- Your code behaves predictably
+- Decisions are based on correct data checks
+- Edge cases are handled intentionally
+- Logic is readable and maintainable
+
+Think of conditionals as decision points—this lesson teaches you how to design them clearly.
+
+#### What You Are Expected to Do
+
+This is a Python logic milestone, not a data analysis task.
+
+You are expected to:
+
+- Write conditional statements using if, elif, and else
+- Compare numeric and string values
+- Use logical operators like and, or, and not
+- Print outputs to observe decision paths
+
+No datasets or advanced libraries are required.
+
+##### 1. Writing Basic if Statements
+
+Start with simple conditions.
+
+You should:
+
+- Use if to check a condition
+- Execute code when the condition is true
+- Observe what happens when the condition is false
+- Keep conditions readable and intentional
+
+This builds foundational logic skills.
+
+##### 2. Using if–else for Decision Branching
+
+Handle true and false paths.
+
+You should:
+
+- Add else blocks where appropriate
+- Ensure both outcomes are handled
+- Avoid unnecessary nesting
+- Clearly separate logic paths
+
+This ensures predictable behavior.
+
+##### 3. Handling Multiple Conditions with elif
+
+Handle more than two cases.
+
+You should:
+
+- Use elif for multiple condition checks
+- Order conditions carefully
+- Ensure only one branch executes
+- Avoid overlapping or redundant checks
+
+This helps manage complex logic cleanly.
+
+##### 4. Using Logical Operators
+
+Combine conditions safely.
+
+You should:
+
+- Use and to require multiple conditions
+- Use or to allow alternative conditions
+- Use not to invert conditions
+- Keep combined conditions readable
+
+Logical operators enable expressive decisions.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating conditional logic.
+
+Your video must include:
+
+- A simple if statement
+- An if–else example
+- An if–elif–else example
+- Use of logical operators
+- Explanation of decision outcomes
+
+#### Implementation
+
+The conditional statements milestone has been implemented in the file:
+- [conditional_statements_demo.py](conditional_statements_demo.py)
+
+This comprehensive demonstration script showcases:
+
+1. **Basic if statements** - Simple condition checking for traffic volumes and signal states
+2. **If-else branching** - Binary decision paths for traffic management scenarios
+3. **Multiple elif conditions** - Complex traffic level classification systems
+4. **Logical operators** - Combined conditions using and, or, and not operators
+5. **Real-world decision outcomes** - Complex traffic scenarios with multiple factors
+
+Run the demonstration script to see all conditional logic concepts in action:
+
+```bash
+python conditional_statements_demo.py
+```
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Focus on correctness, not complexity
+- Watch indentation carefully
+- Keep conditions readable
+- Test multiple input values mentally or with prints
+
+Conditional logic is the backbone of intelligent programs. This milestone ensures you can write clear, correct decisions in Python confidently.
+
+---
+
+## 14. Python Script Development Milestone
 
 ### 🐍 Creating and Running Your First Standalone Python Script
 
