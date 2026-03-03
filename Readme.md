@@ -482,7 +482,168 @@ Conditional logic is the backbone of intelligent programs. This milestone ensure
 
 ---
 
-## 14. Python Script Development Milestone
+## 14. Python Function Parameters and Return Values Milestone
+
+### 🔧 Mastering Function Inputs and Outputs for Modular Programming
+
+This milestone focuses on passing data into Python functions and returning results to build reusable and flexible programs. Understanding how data flows into and out of functions is essential for writing modular, testable, and maintainable code.
+
+Instead of hardcoding values or printing everything, functions should accept inputs and return outputs that can be reused elsewhere in your program.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand function parameters and arguments
+- Pass data into functions correctly
+- Return results using the return statement
+- Use returned values in further computation
+- Write functions that are reusable and predictable
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Define functions that accept input parameters
+- Call functions with different arguments
+- Return values from functions reliably
+- Store and reuse returned results
+- Design functions with clear input-output behavior
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Functions that only print values instead of returning them
+- Hardcoded values inside functions
+- Difficulty reusing function results
+- Confusing data flow across a program
+
+These issues limit scalability and reuse.
+
+This milestone ensures that:
+
+- Functions behave like clear input-output units
+- Logic can be reused across the program
+- Code is easier to test and extend
+- Data flows predictably through functions
+
+Think of functions as machines—you put data in, and you get results out.
+
+#### What You Are Expected to Do
+
+This is a Python fundamentals milestone, not a data analysis task.
+
+You are expected to:
+
+- Define functions with parameters
+- Pass values into functions during calls
+- Use return to send results back
+- Print returned values outside the function
+
+No datasets or advanced libraries are required.
+
+##### 1. Understanding Parameters and Arguments
+
+Learn how functions accept input.
+
+You should:
+
+- Define parameters in the function signature
+- Pass arguments during function calls
+- Match arguments to parameters correctly
+- Use meaningful parameter names
+
+This makes functions flexible.
+
+##### 2. Returning Values from Functions
+
+Learn how to send data back.
+
+You should:
+
+- Use the return statement
+- Return a single value or expression
+- Understand when a function ends execution
+- Avoid unnecessary print statements inside functions
+
+Returning values enables reuse.
+
+##### 3. Using Returned Results
+
+Work with function outputs.
+
+You should:
+
+- Store returned values in variables
+- Use returned values in calculations
+- Pass returned values to other functions
+- Print results only when needed
+
+This builds composable logic.
+
+##### 4. Avoiding Common Function Mistakes
+
+Understand pitfalls.
+
+You should:
+
+- Avoid hardcoding values
+- Avoid mixing print and return incorrectly
+- Ensure every execution path returns a value when needed
+- Keep function logic focused
+
+Good habits prevent bugs.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating function inputs and outputs.
+
+Your video must include:
+
+- A function with parameters
+- Passing arguments into the function
+- Returning a value
+- Using the returned result elsewhere
+
+#### Implementation
+
+The function parameters and return values milestone has been implemented in the file:
+- [function_parameters_demo.py](function_parameters_demo.py)
+
+This comprehensive demonstration script showcases:
+
+1. **Parameters and Arguments** - Functions accepting different input types and values
+2. **Return Values** - Proper use of return statements to send data back
+3. **Using Returned Results** - Chaining function calls and reusing outputs
+4. **Common Mistakes** - Examples of what to avoid with explanations
+5. **Real-World Design** - Complete workflow demonstrating function composition
+
+Run the demonstration script to see all function parameter concepts in action:
+
+```bash
+python function_parameters_demo.py
+```
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Prefer returning values over printing
+- Keep functions predictable
+- Use clear parameter names
+- Well-designed functions improve program structure
+
+Understanding how data flows through functions is critical for clean coding. This milestone ensures you can pass data into functions and return results confidently.
+
+---
+
+## 15. Python Script Development Milestone
 
 ### 🐍 Creating and Running Your First Standalone Python Script
 
