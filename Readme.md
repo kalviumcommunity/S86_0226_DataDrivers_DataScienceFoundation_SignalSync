@@ -841,7 +841,169 @@ Understanding how data flows through functions is critical for clean coding. Thi
 
 ---
 
-## 15. Python Script Development Milestone
+## 15. Code Readability and PEP 8 Naming Milestone
+
+### 📝 Writing Readable Variable Names and Meaningful Comments
+
+This milestone focuses on writing readable variable names and meaningful comments by following basic PEP 8 conventions. Clean naming and comments make code easier to understand, review, debug, and maintain—especially in team-based Data Science projects.
+
+Readable code is not optional; it is a professional requirement.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand why naming and comments matter
+- Write clear, descriptive variable names
+- Follow basic PEP 8 naming conventions
+- Add comments that explain intent, not obvious code
+- Improve overall code readability
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Write self-explanatory variable names
+- Follow standard Python naming styles
+- Use comments effectively and sparingly
+- Make code easier for others to read and review
+- Avoid common readability mistakes
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Cryptic variable names like x, tmp, or val
+- Over-commenting obvious lines of code
+- No comments explaining why something is done
+- Inconsistent naming styles across a file
+
+These issues slow down reviews and cause confusion.
+
+This milestone ensures that:
+
+- Your code communicates intent clearly
+- Reviewers can understand logic quickly
+- Teammates can extend your code safely
+- You develop professional coding habits early
+
+Think of readable code as documentation that never goes out of sync.
+
+#### What You Are Expected to Do
+
+This is a code readability milestone, not a logic or analysis task.
+
+You are expected to:
+
+- Rename variables to be clear and descriptive
+- Follow snake_case naming conventions
+- Add comments where intent needs explanation
+- Avoid unnecessary or redundant comments
+
+No datasets or advanced logic are required.
+
+##### 1. Writing Readable Variable Names
+
+Learn how to name variables clearly.
+
+You should:
+
+- Use descriptive, meaningful names
+- Follow snake_case for variables
+- Avoid single-letter or vague names
+- Reflect what the variable represents
+
+Good names reduce the need for comments.
+
+##### 2. Following PEP 8 Naming Conventions
+
+Understand basic PEP 8 rules.
+
+You should:
+
+- Use lowercase with underscores for variables
+- Use clear names for constants where applicable
+- Keep names concise but descriptive
+- Be consistent throughout the file
+
+Consistency improves readability instantly.
+
+##### 3. Writing Useful Comments
+
+Learn when and how to comment.
+
+You should:
+
+- Explain why code exists, not what it does
+- Avoid commenting obvious operations
+- Write comments above complex logic
+- Keep comments short and clear
+
+Comments should add value.
+
+##### 4. Avoiding Common Readability Mistakes
+
+Recognize poor practices.
+
+You should:
+
+- Avoid commented-out code
+- Avoid misleading comments
+- Avoid over-commenting simple lines
+- Keep code and comments aligned
+
+Clean code builds trust.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating readable code practices.
+
+Your video must include:
+
+- Examples of good vs poor variable names
+- Corrected variable naming using PEP 8
+- Examples of useful comments
+- Explanation of why readability matters
+
+#### Implementation
+
+The code readability and PEP 8 naming milestone has been implemented in the file:
+- [code_readability_demo.py](code_readability_demo.py)
+
+This comprehensive demonstration script showcases:
+
+1. **Poor Variable Naming Examples** - Common mistakes with cryptic and inconsistent names
+2. **Good Variable Naming** - Clear, descriptive names following PEP 8 conventions
+3. **PEP 8 Naming Conventions** - Proper snake_case, CONSTANTS, and class naming
+4. **Meaningful Comments** - When and how to write comments that add value
+5. **Common Mistakes** - What to avoid and best practices for clean code
+6. **Before/After Refactoring** - Complete example showing dramatic readability improvements
+
+Run the demonstration script to see all readability concepts in action:
+
+```bash
+python code_readability_demo.py
+```
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Readability is more important than brevity
+- Code is read more often than written
+- Follow conventions consistently
+- Write code for humans first
+
+Readable naming and comments are core professional skills. This milestone ensures your Python code is clean, understandable, and review-ready.
+
+---
+
+## 16. Python Script Development Milestone
 
 ### 🐍 Creating and Running Your First Standalone Python Script
 
