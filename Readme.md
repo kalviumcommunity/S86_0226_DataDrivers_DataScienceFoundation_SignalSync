@@ -198,6 +198,318 @@ Stores generated results such as:
 - Charts and plots
 - Reports
 - Exported CSV files
+
+---
+
+## 6. Code Structure and Readability Milestone
+
+### Overview
+
+This milestone focuses on structuring Python code for readability, maintainability, and reuse. As programs grow, unstructured code becomes difficult to understand, debug, and extend. This section demonstrates the principles and practices of writing well-organized Python code.
+
+### Learning Objectives
+
+✅ **Understand why code structure matters**
+- Clear organization improves readability
+- Structured code is easier to debug and maintain
+- Good structure enables collaboration and scaling
+
+✅ **Organize code into logical sections**
+- Imports at the top
+- Constants and configuration grouped together
+- Functions defined before use
+- Main execution kept clean and minimal
+
+✅ **Reduce repetition using functions**
+- Identify duplicated logic
+- Extract into reusable functions
+- Call functions instead of copying code
+- Keep functions focused on one task
+
+✅ **Separate setup, logic, and execution**
+- Define functions before using them
+- Keep execution code minimal and readable
+- Avoid mixing concerns randomly
+- Ensure code reads logically from top to bottom
+
+✅ **Write code that is easy to read and reuse**
+- Use clear naming and spacing
+- Avoid deeply nested logic
+- Write code others can follow easily
+- Structure supports long-term maintenance
+
+### Demonstration Files Created
+
+#### 1. **code_structure_comparison.py**
+
+**Purpose:** Side-by-side comparison of poorly structured vs. well-structured code.
+
+**Key Concepts Demonstrated:**
+- ❌ Problems with unstructured code
+- ✅ Benefits of proper organization
+- Before/after examples
+- Impact on readability and maintainability
+
+**Run the file:**
+```bash
+python code_structure_comparison.py
+```
+
+**What you'll see:**
+- Examples of common structural problems
+- Improved versions with clear sections
+- Direct comparison of maintainability
+
+---
+
+#### 2. **structured_traffic_analyzer.py**
+
+**Purpose:** Comprehensive example of professional code structure.
+
+**Key Concepts Demonstrated:**
+- ✅ Clear section organization (8 sections)
+- ✅ Reusable helper functions (no duplication)
+- ✅ Separation of concerns (data, logic, display)
+- ✅ Comprehensive documentation
+- ✅ Main execution wrapper
+
+**Code Structure:**
+```
+Section 1: Imports
+Section 2: Constants & Configuration
+Section 3: Helper Functions (utilities)
+Section 4: Classification Functions
+Section 5: Data Analysis Functions
+Section 6: Reporting Functions
+Section 7: Main Execution Logic
+Section 8: Script Entry Point
+```
+
+**Run the file:**
+```bash
+python structured_traffic_analyzer.py
+```
+
+**What you'll see:**
+- Professional code organization
+- Clean separation of responsibilities
+- Reusable, maintainable structure
+- Real traffic analysis workflow
+
+---
+
+#### 3. **code_structure_exercises.py**
+
+**Purpose:** Hands-on practice exercises for code structure principles.
+
+**Exercises Included:**
+1. **Exercise 1:** Organizing Code into Sections
+2. **Exercise 2:** Eliminating Code Duplication with Functions
+3. **Exercise 3:** Separating Logic from Execution
+4. **Exercise 4:** Creating a Complete Structured Script
+5. **Exercise 5:** Refactoring Poorly Structured Code
+
+**Run the file:**
+```bash
+python code_structure_exercises.py
+```
+
+**What you'll see:**
+- Guided exercises with solutions
+- Practice refactoring messy code
+- Build structured programs from scratch
+- Immediate feedback on your learning
+
+---
+
+### Code Structure Best Practices
+
+#### The Four Pillars of Clean Code Structure:
+
+1. **Organization**
+   ```python
+   # SECTION 1: Imports
+   import module
+   
+   # SECTION 2: Constants
+   THRESHOLD = 1000
+   
+   # SECTION 3: Functions
+   def my_function():
+       pass
+   
+   # SECTION 4: Main Execution
+   if __name__ == "__main__":
+       main()
+   ```
+
+2. **Reusability**
+   ```python
+   # ❌ BAD: Duplicated logic
+   if value1 > 100:
+       print("High")
+   if value2 > 100:
+       print("High")
+   if value3 > 100:
+       print("High")
+   
+   # ✅ GOOD: Reusable function
+   def classify(value):
+       return "High" if value > 100 else "Normal"
+   
+   for value in [value1, value2, value3]:
+       print(classify(value))
+   ```
+
+3. **Separation of Concerns**
+   ```python
+   # ✅ GOOD: Logic separate from execution
+   
+   # Define functions (LOGIC)
+   def calculate(data):
+       return sum(data) / len(data)
+   
+   # Use functions (EXECUTION)
+   def main():
+       data = [1, 2, 3]
+       result = calculate(data)
+       print(result)
+   ```
+
+4. **Readability**
+   ```python
+   # ✅ Use descriptive names
+   # ✅ Add docstrings
+   # ✅ Keep functions focused
+   # ✅ Maintain consistent style
+   
+   def calculate_average_traffic_volume(hourly_counts):
+       """Calculate average from hourly traffic counts.
+       
+       Args:
+           hourly_counts (list): Vehicle counts per hour
+           
+       Returns:
+           float: Average vehicles per hour
+       """
+       return sum(hourly_counts) / len(hourly_counts)
+   ```
+
+---
+
+### Structure Principles Summary
+
+| Principle | Description | Benefit |
+|-----------|-------------|---------|
+| **Sections** | Organize code into imports, constants, functions, main | Easy navigation |
+| **Functions** | Extract repeated logic into reusable functions | No duplication |
+| **Separation** | Keep logic definitions separate from execution | Clear flow |
+| **Documentation** | Add docstrings and comments | Self-explanatory |
+| **Naming** | Use descriptive variable and function names | Readable code |
+| **Consistency** | Follow consistent patterns throughout | Predictable |
+
+---
+
+### Running All Demonstration Files
+
+To see all code structure concepts in action:
+
+```bash
+# Compare poor vs. good structure
+python code_structure_comparison.py
+
+# See professional example
+python structured_traffic_analyzer.py
+
+# Practice with exercises
+python code_structure_exercises.py
+```
+
+---
+
+### Video Walkthrough Guidelines
+
+When creating your ~2 minute video walkthrough, include:
+
+**Required Content:**
+
+1. **Overview of Script Structure** (30 seconds)
+   - Show the file organization
+   - Point out the main sections
+   - Explain the logical flow
+
+2. **Code Sections Explanation** (45 seconds)
+   - Demonstrate imports, constants, functions, main
+   - Show how sections relate to each other
+   - Highlight the separation of concerns
+
+3. **Functions for Reuse** (30 seconds)
+   - Point out reusable functions
+   - Show how they eliminate duplication
+   - Demonstrate calling functions multiple times
+
+4. **Why Structure Improves Readability** (15 seconds)
+   - Explain maintainability benefits
+   - Discuss how it helps collaboration
+   - Emphasize long-term value
+
+**Video Requirements:**
+- Duration: Approximately 2 minutes
+- Screen capture showing code
+- Clear audio explanation
+- Visible code and cursor
+
+**Suggested Tools:**
+- OBS Studio (free)
+- Loom
+- QuickTime (Mac)
+- Windows Game Bar (Windows)
+
+---
+
+### Key Takeaways
+
+> **"Structure transforms working code into maintainable code."**
+
+✅ **What You've Learned:**
+- How to organize code into logical sections
+- How to eliminate duplication with functions
+- How to separate logic from execution
+- How to write readable, maintainable code
+- How to structure code for collaboration
+
+✅ **Skills Developed:**
+- Code organization and planning
+- Function design and reusability
+- Documentation and clarity
+- Professional coding practices
+
+✅ **Impact:**
+- Faster debugging
+- Easier maintenance
+- Better collaboration
+- Scalable codebase
+- Professional quality code
+
+---
+
+### Next Steps
+
+**After Completing This Milestone:**
+
+1. ✅ Run all three demonstration files
+2. ✅ Complete all exercises in `code_structure_exercises.py`
+3. ✅ Record your video walkthrough
+4. ✅ Apply these principles to your own projects
+5. ✅ Review existing code and refactor where needed
+
+**Apply to Your Projects:**
+- Restructure existing scripts using these principles
+- Start new projects with proper structure from the beginning
+- Share these practices with your team
+- Make structure a habit in all your work
+
+---
 - Model outputs
 
 Keeps results separate from raw and processed data.
