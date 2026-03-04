@@ -2423,3 +2423,80 @@ Understanding array shape and dimensions ensures that:
 Shape acts as the blueprint of the data.
 
 ---
+
+## ➗ NumPy Array Mathematics: Basic Arithmetic Operations
+
+This milestone demonstrates performing basic mathematical operations on NumPy arrays using element-wise computation.  
+NumPy allows arithmetic to be applied to entire arrays at once, making numerical code concise, readable, and efficient.
+
+This milestone focuses on NumPy fundamentals and does not involve data analysis or advanced operations.
+
+---
+
+### 📌 Element-Wise Array Operations
+
+NumPy applies arithmetic operations to corresponding elements of arrays with the same shape.
+
+Key points:
+
+- Arrays can be added, subtracted, multiplied, and divided element-wise
+- Operations are applied position by position
+- Arrays must have compatible shapes
+
+This ensures clear and predictable numerical behavior.
+
+---
+
+### 📌 Scalar Operations on Arrays
+
+Scalar values can be applied to entire arrays.
+
+Key characteristics:
+
+- A single number can be added, subtracted, multiplied, or divided across all elements
+- Operations automatically broadcast to each element
+- Simplifies mathematical expressions
+
+This removes the need for loops in simple numerical computations.
+
+---
+
+### 📌 NumPy Arrays vs Python Lists
+
+NumPy arrays and Python lists behave differently during mathematical operations.
+
+Key differences:
+
+- List addition concatenates lists instead of performing math
+- NumPy performs true element-wise arithmetic
+- NumPy is preferred for numerical and scientific computation
+
+Understanding this difference prevents incorrect assumptions in code.
+
+---
+
+### ⚠️ Avoiding Common Mistakes
+
+Important considerations:
+
+- Arrays must have compatible shapes for operations
+- Data types should be numeric
+- Index and shape awareness prevents runtime errors
+- Errors should be interpreted carefully
+
+Correct shape handling ensures reliable results.
+
+---
+
+### 🔍 Why NumPy Math Matters
+
+Using NumPy for arithmetic ensures that:
+
+- Code is concise and readable
+- Mathematical intent is clear
+- Computations scale efficiently
+- Vectorized operations replace loops
+
+NumPy math acts as a foundation for data analysis and scientific computing.
+
+---
