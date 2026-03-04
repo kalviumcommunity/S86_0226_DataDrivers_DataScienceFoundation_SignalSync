@@ -210,29 +210,34 @@ This milestone focuses on structuring Python code for readability, maintainabili
 ### Learning Objectives
 
 ✅ **Understand why code structure matters**
+
 - Clear organization improves readability
 - Structured code is easier to debug and maintain
 - Good structure enables collaboration and scaling
 
 ✅ **Organize code into logical sections**
+
 - Imports at the top
 - Constants and configuration grouped together
 - Functions defined before use
 - Main execution kept clean and minimal
 
 ✅ **Reduce repetition using functions**
+
 - Identify duplicated logic
 - Extract into reusable functions
 - Call functions instead of copying code
 - Keep functions focused on one task
 
 ✅ **Separate setup, logic, and execution**
+
 - Define functions before using them
 - Keep execution code minimal and readable
 - Avoid mixing concerns randomly
 - Ensure code reads logically from top to bottom
 
 ✅ **Write code that is easy to read and reuse**
+
 - Use clear naming and spacing
 - Avoid deeply nested logic
 - Write code others can follow easily
@@ -245,17 +250,20 @@ This milestone focuses on structuring Python code for readability, maintainabili
 **Purpose:** Side-by-side comparison of poorly structured vs. well-structured code.
 
 **Key Concepts Demonstrated:**
+
 - ❌ Problems with unstructured code
 - ✅ Benefits of proper organization
 - Before/after examples
 - Impact on readability and maintainability
 
 **Run the file:**
+
 ```bash
 python code_structure_comparison.py
 ```
 
 **What you'll see:**
+
 - Examples of common structural problems
 - Improved versions with clear sections
 - Direct comparison of maintainability
@@ -267,6 +275,7 @@ python code_structure_comparison.py
 **Purpose:** Comprehensive example of professional code structure.
 
 **Key Concepts Demonstrated:**
+
 - ✅ Clear section organization (8 sections)
 - ✅ Reusable helper functions (no duplication)
 - ✅ Separation of concerns (data, logic, display)
@@ -274,6 +283,7 @@ python code_structure_comparison.py
 - ✅ Main execution wrapper
 
 **Code Structure:**
+
 ```
 Section 1: Imports
 Section 2: Constants & Configuration
@@ -286,11 +296,13 @@ Section 8: Script Entry Point
 ```
 
 **Run the file:**
+
 ```bash
 python structured_traffic_analyzer.py
 ```
 
 **What you'll see:**
+
 - Professional code organization
 - Clean separation of responsibilities
 - Reusable, maintainable structure
@@ -303,6 +315,7 @@ python structured_traffic_analyzer.py
 **Purpose:** Hands-on practice exercises for code structure principles.
 
 **Exercises Included:**
+
 1. **Exercise 1:** Organizing Code into Sections
 2. **Exercise 2:** Eliminating Code Duplication with Functions
 3. **Exercise 3:** Separating Logic from Execution
@@ -310,11 +323,13 @@ python structured_traffic_analyzer.py
 5. **Exercise 5:** Refactoring Poorly Structured Code
 
 **Run the file:**
+
 ```bash
 python code_structure_exercises.py
 ```
 
 **What you'll see:**
+
 - Guided exercises with solutions
 - Practice refactoring messy code
 - Build structured programs from scratch
@@ -327,23 +342,25 @@ python code_structure_exercises.py
 #### The Four Pillars of Clean Code Structure:
 
 1. **Organization**
+
    ```python
    # SECTION 1: Imports
    import module
-   
+
    # SECTION 2: Constants
    THRESHOLD = 1000
-   
+
    # SECTION 3: Functions
    def my_function():
        pass
-   
+
    # SECTION 4: Main Execution
    if __name__ == "__main__":
        main()
    ```
 
 2. **Reusability**
+
    ```python
    # ❌ BAD: Duplicated logic
    if value1 > 100:
@@ -352,23 +369,24 @@ python code_structure_exercises.py
        print("High")
    if value3 > 100:
        print("High")
-   
+
    # ✅ GOOD: Reusable function
    def classify(value):
        return "High" if value > 100 else "Normal"
-   
+
    for value in [value1, value2, value3]:
        print(classify(value))
    ```
 
 3. **Separation of Concerns**
+
    ```python
    # ✅ GOOD: Logic separate from execution
-   
+
    # Define functions (LOGIC)
    def calculate(data):
        return sum(data) / len(data)
-   
+
    # Use functions (EXECUTION)
    def main():
        data = [1, 2, 3]
@@ -377,18 +395,19 @@ python code_structure_exercises.py
    ```
 
 4. **Readability**
+
    ```python
    # ✅ Use descriptive names
    # ✅ Add docstrings
    # ✅ Keep functions focused
    # ✅ Maintain consistent style
-   
+
    def calculate_average_traffic_volume(hourly_counts):
        """Calculate average from hourly traffic counts.
-       
+
        Args:
            hourly_counts (list): Vehicle counts per hour
-           
+
        Returns:
            float: Average vehicles per hour
        """
@@ -399,14 +418,14 @@ python code_structure_exercises.py
 
 ### Structure Principles Summary
 
-| Principle | Description | Benefit |
-|-----------|-------------|---------|
-| **Sections** | Organize code into imports, constants, functions, main | Easy navigation |
-| **Functions** | Extract repeated logic into reusable functions | No duplication |
-| **Separation** | Keep logic definitions separate from execution | Clear flow |
-| **Documentation** | Add docstrings and comments | Self-explanatory |
-| **Naming** | Use descriptive variable and function names | Readable code |
-| **Consistency** | Follow consistent patterns throughout | Predictable |
+| Principle         | Description                                            | Benefit          |
+| ----------------- | ------------------------------------------------------ | ---------------- |
+| **Sections**      | Organize code into imports, constants, functions, main | Easy navigation  |
+| **Functions**     | Extract repeated logic into reusable functions         | No duplication   |
+| **Separation**    | Keep logic definitions separate from execution         | Clear flow       |
+| **Documentation** | Add docstrings and comments                            | Self-explanatory |
+| **Naming**        | Use descriptive variable and function names            | Readable code    |
+| **Consistency**   | Follow consistent patterns throughout                  | Predictable      |
 
 ---
 
@@ -454,12 +473,14 @@ When creating your ~2 minute video walkthrough, include:
    - Emphasize long-term value
 
 **Video Requirements:**
+
 - Duration: Approximately 2 minutes
 - Screen capture showing code
 - Clear audio explanation
 - Visible code and cursor
 
 **Suggested Tools:**
+
 - OBS Studio (free)
 - Loom
 - QuickTime (Mac)
@@ -472,6 +493,7 @@ When creating your ~2 minute video walkthrough, include:
 > **"Structure transforms working code into maintainable code."**
 
 ✅ **What You've Learned:**
+
 - How to organize code into logical sections
 - How to eliminate duplication with functions
 - How to separate logic from execution
@@ -479,12 +501,14 @@ When creating your ~2 minute video walkthrough, include:
 - How to structure code for collaboration
 
 ✅ **Skills Developed:**
+
 - Code organization and planning
 - Function design and reusability
 - Documentation and clarity
 - Professional coding practices
 
 ✅ **Impact:**
+
 - Faster debugging
 - Easier maintenance
 - Better collaboration
@@ -504,6 +528,7 @@ When creating your ~2 minute video walkthrough, include:
 5. ✅ Review existing code and refactor where needed
 
 **Apply to Your Projects:**
+
 - Restructure existing scripts using these principles
 - Start new projects with proper structure from the beginning
 - Share these practices with your team
@@ -522,26 +547,31 @@ Understanding how to convert Python lists to NumPy arrays is essential before wo
 ### Learning Objectives
 
 ✅ **Understand why NumPy is used instead of Python lists**
+
 - Performance benefits for numerical computing
 - Element-wise operations and vectorization
 - Foundation for the entire Python data science ecosystem
 
 ✅ **Convert Python lists into NumPy arrays**
+
 - Create 1D arrays from simple lists
 - Create 2D arrays from nested lists
 - Create multi-dimensional arrays for complex data
 
 ✅ **Inspect array structure and data types**
+
 - Understand array shape and dimensions
 - Check data types (dtype)
 - Analyze array properties
 
 ✅ **Perform basic array operations**
+
 - Element-wise arithmetic
 - Statistical functions
 - Comparison operations
 
 ✅ **Recognize differences between lists and arrays**
+
 - Behavior differences in operations
 - Performance comparisons
 - When to use each data structure
@@ -553,6 +583,7 @@ Understanding how to convert Python lists to NumPy arrays is essential before wo
 **Purpose:** Understand why NumPy arrays are essential for data science.
 
 **Key Concepts Demonstrated:**
+
 - ❌ Limitations of Python lists for numeric data
 - ✅ Benefits of NumPy arrays
 - Performance comparison (speed tests)
@@ -560,11 +591,13 @@ Understanding how to convert Python lists to NumPy arrays is essential before wo
 - When to use lists vs arrays
 
 **Run the file:**
+
 ```bash
 python numpy_lists_vs_arrays.py
 ```
 
 **What you'll see:**
+
 - Problems with list-based numeric computation
 - How arrays solve these problems
 - Real performance benchmarks
@@ -577,6 +610,7 @@ python numpy_lists_vs_arrays.py
 **Purpose:** Master the core skill of creating NumPy arrays from lists.
 
 **Key Concepts Demonstrated:**
+
 - ✅ Importing NumPy properly (`import numpy as np`)
 - ✅ Creating 1D arrays from lists
 - ✅ Creating 2D arrays from nested lists
@@ -585,6 +619,7 @@ python numpy_lists_vs_arrays.py
 - ✅ Data type handling and conversion
 
 **Code Coverage:**
+
 ```
 Section 1: Importing NumPy
 Section 2: Creating 1D Arrays
@@ -598,11 +633,13 @@ Section 9: Practical Examples
 ```
 
 **Run the file:**
+
 ```bash
 python numpy_array_creation.py
 ```
 
 **What you'll see:**
+
 - Step-by-step array creation examples
 - Different dimensional arrays
 - Real traffic analysis use cases
@@ -615,6 +652,7 @@ python numpy_array_creation.py
 **Purpose:** Learn to inspect and understand NumPy array properties.
 
 **Key Concepts Demonstrated:**
+
 - ✅ Array shape (`.shape`)
 - ✅ Number of dimensions (`.ndim`)
 - ✅ Data types (`.dtype`)
@@ -624,6 +662,7 @@ python numpy_array_creation.py
 - ✅ Comparison operations
 
 **Array Properties Reference:**
+
 ```python
 array.shape    # Dimensions (rows, columns, etc.)
 array.ndim     # Number of dimensions
@@ -633,11 +672,13 @@ len(array)     # Length of first dimension
 ```
 
 **Run the file:**
+
 ```bash
 python numpy_array_properties.py
 ```
 
 **What you'll see:**
+
 - How to inspect any array completely
 - Statistical operations on arrays
 - Comparison with list operations
@@ -650,6 +691,7 @@ python numpy_array_properties.py
 **Purpose:** Practice creating and working with NumPy arrays.
 
 **Exercises Included:**
+
 1. **Exercise 1:** Create a Simple 1D Array
 2. **Exercise 2:** Create a 2D Array from Nested Lists
 3. **Exercise 3:** Inspect Array Properties
@@ -660,14 +702,17 @@ python numpy_array_properties.py
 8. **Exercise 8:** Create and Analyze 2D Array
 9. **Exercise 9:** Understanding Data Types
 10. **Exercise 10:** Real-world Traffic Analysis
+
 - **Bonus:** Array Creation Patterns
 
 **Run the file:**
+
 ```bash
 python numpy_exercises.py
 ```
 
 **What you'll see:**
+
 - 10 progressive exercises with solutions
 - Real-world traffic data analysis
 - Immediate feedback on your learning
@@ -728,14 +773,14 @@ array == 50      # Element comparison
 
 ### Why NumPy Matters
 
-| Feature | Python Lists | NumPy Arrays |
-|---------|-------------|--------------|
-| **Speed** | Slow for math | Fast (C-optimized) |
-| **Memory** | More memory | Less memory |
-| **Element-wise Math** | ❌ Requires loops | ✅ Built-in |
-| **Broadcasting** | ❌ Not supported | ✅ Automatic |
-| **Functions** | Limited | Rich (100+) |
-| **Data Science** | ❌ Not standard | ✅ Foundation |
+| Feature               | Python Lists      | NumPy Arrays       |
+| --------------------- | ----------------- | ------------------ |
+| **Speed**             | Slow for math     | Fast (C-optimized) |
+| **Memory**            | More memory       | Less memory        |
+| **Element-wise Math** | ❌ Requires loops | ✅ Built-in        |
+| **Broadcasting**      | ❌ Not supported  | ✅ Automatic       |
+| **Functions**         | Limited           | Rich (100+)        |
+| **Data Science**      | ❌ Not standard   | ✅ Foundation      |
 
 **Key Insight:** Every major Python data science library (Pandas, SciPy, scikit-learn, TensorFlow, PyTorch) is built on NumPy arrays. Mastering NumPy is essential for all data science work.
 
@@ -788,12 +833,14 @@ When creating your ~2 minute video walkthrough, include:
    - Contrast with list behavior
 
 **Video Requirements:**
+
 - Duration: Approximately 2 minutes
 - Screen capture showing code execution
 - Clear audio explanation
 - Visible code and output
 
 **Suggested Tools:**
+
 - VS Code terminal or Jupyter Notebook
 - OBS Studio, Loom, or built-in screen recorder
 - Show both code and console output
@@ -803,17 +850,20 @@ When creating your ~2 minute video walkthrough, include:
 ### Common Patterns Quick Reference
 
 #### Pattern 1: List → Array
+
 ```python
 my_list = [10, 20, 30]
 my_array = np.array(my_list)
 ```
 
 #### Pattern 2: Direct Creation
+
 ```python
 array = np.array([100, 200, 300])
 ```
 
 #### Pattern 3: 2D from Nested Lists
+
 ```python
 matrix = np.array([
     [1, 2, 3],
@@ -822,11 +872,13 @@ matrix = np.array([
 ```
 
 #### Pattern 4: From Range
+
 ```python
 sequence = np.array(range(10))
 ```
 
 #### Pattern 5: Check Properties
+
 ```python
 print(array.shape)
 print(array.dtype)
@@ -840,6 +892,7 @@ print(array.ndim)
 > **"NumPy arrays are the foundation of numerical computing in Python."**
 
 ✅ **What You've Learned:**
+
 - Why NumPy arrays are essential
 - How to create arrays from lists
 - How to inspect array properties
@@ -847,12 +900,14 @@ print(array.ndim)
 - When to use arrays vs lists
 
 ✅ **Skills Developed:**
+
 - Array creation and conversion
 - Property inspection
 - Vectorized operations
 - Real-world data handling
 
 ✅ **Impact:**
+
 - Faster numerical computations
 - Cleaner, more efficient code
 - Foundation for Pandas and ML
@@ -871,7 +926,8 @@ print(array.ndim)
 5. ✅ Move forward to array indexing and slicing
 
 **Prepare for Next Topics:**
-- Advanced NumPy indexing 
+
+- Advanced NumPy indexing
 - Array reshaping and manipulation
 - NumPy with Pandas DataFrames
 - Real dataset analysis
@@ -1487,6 +1543,7 @@ Your video must include:
 #### Implementation
 
 The function parameters and return values milestone has been implemented in the file:
+
 - [function_parameters_demo.py](function_parameters_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -1648,6 +1705,7 @@ Your video must include:
 #### Implementation
 
 The code readability and PEP 8 naming milestone has been implemented in the file:
+
 - [code_readability_demo.py](code_readability_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -2283,3 +2341,85 @@ Using functions ensures that:
 - Code intent is clearer and more readable
 
 Functions act as building blocks for clean programming.
+
+## 📐 NumPy Arrays: Shape, Dimensions, and Indexing
+
+This milestone demonstrates understanding of how NumPy arrays are structured in terms of **shape**, **dimensions**, and **index positions**.  
+Correct interpretation of array layout is essential for accessing elements safely and avoiding index-related errors.
+
+This milestone focuses on NumPy fundamentals and does not involve data analysis or advanced operations.
+
+---
+
+### 📌 Understanding Array Shape
+
+The `shape` attribute describes how data is organized in an array.
+
+Key points:
+
+- Shape shows the size of each dimension
+- In a 1D array, shape represents the number of elements
+- In a 2D array, shape represents rows and columns
+- Shape helps identify how data is laid out
+
+Understanding shape ensures correct navigation of array elements.
+
+---
+
+### 📌 Understanding Dimensions (`ndim`)
+
+The `ndim` attribute represents the number of dimensions of an array.
+
+Key concepts:
+
+- 1D arrays represent linear data
+- 2D arrays represent tabular data (rows and columns)
+- Dimensions relate directly to the shape of the array
+- Higher dimensions increase data complexity
+
+This helps distinguish between different array structures.
+
+---
+
+### 📌 Accessing Elements Using Index Positions
+
+Elements in NumPy arrays are accessed using zero-based indexing.
+
+Key characteristics:
+
+- 1D arrays use a single index
+- 2D arrays use row and column indices
+- Indexing follows the format: `[row, column]`
+- Out-of-range indices cause errors
+
+Correct indexing prevents runtime bugs.
+
+---
+
+### 📌 Visualizing Array Layout
+
+Arrays can be visualized as grids or tables.
+
+Key ideas:
+
+- Rows come before columns in indexing
+- Each index maps to a specific value
+- Visualizing layout improves intuition
+- Simple examples build understanding
+
+This strengthens mental models of how data is stored.
+
+---
+
+### 🔍 Why Shape Awareness Matters
+
+Understanding array shape and dimensions ensures that:
+
+- Data is accessed correctly
+- Code behaves predictably
+- Index errors are avoided
+- Arrays are ready for slicing and reshaping
+
+Shape acts as the blueprint of the data.
+
+---
