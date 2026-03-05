@@ -1868,6 +1868,7 @@ Your video must include:
 #### Implementation
 
 The NumPy vectorization milestone has been implemented in the file:
+
 - [numpy_vectorization_demo.py](numpy_vectorization_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -2661,3 +2662,79 @@ Using NumPy for arithmetic ensures that:
 NumPy math acts as a foundation for data analysis and scientific computing.
 
 ---
+
+NumPy Broadcasting
+
+This milestone demonstrates the concept of NumPy broadcasting, which allows operations between arrays of different shapes without writing explicit loops. Broadcasting makes numerical code more concise, efficient, and easier to read.
+
+The focus of this milestone is understanding how NumPy automatically aligns array shapes to perform arithmetic operations.
+
+📌 Broadcasting with Scalars
+
+The simplest form of broadcasting occurs when a scalar (single value) interacts with an array.
+
+Key observations:
+
+A scalar value is applied to every element of the array
+
+NumPy internally stretches the scalar to match the array shape
+
+This avoids writing loops for simple operations
+
+Example operations include adding, subtracting, or multiplying a scalar with an array.
+
+📌 Broadcasting Between 1D Arrays
+
+Broadcasting can also occur between arrays of different but compatible shapes.
+
+Key concepts:
+
+NumPy aligns array dimensions automatically
+
+Operations are performed element-wise when shapes are compatible
+
+Incompatible shapes produce a shape mismatch error
+
+Understanding shape compatibility is important for safe array operations.
+
+📌 Broadcasting Between 2D and 1D Arrays
+
+Broadcasting often occurs between 2D arrays and 1D arrays.
+
+Key observations:
+
+A 1D array can be applied across rows or columns of a 2D array
+
+NumPy expands dimensions logically to match shapes
+
+This allows operations across entire rows or columns without loops
+
+This pattern is commonly used in numerical and data processing tasks.
+
+📌 Understanding Broadcasting Rules (Conceptual)
+
+Broadcasting works by comparing array shapes starting from the rightmost dimension.
+
+Important ideas:
+
+Dimensions must either match
+
+One of the dimensions must be 1 (expandable)
+
+If neither condition is satisfied, broadcasting fails
+
+Thinking about shapes before performing operations helps prevent errors.
+
+🔍 Why Broadcasting Matters
+
+Broadcasting ensures that:
+
+Code remains short and expressive
+
+Mathematical operations are applied efficiently
+
+Loops are avoided for array computations
+
+Shape compatibility is handled automatically
+
+It is one of NumPy’s most powerful features for numerical computing.
