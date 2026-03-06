@@ -934,6 +934,407 @@ print(array.ndim)
 
 ---
 
+## 8. Creating Pandas Series from Lists and Arrays Milestone
+
+### Overview
+
+This milestone focuses on creating Pandas Series from Python lists and NumPy arrays. A Series is Pandas' core one-dimensional data structure and serves as the foundation for working with labeled data in Data Science workflows.
+
+Understanding how to create and interpret a Series is essential before moving on to DataFrames and real datasets. Think of a Series as a labeled NumPy array—it combines the efficiency of NumPy with the semantic power of labeled indexing.
+
+### Learning Objectives
+
+This lesson helps you:
+
+✅ **Understand what a Pandas Series is**
+
+- Recognize Series as 1D labeled data
+- Observe default indexing behavior
+- Understand Series as NumPy array + labels
+- Appreciate the role of indexing in data
+
+✅ **Create a Series from Python lists**
+
+- Convert lists into Series
+- Observe automatic index creation
+- Use numeric and text examples
+- Print and inspect Series output
+
+✅ **Create a Series from NumPy arrays**
+
+- Convert arrays into Series
+- Preserve data types during conversion
+- Compare behavior with raw NumPy arrays
+- Understand why labels matter
+
+✅ **Understand index and values in a Series**
+
+- Inspect the index of a Series (`.index`)
+- Inspect the values of a Series (`.values`)
+- Understand positional vs label-based access
+- Create custom indexes for meaningful labels
+
+✅ **Compare Series behavior with NumPy arrays**
+
+- Vectorized operations in both structures
+- Automatic alignment by labels
+- Label-based indexing advantages
+- When to use Series vs arrays
+
+By completing this milestone, you will be able to:
+
+- Create Pandas Series confidently
+- Work with Series values and indexes
+- Understand how labels add meaning to data
+- Use Series as building blocks for DataFrames
+- Choose Series appropriately for 1D data
+
+### Why This Matters
+
+Common beginner issues include:
+
+- ❌ Confusion between NumPy arrays and Pandas Series
+- ❌ Ignoring index labels and relying only on positions
+- ❌ Difficulty transitioning from NumPy to Pandas
+- ❌ Misunderstanding how data is aligned
+
+Pandas Series solve these problems by adding labels to data.
+
+This milestone ensures that:
+
+- ✅ Your data has meaningful indexing
+- ✅ Operations are label-aware
+- ✅ You are prepared for DataFrame operations
+- ✅ Data handling becomes more intuitive
+
+### Demonstration Files Created
+
+#### 1. **pandas_series_demo.py**
+
+**Purpose:** Comprehensive demonstration of Pandas Series fundamentals.
+
+**Key Concepts Demonstrated:**
+
+- ✅ Understanding Pandas Series structure
+- ✅ Creating Series from Python lists (numeric, string, mixed)
+- ✅ Creating Series from NumPy arrays
+- ✅ Accessing index and values
+- ✅ Custom index creation and label-based access
+- ✅ Comparing Series with NumPy arrays
+- ✅ Simple operations (arithmetic, statistical, boolean indexing)
+- ✅ Why Series are useful
+
+**Code Structure:**
+
+```
+Section 1: Understanding Pandas Series
+Section 2: Creating Series from Python Lists
+Section 3: Creating Series from NumPy Arrays
+Section 4: Understanding Index and Values
+Section 5: Comparing Series with NumPy Arrays
+Section 6: Simple Operations on a Series
+Section 7: Why Series Are Useful - Summary
+```
+
+**Run the file:**
+
+```bash
+python pandas_series_demo.py
+```
+
+**What you'll see:**
+
+- Step-by-step Series creation examples
+- Index and values inspection
+- Label-based vs positional access
+- Comparison with NumPy arrays
+- Real-world examples with meaningful labels
+
+---
+
+#### 2. **pandas_series_exercises.py**
+
+**Purpose:** Hands-on practice exercises for mastering Pandas Series.
+
+**Exercises Included:**
+
+1. **Exercise 1:** Create Series from Lists
+2. **Exercise 2:** Create Series from NumPy Array
+3. **Exercise 3:** Custom Index
+4. **Exercise 4:** Access Index and Values
+5. **Exercise 5:** Label-based Access
+6. **Exercise 6:** Arithmetic Operations
+7. **Exercise 7:** Statistical Operations
+8. **Exercise 8:** Boolean Indexing
+9. **Exercise 9:** Series from Dictionary
+10. **Exercise 10:** Series Alignment
+
+**Run the file:**
+
+```bash
+python pandas_series_exercises.py
+```
+
+**What you'll see:**
+
+- 10 progressive exercises with solutions
+- Practice with different data types
+- Custom indexing scenarios
+- Real-world data examples
+- Immediate feedback on your learning
+
+---
+
+#### 3. **pandas_series_video_script.py**
+
+**Purpose:** Complete script for recording your 2-minute video walkthrough.
+
+**Includes:**
+
+- ✅ Timed sections for each concept
+- ✅ Code snippets ready to demonstrate
+- ✅ Talking points for clear explanations
+- ✅ Tips for successful recording
+- ✅ Complete demo script at the end
+
+**Use this file to:**
+
+- Follow along during video recording
+- Ensure you cover all required topics
+- Stay within the 2-minute time limit
+- Deliver a professional presentation
+
+---
+
+### Pandas Series Fundamentals Summary
+
+#### Creating Series
+
+```python
+import pandas as pd
+import numpy as np
+
+# From Python list
+list_series = pd.Series([10, 20, 30, 40, 50])
+
+# From NumPy array
+array_series = pd.Series(np.array([100, 200, 300]))
+
+# With custom index
+custom_series = pd.Series(
+    data=[95, 87, 92],
+    index=['Math', 'Science', 'English']
+)
+
+# From dictionary (keys become index)
+dict_series = pd.Series({'A': 100, 'B': 200, 'C': 300})
+```
+
+#### Inspecting Series
+
+```python
+series.index       # Get the index
+series.values      # Get values as NumPy array
+series.dtype       # Data type
+series.size        # Number of elements
+series.shape       # Dimensions (n,)
+```
+
+#### Accessing Data
+
+```python
+# Positional access
+series.iloc[0]     # First element by position
+series.iloc[2]     # Third element
+
+# Label-based access
+series['Math']     # Access by index label
+series.loc['Math'] # Explicit label-based access
+```
+
+#### Basic Operations
+
+```python
+# Arithmetic (element-wise)
+series + 10        # Add 10 to all
+series * 2         # Multiply all by 2
+
+# Statistical
+series.mean()      # Average
+series.sum()       # Sum
+series.std()       # Standard deviation
+series.max()       # Maximum
+series.min()       # Minimum
+
+# Boolean indexing
+series[series > 50]     # Filter values > 50
+series[series == 100]   # Find exact matches
+```
+
+---
+
+### Series vs NumPy Arrays
+
+| Feature                  | NumPy Arrays           | Pandas Series        |
+| ------------------------ | ---------------------- | -------------------- |
+| **Labels/Index**         | ❌ Position-only       | ✅ Custom labels     |
+| **Alignment**            | ❌ Manual              | ✅ Automatic         |
+| **Access by Label**      | ❌ Not supported       | ✅ Built-in          |
+| **Vectorization**        | ✅ Yes                 | ✅ Yes               |
+| **Performance**          | ✅ Fast                | ✅ Fast (NumPy-based)|
+| **Data Types**           | ✅ Homogeneous only    | ✅ Flexible          |
+| **Missing Data**         | ❌ Limited support     | ✅ NaN handling      |
+| **DataFrame Integration**| ❌ Not native          | ✅ Natural           |
+
+**Key Insight:** Series = NumPy Array + Labels + Extra Features
+
+---
+
+### Running All Demonstration Files
+
+To see all Pandas Series concepts in action:
+
+```bash
+# Comprehensive demonstration
+python pandas_series_demo.py
+
+# Practice with exercises
+python pandas_series_exercises.py
+
+# Video walkthrough script
+python pandas_series_video_script.py
+```
+
+---
+
+### Video Walkthrough Guidelines
+
+When creating your ~2 minute video walkthrough, include:
+
+**Required Content:**
+
+1. **Creating Series from a List** (35 seconds)
+   - Show import statement
+   - Create a Series from a Python list
+   - Display the output showing index and values
+   - Explain automatic indexing
+
+2. **Creating Series from NumPy Array** (30 seconds)
+   - Create a NumPy array
+   - Convert it to a Series
+   - Show that data types are preserved
+   - Compare with the array
+
+3. **Showing Series Values and Index** (30 seconds)
+   - Create a Series with custom labels
+   - Access `.index` and `.values` separately
+   - Demonstrate label-based access
+   - Show how it's different from position-based access
+
+4. **Explaining Why Series Are Useful** (25 seconds)
+   - Labels add meaning to data
+   - Automatic alignment in operations
+   - Foundation for DataFrames
+   - Self-documenting code
+
+**Video Requirements:**
+
+- Duration: Approximately 2 minutes
+- Screen capture showing code execution
+- Clear audio explanation
+- Visible code and output
+- Professional presentation
+
+**Suggested Tools:**
+
+- VS Code with integrated terminal
+- Jupyter Notebook
+- OBS Studio (free screen recorder)
+- Loom or built-in OS screen recorder
+
+---
+
+### Common Patterns Quick Reference
+
+#### Pattern 1: Simple Series Creation
+
+```python
+s = pd.Series([1, 2, 3, 4, 5])
+```
+
+#### Pattern 2: Series with Labels
+
+```python
+s = pd.Series([100, 200, 300], index=['A', 'B', 'C'])
+```
+
+#### Pattern 3: From Dictionary
+
+```python
+s = pd.Series({'Mon': 23, 'Tue': 25, 'Wed': 27})
+```
+
+#### Pattern 4: Inspection Workflow
+
+```python
+print(s)              # View entire Series
+print(s.index)        # Check labels
+print(s.values)       # Get values
+print(s['A'])         # Access by label
+```
+
+---
+
+### Key Takeaways
+
+> **"Pandas Series introduce labeled data handling in Python."**
+
+✅ **What You've Learned:**
+
+- What a Pandas Series represents
+- How to create Series from lists and arrays
+- How to work with index and values
+- How to compare Series with NumPy arrays
+- Why labels make data more meaningful
+
+✅ **Skills Developed:**
+
+- Series creation and initialization
+- Label-based data access
+- Index manipulation
+- Basic Series operations
+- Transitioning from NumPy to Pandas
+
+✅ **Impact:**
+
+- More intuitive data handling
+- Self-documenting code with labels
+- Foundation for DataFrame work
+- Automatic data alignment
+- Better collaboration with labeled data
+
+---
+
+### Next Steps
+
+**After Completing This Milestone:**
+
+1. ✅ Run `pandas_series_demo.py` to see all concepts
+2. ✅ Complete all 10 exercises in `pandas_series_exercises.py`
+3. ✅ Use `pandas_series_video_script.py` for your recording
+4. ✅ Record and submit your 2-minute video walkthrough
+5. ✅ Practice creating Series with your own data
+
+**Prepare for Next Topics:**
+
+- Pandas DataFrames (2D labeled data)
+- Loading data from CSV files
+- Data cleaning and preprocessing
+- Advanced indexing and selection
+- Series and DataFrame integration
+
+---
+
 - Model outputs
 
 Keeps results separate from raw and processed data.
