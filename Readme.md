@@ -2738,3 +2738,25 @@ Loops are avoided for array computations
 Shape compatibility is handled automatically
 
 It is one of NumPy’s most powerful features for numerical computing.
+
+## DataFrame Selection
+
+### Selecting Columns
+
+- Select a single column from the DataFrame
+- Select multiple columns using a list of column names
+
+### Selecting Rows by Position (`iloc`)
+
+- Select rows using integer position
+- Slice a range of rows using position-based indexing
+
+### Selecting Rows by Label (`loc`)
+
+- Select rows using index labels
+- Slice rows using label-based indexing
+
+### Selecting Rows and Columns Together
+
+- Select specific rows and columns in one operation
+- Verify the selected subset of the DataFrame
