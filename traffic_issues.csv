@@ -1,0 +1,7 @@
+date_time;traffic_volume;temp;weather_main
+2023-01-02 08:00:00;3600;44.5;Clear
+2023-01-02 09:00:00;4300;46.2;Clouds
+Missing Data Row Here
+2023-01-02 11:00:00;3700;49.8;Clear
+2023-01-02 12:00:00;;51.5;Rain
+2023-01-02 13:00:00;4600;52.9;Clear
