@@ -1289,6 +1289,182 @@ This section is optional, and learners who want to explore the topics covered so
 
 ---
 
+## 19. Inspecting Pandas DataFrames Milestone
+
+### 🔍 Mastering DataFrame Inspection with head(), info(), and describe()
+
+This milestone focuses on inspecting Pandas DataFrames using head(), info(), and describe(). After loading data, inspection is the most important step to understand structure, data types, and overall data quality before any cleaning or analysis.
+
+These three methods give you a fast, reliable snapshot of what your data actually looks like.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Preview rows in a DataFrame quickly
+- Understand column names and data types
+- Identify missing values and memory usage
+- Get summary statistics for numeric columns
+- Build habits of inspecting data before analysis
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Use head() to preview DataFrame contents
+- Use info() to understand structure and data types
+- Use describe() to summarize numeric data
+- Detect obvious data issues early
+- Inspect data confidently before processing
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Starting analysis without understanding the data
+- Misinterpreting column data types
+- Missing hidden null values
+- Drawing conclusions from incomplete inspection
+
+**Most analysis mistakes start with poor inspection.**
+
+This milestone ensures that:
+
+- You understand your dataset before working on it
+- Structural issues are caught early
+- Data cleaning decisions are informed
+- Analysis results are more reliable
+
+Think of inspection as reading the dataset before using it.
+
+#### What You Are Expected to Do
+
+This is a data inspection milestone, not a cleaning or analysis task.
+
+You are expected to:
+
+- Load a DataFrame
+- Use inspection methods intentionally
+- Observe structure, types, and summaries
+- Explain what each inspection method reveals
+
+*No transformations or modeling are required.*
+
+#### Key Components
+
+##### 1. Inspecting Data with head()
+
+Preview the dataset.
+
+You should:
+
+- Use head() to view the first few rows
+- Understand default row limits
+- Identify column names and sample values
+- Use previews to check data alignment
+
+This gives quick visual confirmation of the data.
+
+##### 2. Inspecting Structure with info()
+
+Understand how the DataFrame is built.
+
+You should:
+
+- Use info() to inspect columns and data types
+- Identify non-null counts
+- Understand memory usage conceptually
+- Recognize columns that may need cleaning
+
+This method reveals structural health.
+
+##### 3. Summarizing Data with describe()
+
+Understand numeric distributions.
+
+You should:
+
+- Use describe() on numeric columns
+- Interpret count, mean, min, max, and percentiles
+- Identify potential outliers conceptually
+- Understand limitations of numeric summaries
+
+This gives statistical context.
+
+##### 4. Knowing When to Use Each Method
+
+Build inspection intuition.
+
+You should:
+
+- Use head() for visual previews
+- Use info() for structure and types
+- Use describe() for numeric understanding
+- Combine all three before analysis
+
+Each method answers a different question.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating DataFrame inspection.
+
+Your video must include:
+
+- Using head() to preview data
+- Using info() to inspect structure
+- Using describe() for numeric summary
+- Explanation of why inspection matters
+
+#### Implementation
+
+The DataFrame inspection milestone has been implemented in the file:
+- [dataframe_inspection_demo.py](dataframe_inspection_demo.py)
+
+This comprehensive demonstration script showcases:
+
+1. **Inspecting with head()** - Preview rows with different limits, understand what it reveals
+2. **Inspecting with info()** - Check structure, data types, missing values, and memory usage
+3. **Summarizing with describe()** - Get statistical summaries and interpret results
+4. **Method Comparison** - Understanding when to use each inspection method
+5. **Complete Workflow** - Step-by-step inspection process combining all methods
+6. **Practical Examples** - Detecting data quality issues through inspection
+
+The demonstration uses the sample CSV files:
+- `traffic_sample.csv` - Clean dataset for inspection practice
+- `traffic_issues.csv` - Dataset with issues to detect through inspection
+
+Run the demonstration script to see all DataFrame inspection concepts in action:
+
+```bash
+python dataframe_inspection_demo.py
+```
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Always inspect data before analysis
+- Do not assume column types are correct
+- Inspection prevents costly mistakes
+- These methods are used in every real project
+
+Inspecting DataFrames is a foundational Data Science habit. This milestone ensures you can quickly understand any dataset before cleaning, analysis, or modeling.
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
+- Pandas head() Documentation
+- .info() and .describe() methods
+- Using describe() Effectively
+
+---
+
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 This milestone verifies that the local Data Science environment is correctly configured and ready for the sprint.
