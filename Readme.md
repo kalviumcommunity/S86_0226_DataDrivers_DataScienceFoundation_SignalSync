@@ -1175,16 +1175,16 @@ series[series == 100]   # Find exact matches
 
 ### Series vs NumPy Arrays
 
-| Feature                  | NumPy Arrays           | Pandas Series        |
-| ------------------------ | ---------------------- | -------------------- |
-| **Labels/Index**         | ❌ Position-only       | ✅ Custom labels     |
-| **Alignment**            | ❌ Manual              | ✅ Automatic         |
-| **Access by Label**      | ❌ Not supported       | ✅ Built-in          |
-| **Vectorization**        | ✅ Yes                 | ✅ Yes               |
-| **Performance**          | ✅ Fast                | ✅ Fast (NumPy-based)|
-| **Data Types**           | ✅ Homogeneous only    | ✅ Flexible          |
-| **Missing Data**         | ❌ Limited support     | ✅ NaN handling      |
-| **DataFrame Integration**| ❌ Not native          | ✅ Natural           |
+| Feature                   | NumPy Arrays        | Pandas Series         |
+| ------------------------- | ------------------- | --------------------- |
+| **Labels/Index**          | ❌ Position-only    | ✅ Custom labels      |
+| **Alignment**             | ❌ Manual           | ✅ Automatic          |
+| **Access by Label**       | ❌ Not supported    | ✅ Built-in           |
+| **Vectorization**         | ✅ Yes              | ✅ Yes                |
+| **Performance**           | ✅ Fast             | ✅ Fast (NumPy-based) |
+| **Data Types**            | ✅ Homogeneous only | ✅ Flexible           |
+| **Missing Data**          | ❌ Limited support  | ✅ NaN handling       |
+| **DataFrame Integration** | ❌ Not native       | ✅ Natural            |
 
 **Key Insight:** Series = NumPy Array + Labels + Extra Features
 
@@ -1585,15 +1585,15 @@ df.drop(0, axis=0)
 
 ### DataFrame vs Series
 
-| Feature           | Series                | DataFrame                     |
-| ----------------- | --------------------- | ----------------------------- |
-| **Dimensions**    | 1D                    | 2D                            |
-| **Structure**     | Single column         | Multiple columns              |
-| **Indexing**      | Single index          | Row index + column names      |
-| **Use Case**      | Single variable       | Multiple related variables    |
-| **Type**          | `pd.Series`           | `pd.DataFrame`                |
-| **Access**        | `series[index]`       | `df['col'][row]` or `df.loc` |
-| **Relationship**  | Building block        | Collection of Series          |
+| Feature          | Series          | DataFrame                    |
+| ---------------- | --------------- | ---------------------------- |
+| **Dimensions**   | 1D              | 2D                           |
+| **Structure**    | Single column   | Multiple columns             |
+| **Indexing**     | Single index    | Row index + column names     |
+| **Use Case**     | Single variable | Multiple related variables   |
+| **Type**         | `pd.Series`     | `pd.DataFrame`               |
+| **Access**       | `series[index]` | `df['col'][row]` or `df.loc` |
+| **Relationship** | Building block  | Collection of Series         |
 
 **Key Insight:** A DataFrame is a collection of Series objects that share the same index. Each column in a DataFrame is a Series.
 
@@ -3566,7 +3566,8 @@ Dimensions must either match
 
 One of the dimensions must be 1 (expandable)
 
- Loading-CSV-Data
+Loading-CSV-Data
+
 ## 18. Loading CSV Data into Pandas DataFrames Milestone
 
 ### 📂 Mastering CSV Data Loading for Real-World Data Science Workflows
@@ -3626,7 +3627,7 @@ You are expected to:
 - Understand how rows and columns are interpreted
 - Verify the structure before proceeding
 
-*No data cleaning or transformation is required.*
+_No data cleaning or transformation is required._
 
 #### Key Components
 
@@ -3696,6 +3697,7 @@ Your video must include:
 #### Implementation
 
 The CSV data loading milestone has been implemented in the file:
+
 - [csv_loading_demo.py](csv_loading_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -3707,6 +3709,7 @@ This comprehensive demonstration script showcases:
 5. **Key Takeaways** - Best practices and common pitfalls to avoid
 
 The demonstration includes three sample CSV files:
+
 - `traffic_sample.csv` - Properly formatted CSV file
 - `traffic_issues.csv` - CSV with wrong delimiter (semicolon)
 - `traffic_no_header.csv` - CSV file without header row
@@ -3802,7 +3805,7 @@ You are expected to:
 - Observe structure, types, and summaries
 - Explain what each inspection method reveals
 
-*No transformations or modeling are required.*
+_No transformations or modeling are required._
 
 #### Key Components
 
@@ -3872,6 +3875,7 @@ Your video must include:
 #### Implementation
 
 The DataFrame inspection milestone has been implemented in the file:
+
 - [dataframe_inspection_demo.py](dataframe_inspection_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -3884,6 +3888,7 @@ This comprehensive demonstration script showcases:
 6. **Practical Examples** - Detecting data quality issues through inspection
 
 The demonstration uses the sample CSV files:
+
 - `traffic_sample.csv` - Clean dataset for inspection practice
 - `traffic_issues.csv` - Dataset with issues to detect through inspection
 
@@ -3922,7 +3927,7 @@ This section is optional, and learners who want to explore the topics covered so
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 If neither condition is satisfied, broadcasting fails
- main
+main
 
 Thinking about shapes before performing operations helps prevent errors.
 
@@ -3961,3 +3966,28 @@ It is one of NumPy’s most powerful features for numerical computing.
 
 - Select specific rows and columns in one operation
 - Verify the selected subset of the DataFrame
+
+## Missing Value Detection
+
+### Understanding Missing Values
+
+- Understand how missing values appear in datasets
+- Recognize how Pandas represents missing data
+- Distinguish between missing values and empty values
+
+### Detecting Missing Values
+
+- Detect missing values in a DataFrame
+- Identify which columns contain missing data
+- Inspect missing values across rows
+
+### Counting Missing Values
+
+- Count missing values for each column
+- Summarize missing data across the DataFrame
+- Identify columns with higher amounts of missing data
+
+### Inspecting Rows with Missing Data
+
+- Locate rows containing missing values
+- Inspect affected rows to understand the missing data pattern.
