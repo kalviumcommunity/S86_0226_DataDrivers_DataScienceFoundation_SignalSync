@@ -1113,6 +1113,182 @@ This section is optional, and learners who want to explore the topics covered so
 
 ---
 
+## 18. Loading CSV Data into Pandas DataFrames Milestone
+
+### 📂 Mastering CSV Data Loading for Real-World Data Science Workflows
+
+This milestone focuses on loading CSV data into Pandas DataFrames, which is one of the most common tasks in real-world Data Science workflows. CSV files are a standard format for sharing tabular data, and knowing how to load them correctly is essential before any analysis can begin.
+
+Correct data loading prevents silent errors and ensures your analysis starts on a solid foundation.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand what CSV files represent
+- Load CSV files into Pandas DataFrames
+- Interpret headers, rows, and columns correctly
+- Inspect loaded data for correctness
+- Recognize common CSV loading issues
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Load CSV files into Pandas using standard methods
+- Inspect DataFrame structure after loading
+- Verify column names and row counts
+- Identify basic issues in loaded data
+- Prepare data safely for further processing
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Incorrect column names after loading
+- Data shifted into wrong columns
+- Assuming data is correct without inspection
+- Analysis errors caused by bad loading steps
+
+**Most downstream problems begin at data loading.**
+
+This milestone ensures that:
+
+- Your data is loaded as expected
+- You understand the structure of the dataset
+- Errors are caught early
+- Analysis becomes more reliable
+
+Think of CSV loading as opening a dataset—always check what you opened.
+
+#### What You Are Expected to Do
+
+This is a Pandas fundamentals milestone, not a data analysis task.
+
+You are expected to:
+
+- Load a CSV file into a DataFrame
+- Inspect the loaded data
+- Understand how rows and columns are interpreted
+- Verify the structure before proceeding
+
+*No data cleaning or transformation is required.*
+
+#### Key Components
+
+##### 1. Understanding CSV Files
+
+Learn what CSV files contain.
+
+You should:
+
+- Understand rows and columns in CSV format
+- Recognize headers vs data rows
+- Understand how delimiters work conceptually
+- Relate CSVs to spreadsheet tables
+
+This builds context before loading.
+
+##### 2. Loading CSV Files into Pandas
+
+Bring data into Python.
+
+You should:
+
+- Load a CSV file using Pandas
+- Ensure the file path is correct
+- Observe how headers are handled
+- Create a DataFrame successfully
+
+This is the core skill of the lesson.
+
+##### 3. Inspecting Loaded Data
+
+Verify what was loaded.
+
+You should:
+
+- Preview the first few rows
+- Check column names
+- Understand row counts
+- Confirm overall structure
+
+Inspection prevents hidden issues.
+
+##### 4. Recognizing Common Loading Issues
+
+Learn what can go wrong.
+
+You should:
+
+- Notice unexpected column names
+- Identify missing or extra columns
+- Recognize formatting-related issues
+- Understand why inspection matters
+
+Early awareness saves time later.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating CSV loading.
+
+Your video must include:
+
+- Loading a CSV file into a DataFrame
+- Previewing the loaded data
+- Explaining column and row structure
+- Describing why inspection is important
+
+#### Implementation
+
+The CSV data loading milestone has been implemented in the file:
+- [csv_loading_demo.py](csv_loading_demo.py)
+
+This comprehensive demonstration script showcases:
+
+1. **Understanding CSV Files** - Explanation of CSV structure and format
+2. **Loading CSV Files** - Using pd.read_csv() to load data into DataFrames
+3. **Inspecting Loaded Data** - Using .head(), .tail(), .info(), .describe(), .shape, and .columns
+4. **Common Loading Issues** - Demonstrating wrong delimiter and missing header problems
+5. **Key Takeaways** - Best practices and common pitfalls to avoid
+
+The demonstration includes three sample CSV files:
+- `traffic_sample.csv` - Properly formatted CSV file
+- `traffic_issues.csv` - CSV with wrong delimiter (semicolon)
+- `traffic_no_header.csv` - CSV file without header row
+
+Run the demonstration script to see all CSV loading concepts in action:
+
+```bash
+python csv_loading_demo.py
+```
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Always inspect data after loading
+- Do not assume files load correctly
+- Use small, readable CSV files
+- Data loading is the foundation of analysis
+
+Loading CSV data correctly is a critical first step in Data Science. This milestone ensures you can bring external tabular data into Pandas confidently and safely.
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
+- Reading CSV Files with Pandas
+- Common CSV Loading Issues
+- Inspecting DataFrames in Pandas
+
+---
+
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 This milestone verifies that the local Data Science environment is correctly configured and ready for the sprint.
