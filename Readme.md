@@ -3991,3 +3991,29 @@ It is one of NumPy’s most powerful features for numerical computing.
 
 - Locate rows containing missing values
 - Inspect affected rows to understand the missing data pattern.
+
+## Duplicate Record Handling
+
+### Understanding Duplicate Records
+
+- Understand what duplicate rows represent in a dataset
+- Recognize exact duplicate records
+- Understand common reasons duplicates appear in data
+
+### Detecting Duplicate Rows
+
+- Detect duplicate rows in a DataFrame
+- Identify the number of duplicate records
+- Inspect duplicate entries before removing them
+
+### Removing Duplicate Records
+
+- Remove duplicate rows from the dataset
+- Choose which duplicate record to keep
+- Apply duplicate removal across all or selected columns
+
+### Verifying Deduplication
+
+- Compare dataset shape before and after removing duplicates
+- Recheck the dataset to confirm duplicates are removed
+- Ensure important records remain after deduplication
