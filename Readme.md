@@ -2138,6 +2138,295 @@ This section is optional, and learners who want to explore the topics covered so
 
 ---
 
+## 23. Comparing Distributions Across Multiple Columns Milestone
+
+### 📊 Comparing Distributions Across Multiple Columns in Pandas DataFrames
+
+This milestone focuses on comparing distributions across multiple columns in a Pandas DataFrame. Comparing distributions helps you understand how different variables behave relative to each other and reveals patterns that single-column analysis cannot show.
+
+This is a key step in Exploratory Data Analysis (EDA) before drawing any insights or conclusions.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand what a data distribution represents
+- Compare central tendency across columns
+- Compare spread and variability across columns
+- Identify differences and similarities between variables
+- Build intuition for multi-column analysis
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Compute summary statistics for multiple columns
+- Compare means, medians, and ranges across columns
+- Identify columns with higher or lower variability
+- Detect unusual distributions conceptually
+- Use comparisons to guide deeper analysis
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Analyzing columns in isolation
+- Missing relationships between variables
+- Comparing raw values instead of distributions
+- Drawing conclusions without context
+
+**Most real insights come from comparison, not isolation.**
+
+This milestone ensures that:
+
+- You understand how variables differ from each other
+- Patterns across columns become visible
+- Analysis decisions are more informed
+- You avoid misleading conclusions
+
+Think of distribution comparison as putting columns side by side and asking, "How are these different?"
+
+#### What You Are Expected to Do
+
+This is a data understanding milestone, not a modeling task.
+
+You are expected to:
+
+- Load a DataFrame with multiple numeric columns
+- Compute summary statistics for each column
+- Compare distributions using statistics
+- Interpret differences meaningfully
+
+*No visualization or modeling is required.*
+
+#### Key Components
+
+##### 1. Understanding Distributions Across Columns
+
+Build a comparative mindset.
+
+You should:
+
+- Understand what distribution means for a column
+- Recognize that each column has its own spread
+- Avoid comparing raw values directly
+- Focus on patterns, not single numbers
+
+Comparison adds context.
+
+##### 2. Comparing Central Tendency
+
+Look at averages across columns.
+
+You should:
+
+- Compare means across multiple columns
+- Compare medians to detect skew
+- Understand why averages may differ
+- Avoid assuming "higher is better"
+
+Central tendency is only one part of the story.
+
+##### 3. Comparing Spread and Variability
+
+Understand how data is distributed.
+
+You should:
+
+- Compare ranges across columns
+- Compare standard deviation conceptually
+- Identify columns with high variability
+- Recognize stability vs volatility in data
+
+Spread explains consistency.
+
+##### 4. Identifying Patterns and Anomalies
+
+Detect interesting behavior.
+
+You should:
+
+- Identify columns that behave differently
+- Notice unusually wide or narrow distributions
+- Use statistics to raise questions
+- Avoid jumping to conclusions
+
+EDA is about asking better questions.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating distribution comparison.
+
+Your video must include:
+
+- Computing summary statistics for multiple columns
+- Comparing central tendency across columns
+- Comparing spread or variability
+- Explaining what differences suggest
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Always compare columns using distributions, not raw values
+- Consider both average and spread
+- Comparison reveals hidden patterns
+- This step guides deeper analysis
+
+Comparing distributions across multiple columns is a core EDA skill. This milestone ensures you can reason about how variables differ and interact before moving into visualization or modeling.
+
+#### Implementation Details
+
+The distribution comparison milestone has been implemented in two files:
+
+**Demo File:** [distribution_comparison_demo.py](distribution_comparison_demo.py)
+
+**Quick Reference:** [DISTRIBUTION_COMPARISON_QUICK_REFERENCE.md](DISTRIBUTION_COMPARISON_QUICK_REFERENCE.md)
+
+The demonstration showcases:
+
+1. **Understanding Distributions** - What distributions represent and why they matter
+2. **Comparing Central Tendency** - Side-by-side comparison of means and medians
+3. **Comparing Spread and Variability** - Using range, std, and CV (Coefficient of Variation)
+4. **Identifying Patterns** - Finding unusual or interesting distributions
+5. **Practical Scenarios** - Real-world questions answered through comparison
+6. **Best Practices** - Common pitfalls and interpretation guidelines
+
+The demonstration includes:
+- **Mean vs Median comparison** - Detecting skewness across multiple columns
+- **Variability analysis** - Using CV to compare across different scales
+- **Distribution profiling** - Creating statistical profiles for each column
+- **Pattern detection** - Identifying similar and unusual distributions
+- **Scale-aware comparison** - When to use absolute vs relative measures
+- **Comprehensive examples** - Real traffic data analysis with interpretations
+
+Run the demonstration script to see all distribution comparison concepts in action:
+
+```bash
+python distribution_comparison_demo.py
+```
+
+#### Key Comparison Concepts
+
+**What is a Distribution?**
+A distribution describes how values are spread in a column:
+- **Central tendency**: Where the center is (mean, median)
+- **Spread**: How spread out values are (range, std)
+- **Shape**: Whether symmetric or skewed
+- **Outliers**: Unusual or extreme values
+
+**Comparing Central Tendency:**
+- **Mean comparison** → Which column has higher average values
+- **Median comparison** → Robust comparison (less affected by outliers)
+- **Mean vs Median** → Reveals distribution shape (symmetric vs skewed)
+
+**Comparing Spread:**
+- **Range** → Full spread from min to max
+- **Standard Deviation (Std)** → Absolute variability (use only for similar scales)
+- **Coefficient of Variation (CV)** → Relative variability (works across any scale) ★ RECOMMENDED
+
+**Why CV is Critical:**
+```python
+# CV = Std / Mean
+# Allows comparison across different scales
+cv_traffic = traffic_df['traffic_volume'].std() / traffic_df['traffic_volume'].mean()
+cv_temp = traffic_df['temp'].std() / traffic_df['temp'].mean()
+
+# Now you can compare variability across DIFFERENT scales!
+```
+
+**CV Interpretation:**
+- **CV < 0.15** → Very low variability (highly consistent)
+- **CV 0.15-0.30** → Low to moderate variability
+- **CV 0.30-0.50** → Moderate to high variability
+- **CV > 0.50** → Very high variability
+
+**When to Use Each Measure:**
+
+| Comparison Type | Use This | When |
+|----------------|----------|------|
+| Typical values | Mean or Median | Compare central tendency |
+| Absolute spread | Range or Std | Columns have SIMILAR scales |
+| Relative spread | CV (Std/Mean) | Columns have DIFFERENT scales ★ |
+| Distribution shape | Mean vs Median | Detect skewness |
+| Quick overview | .describe().T | Initial exploration |
+
+**Common Comparison Patterns:**
+
+| Pattern | Interpretation | Action |
+|---------|----------------|--------|
+| High CV | Variable/unpredictable | Investigate causes |
+| Low CV | Consistent/stable | May be less informative |
+| Mean >> Median | Right-skewed | Check for high outliers |
+| Mean << Median | Left-skewed | Check for low outliers |
+| Similar CVs | Similar variability | May behave similarly |
+
+**Best Practices:**
+- **Use CV for cross-scale comparisons** (not Std)
+- **Compare both mean AND median** to understand shape
+- **Check variability along with central tendency**
+- **Look for patterns across multiple columns**
+- **Use comparisons to ask better questions**
+- **Consider domain context when interpreting**
+
+**Common MISTAKES to avoid:**
+- Comparing only means without checking spread
+- Using Std to compare different-scale columns (use CV!)
+- Assuming higher values are "better" or "worse"
+- Drawing conclusions without understanding context
+- Ignoring the shape of the distribution
+- Comparing raw values across vastly different scales
+
+**Decision Guide:**
+
+```
+Question: Which column is more consistent?
+Answer: The one with LOWER CV
+
+Question: Which columns have similar distributions?
+Answer: Compare CV and mean/median ratios
+
+Question: Can I compare these columns directly?
+Answer: Check if scales are similar; if not, use CV not Std
+
+Question: Which column should I investigate further?
+Answer: Look for high CV, unusual mean/median ratios, or extreme values
+```
+
+**Practical Workflow:**
+
+```python
+# 1. Get overview
+df[numeric_cols].describe().T
+
+# 2. Compare central tendency
+means = df[numeric_cols].mean()
+medians = df[numeric_cols].median()
+
+# 3. Compare variability (CV for different scales!)
+cvs = df[numeric_cols].std() / df[numeric_cols].mean()
+
+# 4. Identify patterns
+for col in numeric_cols:
+    cv = df[col].std() / df[col].mean()
+    shape = 'symmetric' if abs(df[col].mean() - df[col].median())/df[col].median() < 0.05 else 'skewed'
+    print(f"{col}: CV={cv:.3f}, {shape}")
+```
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+- [Descriptive Statistics in Pandas](https://pandas.pydata.org/docs/user_guide/basics.html#descriptive-statistics)
+- [Understanding Data Distributions](https://towardsdatascience.com/understanding-data-distributions-cdbadfa87aed)
+- [Why Comparing Distributions Matters](https://www.statology.org/comparing-distributions/)
+
+---
+
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 This milestone verifies that the local Data Science environment is correctly configured and ready for the sprint.
