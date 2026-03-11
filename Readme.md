@@ -3924,6 +3924,679 @@ This section is optional, and learners who want to explore the topics covered so
 
 ---
 
+## 20. Handling Missing Values (Drop and Fill Strategies) Milestone
+
+### 🧹 Mastering Missing Data Handling with Drop and Fill Strategies
+
+This milestone focuses on handling missing values using drop and fill strategies in Pandas. After identifying missing data, the next step is to decide how to handle it responsibly—either by removing incomplete data or filling missing values in a meaningful way.
+
+Choosing the right strategy is critical for data quality and reliable analysis.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand different strategies for handling missing data
+- Drop missing values safely when appropriate
+- Fill missing values using suitable methods
+- Understand trade-offs between dropping and filling
+- Make intentional decisions based on data context
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Remove rows or columns with missing data when necessary
+- Fill missing values using constants or simple statistics
+- Choose the right strategy based on the situation
+- Avoid introducing bias or errors unintentionally
+- Prepare clean data for analysis or modeling
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Dropping too much data without realizing the impact
+- Filling missing values blindly
+- Mixing strategies without understanding consequences
+- Distorting analysis results due to poor handling choices
+
+**Handling missing data incorrectly can be worse than leaving it untouched.**
+
+This milestone ensures that:
+
+- Missing data is handled intentionally
+- Data integrity is preserved as much as possible
+- Cleaning steps are justified and explainable
+- Analysis results are more trustworthy
+
+Think of missing data handling as making informed trade-offs, not quick fixes.
+
+#### What You Are Expected to Do
+
+This is a data cleaning milestone, not an analysis task.
+
+You are expected to:
+
+- Load a DataFrame with missing values
+- Apply drop strategies where appropriate
+- Apply fill strategies where appropriate
+- Observe and explain the effects of each approach
+
+*No modeling or visualization is required.*
+
+#### Key Components
+
+##### 1. Dropping Missing Values
+
+Learn when removal makes sense.
+
+You should:
+
+- Drop rows with missing values
+- Drop columns with excessive missing data
+- Understand the impact on dataset size
+- Use dropping intentionally, not automatically
+
+Dropping simplifies data but reduces information.
+
+##### 2. Filling Missing Values
+
+Learn how to fill missing data.
+
+You should:
+
+- Fill missing values with constants
+- Fill missing values using summary statistics (mean, median, mode)
+- Understand how filling affects distributions
+- Keep strategies simple and explainable
+
+Filling preserves data size but introduces assumptions.
+
+##### 3. Choosing Between Drop and Fill
+
+Make informed decisions.
+
+You should:
+
+- Compare results of dropping vs filling
+- Consider the importance of the column
+- Consider the amount of missing data
+- Choose the least harmful strategy
+
+There is no one-size-fits-all solution.
+
+##### 4. Avoiding Common Mistakes
+
+Recognize pitfalls.
+
+You should:
+
+- Avoid filling categorical data with numeric values
+- Avoid dropping critical columns blindly
+- Avoid hiding missing data issues
+- Always inspect results after cleaning
+
+Good handling is careful and deliberate.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating missing value handling.
+
+Your video must include:
+
+- Dropping missing values
+- Filling missing values
+- Comparing dataset shape before and after
+- Explaining why each strategy was chosen
+
+#### Implementation
+
+The missing values handling milestone has been implemented in the file:
+- [missing_values_handling_demo.py](missing_values_handling_demo.py)
+
+This comprehensive demonstration script showcases:
+
+1. **Identifying Missing Values** - Detecting and quantifying missing data patterns
+2. **Drop Strategies** - Using dropna() with different parameters (any, all, subset, columns)
+3. **Fill Strategies** - Using fillna() with constants, mean, median, mode, forward fill, and backward fill
+4. **Comprehensive Cleaning** - Combining multiple strategies thoughtfully
+5. **Strategy Comparison** - Comparing drop vs fill approaches with data retention metrics
+6. **Decision Guidelines** - When to drop, when to fill, and how to choose methods
+7. **Verification** - Ensuring cleaned data is valid and analysis-ready
+
+The demonstration includes:
+- **Drop ANY missing** - Removes all rows with any missing values (aggressive)
+- **Drop ALL missing** - Removes only completely empty rows (safe)
+- **Drop subset** - Removes rows where critical columns are missing (targeted)
+- **Drop columns** - Removes columns with excessive missing data (>50%)
+- **Fill with constant** - Fills categorical data with meaningful values like 'Unknown'
+- **Fill with mean** - Uses average for numeric columns (affected by outliers)
+- **Fill with median** - Uses middle value for numeric columns (robust to outliers)
+- **Fill with mode** - Uses most frequent value for categorical columns
+- **Forward fill** - Propagates last valid value (good for time-series)
+- **Backward fill** - Propagates next valid value (alternative for time-series)
+
+Run the demonstration script to see all missing values handling concepts in action:
+
+```bash
+python missing_values_handling_demo.py
+```
+
+#### Key Decision Guidelines
+
+**When to DROP missing values:**
+- Column has >70% missing data (little useful information)
+- Row is completely empty
+- Missing data is in a critical column (e.g., target variable)
+- Dataset is large enough to afford data loss
+- Missing data pattern seems non-random (systematically missing)
+
+**When to FILL missing values:**
+- Missing data is <20% of column
+- Column is important for analysis
+- Dataset is small and can't afford data loss
+- Missing values appear randomly
+- You can justify the filling method
+
+**How to CHOOSE filling method:**
+- Use **MEDIAN** for numeric data (robust to outliers)
+- Use **MODE** for categorical data
+- Use **FORWARD/BACKWARD FILL** for time-series data
+- Use **CONSTANT** (e.g., 0, 'Unknown') when it makes domain sense
+- **AVOID** using MEAN if data has outliers
+
+**Common MISTAKES to avoid:**
+- Dropping data without checking impact
+- Filling categorical data with numeric values
+- Using mean when median is more appropriate
+- Filling without documenting your decision
+- Not verifying the cleaned data
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Always detect missing values before handling them
+- Document your decisions
+- Prefer simple, explainable strategies
+- Cleaning choices affect all downstream work
+
+Handling missing values responsibly is a core data preparation skill. This milestone ensures you can clean incomplete data using drop and fill strategies with clarity and intent.
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
+- [Pandas dropna() Documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html)
+- [Pandas fillna() Documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.fillna.html)
+- Best Practices for Handling Missing Data
+
+---
+
+## 21. Standardizing Column Names and Data Formats Milestone
+
+### 📏 Standardizing Column Names and Data Formats in Pandas DataFrames
+
+This milestone focuses on standardizing column names and data formats in Pandas DataFrames. Inconsistent naming and formatting make datasets harder to understand, combine, and analyze—especially when working with real-world data from multiple sources.
+
+Standardization is a critical step in preparing clean, reliable, and analysis-ready data.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand why standardization is necessary
+- Clean and normalize column names
+- Apply consistent naming conventions
+- Standardize basic data formats (text, dates, numbers)
+- Build habits for reusable, clean datasets
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Convert column names to a consistent format
+- Remove spaces and special characters from column names
+- Apply predictable naming conventions (snake_case)
+- Standardize simple data formats across columns
+- Improve dataset usability and readability
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Column names with spaces or mixed casing
+- Inconsistent naming across datasets
+- Difficulty referencing columns in code
+- Errors when merging or transforming data
+
+**Messy column names lead to messy code.**
+
+This milestone ensures that:
+
+- Column access is simple and predictable
+- Code is cleaner and less error-prone
+- Datasets are easier to merge and reuse
+- Analysis workflows scale better
+
+Think of standardization as setting rules for your data to follow.
+
+#### What You Are Expected to Do
+
+This is a data cleaning and formatting milestone, not an analysis task.
+
+You are expected to:
+
+- Load a DataFrame
+- Standardize column names
+- Apply consistent formatting to selected data
+- Inspect results after standardization
+
+*No modeling or visualization is required.*
+
+#### Key Components
+
+##### 1. Standardizing Column Names
+
+Clean and normalize column headers.
+
+You should:
+- Convert column names to lowercase
+- Replace spaces with underscores
+- Remove or handle special characters
+- Apply a consistent naming style
+
+Clean names make code readable.
+
+##### 2. Choosing Naming Conventions
+
+Be consistent and intentional.
+
+You should:
+- Use snake_case for column names
+- Avoid abbreviations that reduce clarity
+- Keep names descriptive but concise
+- Apply the same rules across all columns
+
+Consistency matters more than style choice.
+
+##### 3. Standardizing Text Data
+
+Normalize string values.
+
+You should:
+- Convert text to lowercase or uppercase
+- Strip extra whitespace
+- Ensure consistent category values
+- Avoid mixed formats in the same column
+
+Text consistency prevents subtle bugs.
+
+##### 4. Standardizing Numeric and Date Formats
+
+Ensure uniform data representation.
+
+You should:
+- Ensure numeric columns are truly numeric
+- Standardize simple date formats conceptually
+- Recognize formatting issues early
+- Prepare data for downstream processing
+
+Correct formats enable valid operations.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating standardization.
+
+Your video must include:
+- Cleaning column names
+- Applying a naming convention
+- Standardizing at least one data format
+- Comparing before and after results
+- Explaining why standardization matters
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Always standardize early in the workflow
+- Be consistent across datasets
+- Avoid over-complicating formatting
+- Clean data enables clean analysis
+
+Standardizing column names and data formats is a foundational data preparation step. This milestone ensures you can clean and normalize datasets for reliable, scalable analysis.
+
+#### Implementation Details
+
+The standardization milestone has been implemented in the file:
+
+**File:** [standardization_demo.py](S86_0226_DataDrivers_DataScienceFoundation_SignalSync/standardization_demo.py)
+
+The demonstration showcases:
+
+1. **Column Name Standardization** - Converting to snake_case, removing special characters
+2. **Text Data Standardization** - Normalizing case and whitespace
+3. **Numeric Data Standardization** - Converting string numbers to proper numeric types
+4. **Date Format Standardization** - Converting to datetime objects
+5. **Complete Standardization Function** - Reusable function for full dataset standardization
+6. **Before and After Comparisons** - Visual verification of improvements
+
+The demonstration includes:
+- **Lowercase conversion** - Ensures consistent casing across all column names
+- **Space to underscore** - Replaces spaces with underscores for Python-friendly names
+- **Special character removal** - Removes parentheses, percent signs, hyphens, etc.
+- **Text normalization** - Strips whitespace and standardizes case
+- **Type conversion** - Ensures numeric and date columns have correct data types
+- **Reusable functions** - Automated standardization for scalability
+
+Run the demonstration script to see all standardization concepts in action:
+
+```bash
+python standardization_demo.py
+```
+
+#### Key Standardization Guidelines
+
+**Column Name Rules:**
+- Always use lowercase
+- Use underscores instead of spaces (snake_case)
+- Remove special characters: (), %, -, etc.
+- Keep names descriptive but concise
+- Apply same rules across all datasets
+
+**Text Data Rules:**
+- Convert to consistent case (lowercase or uppercase)
+- Strip leading/trailing whitespace
+- Ensure category values are consistent
+- Avoid mixed formats in the same column
+
+**Numeric Data Rules:**
+- Ensure numeric columns have numeric types
+- Convert string numbers to numeric
+- Handle invalid values appropriately
+- Use consistent units
+
+**Date Data Rules:**
+- Convert to datetime type early
+- Use consistent date formats
+- Enable date-based operations and filtering
+- Extract components (day, month, year) as needed
+
+**When to Standardize:**
+- At the start of analysis workflow
+- Before merging datasets
+- After loading new data
+- When preparing data for others
+
+**Why Standardization Matters:**
+- Makes code cleaner and more readable
+- Prevents column reference errors
+- Enables easier data merging
+- Improves dataset reusability
+- Scales better across multiple datasets
+
+**Common MISTAKES to avoid:**
+- Inconsistent naming across files
+- Leaving spaces in column names
+- Ignoring data type conversions
+- Not documenting standardization rules
+- Over-complicating simple tasks
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
+- [Pandas String Methods](https://pandas.pydata.org/docs/user_guide/text.html)
+- [Best Practices for Column Naming](https://www.dataschool.io/best-practices-with-pandas/)
+- [Data Cleaning in Pandas](https://realpython.com/python-data-cleaning-numpy-pandas/)
+
+---
+
+## 22. Computing Basic Summary Statistics for Columns Milestone
+
+### 📊 Computing Basic Summary Statistics for Individual Columns in Pandas DataFrames
+
+This milestone focuses on computing basic summary statistics for individual columns in a Pandas DataFrame. Summary statistics help you quickly understand the distribution, central tendency, and spread of your data before making any decisions or assumptions.
+
+These statistics form the foundation of Exploratory Data Analysis (EDA).
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand what summary statistics represent
+- Compute basic statistics for numeric columns
+- Interpret statistical outputs correctly
+- Compare statistics across different columns
+- Build intuition about data distributions
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Compute common summary statistics for columns
+- Interpret mean, median, minimum, and maximum values
+- Understand spread using variance and standard deviation conceptually
+- Identify unusual values using summaries
+- Use statistics to guide further analysis
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Jumping into analysis without understanding the data
+- Misinterpreting averages without considering spread
+- Ignoring outliers that affect results
+- Making assumptions based on raw data views alone
+
+**Summary statistics provide a quick, reliable data overview.**
+
+This milestone ensures that:
+
+- You understand your data numerically
+- Data issues are identified early
+- Analysis decisions are informed
+- Your interpretations are grounded in evidence
+
+Think of summary statistics as the first quantitative snapshot of your data.
+
+#### What You Are Expected to Do
+
+This is a data understanding milestone, not a modeling task.
+
+You are expected to:
+
+- Load a DataFrame
+- Select individual numeric columns
+- Compute summary statistics
+- Interpret the results meaningfully
+
+*No visualization or modeling is required.*
+
+#### Key Components
+
+##### 1. Understanding Common Summary Statistics
+
+Learn what each statistic means.
+
+You should:
+
+- Understand mean and median conceptually
+- Understand minimum and maximum values
+- Recognize the role of count
+- Understand what standard deviation indicates
+
+Conceptual clarity matters more than formulas.
+
+##### 2. Computing Statistics for a Single Column
+
+Work column by column.
+
+You should:
+
+- Select an individual numeric column
+- Compute basic statistics for that column
+- Observe how results change across columns
+- Keep examples simple and readable
+
+Column-level analysis builds precision.
+
+##### 3. Interpreting Results Correctly
+
+Avoid common misinterpretations.
+
+You should:
+
+- Compare mean vs median
+- Understand how outliers affect statistics
+- Interpret spread alongside central tendency
+- Avoid conclusions without context
+
+Numbers need interpretation.
+
+##### 4. Comparing Columns Using Statistics
+
+Build comparative insight.
+
+You should:
+
+- Compute statistics for multiple columns
+- Compare ranges and averages
+- Identify columns with higher variability
+- Use summaries to ask better questions
+
+Comparison reveals patterns.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating summary statistics.
+
+Your video must include:
+
+- Selecting an individual numeric column
+- Computing basic summary statistics
+- Explaining what each statistic tells you
+- Brief comparison with another column
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Always understand your data before modeling
+- Statistics describe data, not explanations
+- Use summaries alongside inspection
+- Avoid overinterpreting single metrics
+
+Computing summary statistics is a core EDA skill. This milestone ensures you can quantitatively understand individual columns before moving deeper into data analysis.
+
+#### Implementation Details
+
+The summary statistics milestone has been implemented in two files:
+
+**Demo File:** [summary_statistics_demo.py](summary_statistics_demo.py)
+
+**Quick Reference:** [SUMMARY_STATISTICS_QUICK_REFERENCE.md](SUMMARY_STATISTICS_QUICK_REFERENCE.md)
+
+The demonstration showcases:
+
+1. **Understanding Common Statistics** - Explanation of count, mean, median, min, max, std
+2. **Computing Statistics for Single Columns** - Using `.mean()`, `.median()`, `.describe()`
+3. **Interpreting Results** - Mean vs median, understanding spread, identifying skewness
+4. **Comparing Multiple Columns** - Side-by-side statistical comparisons
+5. **Identifying Unusual Values** - Using statistical rules to detect outliers
+6. **Best Practices** - Common pitfalls and interpretation guidelines
+
+The demonstration includes:
+- **Individual statistic methods** - `.count()`, `.mean()`, `.median()`, `.min()`, `.max()`, `.std()`
+- **The .describe() method** - Computing all statistics at once
+- **Statistical interpretation** - What mean > median indicates, understanding variability
+- **Column comparisons** - Comparing statistics across different numeric columns
+- **Outlier detection** - Using Mean ± 2×Std rule to identify unusual values
+- **Practical examples** - Real traffic data analysis with interpretations
+
+Run the demonstration script to see all summary statistics concepts in action:
+
+```bash
+python summary_statistics_demo.py
+```
+
+#### Key Statistical Concepts
+
+**Essential Statistics:**
+- **Count**: Number of non-missing values (identifies missing data)
+- **Mean**: Average value (affected by outliers)
+- **Median**: Middle value when sorted (robust to outliers)
+- **Min/Max**: Boundary values (shows range)
+- **Std (Standard Deviation)**: Measure of spread/variability
+
+**Mean vs Median Interpretation:**
+- Mean ≈ Median → Symmetric distribution
+- Mean > Median → Right-skewed (high outliers pulling mean up)
+- Mean < Median → Left-skewed (low outliers pulling mean down)
+
+**Understanding Spread:**
+- Low Std relative to Mean → Data is consistent
+- High Std relative to Mean → Data is highly variable
+- Coefficient of Variation (CV = Std/Mean) → Compare variability across scales
+
+**Identifying Unusual Values:**
+- Values beyond Mean ± 2×Std → Occur ~5% of the time (potentially unusual)
+- Values beyond Mean ± 3×Std → Occur ~0.3% of the time (likely outliers)
+- Always investigate unusual values before removing them
+
+**When to Compute Statistics:**
+- BEFORE any analysis or modeling
+- AFTER loading and cleaning data
+- When comparing different datasets
+- When validating data quality
+
+**Why Summary Statistics Matter:**
+- Provide quick numerical overview without scrolling through data
+- Reveal data distribution characteristics instantly
+- Identify potential data quality issues early
+- Guide further analysis and modeling decisions
+- Enable informed feature selection and engineering
+
+**Common MISTAKES to avoid:**
+- Relying only on mean without checking median and std
+- Ignoring outliers that heavily influence the mean
+- Not checking count (missing data distorts statistics)
+- Comparing statistics without considering scale differences
+- Making conclusions from statistics alone without context
+
+**Best Practices:**
+- Always compute .describe() first for overview
+- Compare mean vs median to detect skewness
+- Check count to identify missing values
+- Consider spread (std) alongside central tendency (mean/median)
+- Use statistics to guide investigation, not as final answers
+- Combine statistical summaries with visual inspection
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+- [Pandas Descriptive Statistics](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)
+- [Understanding Mean vs Median](https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/)
+- [Standard Deviation Explained Simply](https://www.mathsisfun.com/data/standard-deviation.html)
+
+---
+
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 If neither condition is satisfied, broadcasting fails
