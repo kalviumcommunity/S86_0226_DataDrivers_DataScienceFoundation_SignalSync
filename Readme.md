@@ -3983,7 +3983,7 @@ You are expected to:
 - Apply fill strategies where appropriate
 - Observe and explain the effects of each approach
 
-*No modeling or visualization is required.*
+_No modeling or visualization is required._
 
 #### Key Components
 
@@ -4053,6 +4053,7 @@ Your video must include:
 #### Implementation
 
 The missing values handling milestone has been implemented in the file:
+
 - [missing_values_handling_demo.py](missing_values_handling_demo.py)
 
 This comprehensive demonstration script showcases:
@@ -4066,6 +4067,7 @@ This comprehensive demonstration script showcases:
 7. **Verification** - Ensuring cleaned data is valid and analysis-ready
 
 The demonstration includes:
+
 - **Drop ANY missing** - Removes all rows with any missing values (aggressive)
 - **Drop ALL missing** - Removes only completely empty rows (safe)
 - **Drop subset** - Removes rows where critical columns are missing (targeted)
@@ -4086,6 +4088,7 @@ python missing_values_handling_demo.py
 #### Key Decision Guidelines
 
 **When to DROP missing values:**
+
 - Column has >70% missing data (little useful information)
 - Row is completely empty
 - Missing data is in a critical column (e.g., target variable)
@@ -4093,6 +4096,7 @@ python missing_values_handling_demo.py
 - Missing data pattern seems non-random (systematically missing)
 
 **When to FILL missing values:**
+
 - Missing data is <20% of column
 - Column is important for analysis
 - Dataset is small and can't afford data loss
@@ -4100,6 +4104,7 @@ python missing_values_handling_demo.py
 - You can justify the filling method
 
 **How to CHOOSE filling method:**
+
 - Use **MEDIAN** for numeric data (robust to outliers)
 - Use **MODE** for categorical data
 - Use **FORWARD/BACKWARD FILL** for time-series data
@@ -4107,6 +4112,7 @@ python missing_values_handling_demo.py
 - **AVOID** using MEAN if data has outliers
 
 **Common MISTAKES to avoid:**
+
 - Dropping data without checking impact
 - Filling categorical data with numeric values
 - Using mean when median is more appropriate
@@ -4198,7 +4204,7 @@ You are expected to:
 - Apply consistent formatting to selected data
 - Inspect results after standardization
 
-*No modeling or visualization is required.*
+_No modeling or visualization is required._
 
 #### Key Components
 
@@ -4207,6 +4213,7 @@ You are expected to:
 Clean and normalize column headers.
 
 You should:
+
 - Convert column names to lowercase
 - Replace spaces with underscores
 - Remove or handle special characters
@@ -4219,6 +4226,7 @@ Clean names make code readable.
 Be consistent and intentional.
 
 You should:
+
 - Use snake_case for column names
 - Avoid abbreviations that reduce clarity
 - Keep names descriptive but concise
@@ -4231,6 +4239,7 @@ Consistency matters more than style choice.
 Normalize string values.
 
 You should:
+
 - Convert text to lowercase or uppercase
 - Strip extra whitespace
 - Ensure consistent category values
@@ -4243,6 +4252,7 @@ Text consistency prevents subtle bugs.
 Ensure uniform data representation.
 
 You should:
+
 - Ensure numeric columns are truly numeric
 - Standardize simple date formats conceptually
 - Recognize formatting issues early
@@ -4255,6 +4265,7 @@ Correct formats enable valid operations.
 Record a short screen-capture video demonstrating standardization.
 
 Your video must include:
+
 - Cleaning column names
 - Applying a naming convention
 - Standardizing at least one data format
@@ -4293,6 +4304,7 @@ The demonstration showcases:
 6. **Before and After Comparisons** - Visual verification of improvements
 
 The demonstration includes:
+
 - **Lowercase conversion** - Ensures consistent casing across all column names
 - **Space to underscore** - Replaces spaces with underscores for Python-friendly names
 - **Special character removal** - Removes parentheses, percent signs, hyphens, etc.
@@ -4309,6 +4321,7 @@ python standardization_demo.py
 #### Key Standardization Guidelines
 
 **Column Name Rules:**
+
 - Always use lowercase
 - Use underscores instead of spaces (snake_case)
 - Remove special characters: (), %, -, etc.
@@ -4316,30 +4329,35 @@ python standardization_demo.py
 - Apply same rules across all datasets
 
 **Text Data Rules:**
+
 - Convert to consistent case (lowercase or uppercase)
 - Strip leading/trailing whitespace
 - Ensure category values are consistent
 - Avoid mixed formats in the same column
 
 **Numeric Data Rules:**
+
 - Ensure numeric columns have numeric types
 - Convert string numbers to numeric
 - Handle invalid values appropriately
 - Use consistent units
 
 **Date Data Rules:**
+
 - Convert to datetime type early
 - Use consistent date formats
 - Enable date-based operations and filtering
 - Extract components (day, month, year) as needed
 
 **When to Standardize:**
+
 - At the start of analysis workflow
 - Before merging datasets
 - After loading new data
 - When preparing data for others
 
 **Why Standardization Matters:**
+
 - Makes code cleaner and more readable
 - Prevents column reference errors
 - Enables easier data merging
@@ -4347,6 +4365,7 @@ python standardization_demo.py
 - Scales better across multiple datasets
 
 **Common MISTAKES to avoid:**
+
 - Inconsistent naming across files
 - Leaving spaces in column names
 - Ignoring data type conversions
@@ -4422,7 +4441,7 @@ You are expected to:
 - Compute summary statistics
 - Interpret the results meaningfully
 
-*No visualization or modeling is required.*
+_No visualization or modeling is required._
 
 #### Key Components
 
@@ -4523,6 +4542,7 @@ The demonstration showcases:
 6. **Best Practices** - Common pitfalls and interpretation guidelines
 
 The demonstration includes:
+
 - **Individual statistic methods** - `.count()`, `.mean()`, `.median()`, `.min()`, `.max()`, `.std()`
 - **The .describe() method** - Computing all statistics at once
 - **Statistical interpretation** - What mean > median indicates, understanding variability
@@ -4539,6 +4559,7 @@ python summary_statistics_demo.py
 #### Key Statistical Concepts
 
 **Essential Statistics:**
+
 - **Count**: Number of non-missing values (identifies missing data)
 - **Mean**: Average value (affected by outliers)
 - **Median**: Middle value when sorted (robust to outliers)
@@ -4546,27 +4567,32 @@ python summary_statistics_demo.py
 - **Std (Standard Deviation)**: Measure of spread/variability
 
 **Mean vs Median Interpretation:**
+
 - Mean ≈ Median → Symmetric distribution
 - Mean > Median → Right-skewed (high outliers pulling mean up)
 - Mean < Median → Left-skewed (low outliers pulling mean down)
 
 **Understanding Spread:**
+
 - Low Std relative to Mean → Data is consistent
 - High Std relative to Mean → Data is highly variable
 - Coefficient of Variation (CV = Std/Mean) → Compare variability across scales
 
 **Identifying Unusual Values:**
+
 - Values beyond Mean ± 2×Std → Occur ~5% of the time (potentially unusual)
 - Values beyond Mean ± 3×Std → Occur ~0.3% of the time (likely outliers)
 - Always investigate unusual values before removing them
 
 **When to Compute Statistics:**
+
 - BEFORE any analysis or modeling
 - AFTER loading and cleaning data
 - When comparing different datasets
 - When validating data quality
 
 **Why Summary Statistics Matter:**
+
 - Provide quick numerical overview without scrolling through data
 - Reveal data distribution characteristics instantly
 - Identify potential data quality issues early
@@ -4574,6 +4600,7 @@ python summary_statistics_demo.py
 - Enable informed feature selection and engineering
 
 **Common MISTAKES to avoid:**
+
 - Relying only on mean without checking median and std
 - Ignoring outliers that heavily influence the mean
 - Not checking count (missing data distorts statistics)
@@ -4581,6 +4608,7 @@ python summary_statistics_demo.py
 - Making conclusions from statistics alone without context
 
 **Best Practices:**
+
 - Always compute .describe() first for overview
 - Compare mean vs median to detect skewness
 - Check count to identify missing values
@@ -4591,6 +4619,7 @@ python summary_statistics_demo.py
 #### Bonus Content
 
 This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
 - [Pandas Descriptive Statistics](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)
 - [Understanding Mean vs Median](https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/mean-median-mode/)
 - [Standard Deviation Explained Simply](https://www.mathsisfun.com/data/standard-deviation.html)
@@ -4656,7 +4685,7 @@ You are expected to:
 - Compare distributions using statistics
 - Interpret differences meaningfully
 
-*No visualization or modeling is required.*
+_No visualization or modeling is required._
 
 #### Key Components
 
@@ -4757,6 +4786,7 @@ The demonstration showcases:
 6. **Best Practices** - Common pitfalls and interpretation guidelines
 
 The demonstration includes:
+
 - **Mean vs Median comparison** - Detecting skewness across multiple columns
 - **Variability analysis** - Using CV to compare across different scales
 - **Distribution profiling** - Creating statistical profiles for each column
@@ -4774,22 +4804,26 @@ python distribution_comparison_demo.py
 
 **What is a Distribution?**
 A distribution describes how values are spread in a column:
+
 - **Central tendency**: Where the center is (mean, median)
 - **Spread**: How spread out values are (range, std)
 - **Shape**: Whether symmetric or skewed
 - **Outliers**: Unusual or extreme values
 
 **Comparing Central Tendency:**
+
 - **Mean comparison** → Which column has higher average values
 - **Median comparison** → Robust comparison (less affected by outliers)
 - **Mean vs Median** → Reveals distribution shape (symmetric vs skewed)
 
 **Comparing Spread:**
+
 - **Range** → Full spread from min to max
 - **Standard Deviation (Std)** → Absolute variability (use only for similar scales)
 - **Coefficient of Variation (CV)** → Relative variability (works across any scale) ★ RECOMMENDED
 
 **Why CV is Critical:**
+
 ```python
 # CV = Std / Mean
 # Allows comparison across different scales
@@ -4800,6 +4834,7 @@ cv_temp = traffic_df['temp'].std() / traffic_df['temp'].mean()
 ```
 
 **CV Interpretation:**
+
 - **CV < 0.15** → Very low variability (highly consistent)
 - **CV 0.15-0.30** → Low to moderate variability
 - **CV 0.30-0.50** → Moderate to high variability
@@ -4807,25 +4842,26 @@ cv_temp = traffic_df['temp'].std() / traffic_df['temp'].mean()
 
 **When to Use Each Measure:**
 
-| Comparison Type | Use This | When |
-|----------------|----------|------|
-| Typical values | Mean or Median | Compare central tendency |
-| Absolute spread | Range or Std | Columns have SIMILAR scales |
-| Relative spread | CV (Std/Mean) | Columns have DIFFERENT scales ★ |
-| Distribution shape | Mean vs Median | Detect skewness |
-| Quick overview | .describe().T | Initial exploration |
+| Comparison Type    | Use This       | When                            |
+| ------------------ | -------------- | ------------------------------- |
+| Typical values     | Mean or Median | Compare central tendency        |
+| Absolute spread    | Range or Std   | Columns have SIMILAR scales     |
+| Relative spread    | CV (Std/Mean)  | Columns have DIFFERENT scales ★ |
+| Distribution shape | Mean vs Median | Detect skewness                 |
+| Quick overview     | .describe().T  | Initial exploration             |
 
 **Common Comparison Patterns:**
 
-| Pattern | Interpretation | Action |
-|---------|----------------|--------|
-| High CV | Variable/unpredictable | Investigate causes |
-| Low CV | Consistent/stable | May be less informative |
-| Mean >> Median | Right-skewed | Check for high outliers |
-| Mean << Median | Left-skewed | Check for low outliers |
-| Similar CVs | Similar variability | May behave similarly |
+| Pattern        | Interpretation         | Action                  |
+| -------------- | ---------------------- | ----------------------- |
+| High CV        | Variable/unpredictable | Investigate causes      |
+| Low CV         | Consistent/stable      | May be less informative |
+| Mean >> Median | Right-skewed           | Check for high outliers |
+| Mean << Median | Left-skewed            | Check for low outliers  |
+| Similar CVs    | Similar variability    | May behave similarly    |
 
 **Best Practices:**
+
 - **Use CV for cross-scale comparisons** (not Std)
 - **Compare both mean AND median** to understand shape
 - **Check variability along with central tendency**
@@ -4834,6 +4870,7 @@ cv_temp = traffic_df['temp'].std() / traffic_df['temp'].mean()
 - **Consider domain context when interpreting**
 
 **Common MISTAKES to avoid:**
+
 - Comparing only means without checking spread
 - Using Std to compare different-scale columns (use CV!)
 - Assuming higher values are "better" or "worse"
@@ -4880,6 +4917,7 @@ for col in numeric_cols:
 #### Bonus Content
 
 This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
 - [Descriptive Statistics in Pandas](https://pandas.pydata.org/docs/user_guide/basics.html#descriptive-statistics)
 - [Understanding Data Distributions](https://towardsdatascience.com/understanding-data-distributions-cdbadfa87aed)
 - [Why Comparing Distributions Matters](https://www.statology.org/comparing-distributions/)
@@ -4979,3 +5017,29 @@ It is one of NumPy’s most powerful features for numerical computing.
 - Compare dataset shape before and after removing duplicates
 - Recheck the dataset to confirm duplicates are removed
 - Ensure important records remain after deduplication
+
+## Histogram Visualization
+
+### Understanding Histograms
+
+- Understand how histograms represent numeric data distributions
+- Recognize bins and frequency counts
+- Distinguish histograms from bar charts
+
+### Creating a Histogram
+
+- Select a numeric column from the DataFrame
+- Generate a histogram to visualize value distribution
+- Observe how values are grouped into bins
+
+### Interpreting Distribution Shape
+
+- Identify skewed distributions
+- Recognize approximately normal distributions
+- Detect clusters, gaps, or unusual patterns
+
+### Comparing Histograms
+
+- Create histograms for multiple numeric columns
+- Compare distribution spread and skewness across columns
+- Use visual patterns to understand differences in data behavior
