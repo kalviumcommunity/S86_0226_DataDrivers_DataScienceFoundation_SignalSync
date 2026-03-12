@@ -5222,3 +5222,30 @@ It is one of NumPy’s most powerful features for numerical computing.
 - Identify sudden spikes or drops in values
 - Observe unusual variations over time
 - Use visual patterns to understand changes in the data
+
+## Scatter Plot Visualization
+
+### Understanding Scatter Plots
+
+- Understand how scatter plots represent relationships between two variables
+- Recognize each point as an individual observation
+- Understand axes and how point position reflects values
+
+### Creating a Scatter Plot
+
+- Select two numeric columns from the DataFrame
+- Plot one variable on the x-axis and the other on the y-axis
+- Generate a scatter plot to visualize their relationship
+- Label axes clearly for readability
+
+### Interpreting Relationships
+
+- Identify positive or negative relationships between variables
+- Recognize when no clear relationship exists
+- Observe linear or non-linear patterns in the data
+
+### Identifying Clusters and Outliers
+
+- Detect clusters of points that form groups
+- Identify isolated or extreme points
+- Use visual patterns to understand variable interactions
