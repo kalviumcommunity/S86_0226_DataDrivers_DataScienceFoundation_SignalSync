@@ -4924,6 +4924,158 @@ This section is optional, and learners who want to explore the topics covered so
 
 ---
 
+## 24. Visualizing Data Distributions Using Boxplots Milestone
+
+### 📊 Visualizing Data Distributions Using Boxplots
+
+This milestone focuses on visualizing data distributions using boxplots. Boxplots provide a compact summary of a dataset's distribution, making it easy to compare spread, central tendency, and potential outliers across one or more numeric columns.
+
+Boxplots complement histograms by highlighting quartiles and outliers clearly.
+
+#### Learning Objectives
+
+This lesson helps you:
+
+- Understand what a boxplot represents
+- Visualize distribution spread using quartiles
+- Identify median and interquartile range (IQR)
+- Detect potential outliers visually
+- Compare distributions across multiple columns
+
+#### Milestone Outcomes
+
+By completing this milestone, you will be able to:
+
+- Create boxplots for numeric columns
+- Interpret median, quartiles, and range
+- Identify outliers using visual cues
+- Compare variability across columns
+- Use boxplots as part of EDA
+
+#### Why This Matters
+
+Common beginner issues include:
+
+- Missing outliers when relying only on averages
+- Difficulty comparing distributions across columns
+- Over-reliance on histograms for all insights
+- Misinterpreting spread and variability
+
+**Boxplots summarize distributions clearly and comparably.**
+
+This milestone ensures that:
+
+- You can spot outliers quickly
+- Distribution spread is easy to compare
+- Central tendency is clearly visible
+- EDA decisions are more informed
+
+Think of boxplots as a side-by-side comparison tool for distributions.
+
+#### What You Are Expected to Do
+
+This is a data visualization milestone, not a modeling task.
+
+You are expected to:
+
+- Load a dataset into a DataFrame
+- Select one or more numeric columns
+- Create boxplots for those columns
+- Interpret what the boxplots reveal
+
+*No modeling or advanced styling is required.*
+
+#### Key Components
+
+##### 1. Understanding Boxplots
+
+Learn what each part represents.
+
+You should:
+
+- Understand median, quartiles, and IQR
+- Recognize whiskers and their meaning
+- Identify outliers visually
+- Avoid confusing boxplots with bar charts
+
+Each component conveys key information.
+
+##### 2. Creating a Boxplot for a Single Column
+
+Visualize one distribution.
+
+You should:
+
+- Select a numeric column
+- Create a boxplot
+- Identify median and spread
+- Note any visible outliers
+
+Single-column boxplots build intuition.
+
+##### 3. Comparing Boxplots Across Columns
+
+Compare distributions side by side.
+
+You should:
+
+- Create boxplots for multiple columns
+- Compare medians and variability
+- Identify columns with wider spread
+- Spot columns with more outliers
+
+Comparison is a major strength of boxplots.
+
+##### 4. Interpreting Outliers Carefully
+
+Understand what outliers mean.
+
+You should:
+
+- Identify points beyond whiskers
+- Understand that outliers are not always errors
+- Avoid removing outliers blindly
+- Use boxplots to ask better questions
+
+Outliers need context, not assumptions.
+
+##### 5. Video Walkthrough (~2 Minutes)
+
+Record a short screen-capture video demonstrating boxplot visualization.
+
+Your video must include:
+
+- Creating a boxplot for a numeric column
+- Explaining median and quartiles
+- Identifying outliers
+- Comparing boxplots across columns (if applicable)
+
+#### Submission Guidelines
+
+- Submit your work as a Pull Request (if required)
+- Submit the video link as instructed
+- Video should be approximately 2 minutes
+- Video must be screen-facing and clearly visible
+
+#### Important Notes
+
+- Use boxplots only for numeric data
+- Combine boxplots with summary statistics
+- Do not assume outliers are mistakes
+- Use visuals to guide further analysis
+
+Visualizing data distributions using boxplots is a powerful EDA skill. This milestone ensures you can summarize and compare numeric distributions clearly before moving deeper into analysis.
+
+#### Bonus Content
+
+This section is optional, and learners who want to explore the topics covered so far can utilize the materials provided below:
+
+- [Pandas Boxplot Documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.boxplot.html)
+- [Understanding Boxplots](https://towardsdatascience.com/understanding-boxplots-5e2df7bcbd51)
+- [Interpreting Outliers in Boxplots](https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/)
+
+---
+
 🔧 **Environment Verification (Sprint Hygiene Milestone)**
 
 If neither condition is satisfied, broadcasting fails
