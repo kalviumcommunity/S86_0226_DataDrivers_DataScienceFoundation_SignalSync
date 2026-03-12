@@ -4983,7 +4983,7 @@ You are expected to:
 - Create boxplots for those columns
 - Interpret what the boxplots reveal
 
-*No modeling or advanced styling is required.*
+_No modeling or advanced styling is required._
 
 #### Key Components
 
@@ -5195,3 +5195,30 @@ It is one of NumPy’s most powerful features for numerical computing.
 - Create histograms for multiple numeric columns
 - Compare distribution spread and skewness across columns
 - Use visual patterns to understand differences in data behavior
+
+## Line Plot Visualization
+
+### Understanding Time-Based Data
+
+- Identify columns representing time or date
+- Ensure data is ordered correctly by time
+- Understand time as a continuous sequence
+
+### Creating Line Plots
+
+- Select a time column for the x-axis
+- Select a numeric column for the y-axis
+- Generate a line plot to visualize changes over time
+- Label axes clearly
+
+### Identifying Trends
+
+- Observe upward or downward trends
+- Recognize stable or flat patterns
+- Distinguish long-term trends from short-term fluctuations
+
+### Detecting Changes and Anomalies
+
+- Identify sudden spikes or drops in values
+- Observe unusual variations over time
+- Use visual patterns to understand changes in the data
