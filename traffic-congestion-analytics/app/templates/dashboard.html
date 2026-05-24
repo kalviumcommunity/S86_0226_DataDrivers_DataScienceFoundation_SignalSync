@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Traffic Congestion Analytics{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 class="hero-title">Traffic Flow Intelligence Dashboard</h2>
+        <p class="hero-subtitle">Real-time insights and predictive analytics for urban traffic management</p>
+    </section>
+
+    <!-- Key Metrics Cards -->
+    <section class="metrics-section">
+        <h3 class="section-title">
+            <i class="fas fa-chart-bar section-icon"></i>
+            Key Performance Indicators
+        </h3>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="metric-content">
+                    <h4 class="metric-label">Total Records</h4>
+                    <p class="metric-value">{{ "{:,}".format(summary.total_records) }}</p>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <div class="metric-content">
+                    <h4 class="metric-label">Avg Traffic Volume</h4>
+                    <p class="metric-value">{{ "{:,.0f}".format(summary.avg_traffic_volume) }}</p>
+                </div>
+            </div>
+
+            <div class="metric-card highlight-orange">
+                <div class="metric-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="metric-content">
+                    <h4 class="metric-label">Peak Hour</h4>
+                    <p class="metric-value">{{ summary.peak_hour }}:00</p>
+                    <p class="metric-subtext">{{ "{:,.0f}".format(summary.peak_hour_volume) }} vehicles</p>
+                </div>
+            </div>
+
+            <div class="metric-card highlight-green">
+                <div class="metric-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="metric-content">
+                    <h4 class="metric-label">Busiest Day</h4>
+                    <p class="metric-value">{{ summary.busiest_day }}</p>
+                    <p class="metric-subtext">{{ "{:,.0f}".format(summary.busiest_day_volume) }} avg vehicles</p>
+                </div>
+            </div>
+
+            <div
+                class="metric-card {% if summary.congestion_rate > 50 %}alert-high{% elif summary.congestion_rate > 25 %}alert-medium{% else %}alert-low{% endif %}">
+                <div class="metric-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="metric-content">
+                    <h4 class="metric-label">Congestion Rate</h4>
+                    <p class="metric-value">{{ "%.1f"|format(summary.congestion_rate) }}%</p>
+                    <p class="metric-subtext">Above threshold traffic</p>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="metric-content">
+                    <h4 class="metric-label">Data Period</h4>
+                    <p class="metric-value-small">{{ summary.date_range.start[:10] }}</p>
+                    <p class="metric-subtext">to {{ summary.date_range.end[:10] }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottlenecks and Insights -->
+    <section class="insights-section">
+        <h3 class="section-title">
+            <i class="fas fa-lightbulb section-icon"></i>
+            Traffic Bottlenecks & Critical Insights
+        </h3>
+
+        <div class="insights-grid">
+            {% for bottleneck in bottlenecks %}
+            <div class="insight-card severity-{{ bottleneck.severity.lower() }}">
+                <div class="insight-header">
+                    <div class="insight-type-container">
+                        <i class="fas fa-exclamation-circle insight-icon"></i>
+                        <span class="insight-type">{{ bottleneck.type }}</span>
+                    </div>
+                    <span class="insight-badge badge-{{ bottleneck.severity.lower() }}">{{ bottleneck.severity }}</span>
+                </div>
+                <p class="insight-description">{{ bottleneck.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Traffic Prediction -->
+    <section class="prediction-section">
+        <h3 class="section-title">
+            <i class="fas fa-brain section-icon"></i>
+            AI-Powered Traffic Prediction
+        </h3>
+        <div class="analytics-card">
+            <p class="analytics-description">Predict traffic volume based on time, weather, and other environmental
+                factors using machine learning.</p>
+            <div class="prediction-form">
+                <div class="form-group">
+                    <label>Hour (0-23):</label>
+                    <input type="number" id="predictHour" min="0" max="23" value="17">
+                </div>
+                <div class="form-group">
+                    <label>Weather:</label>
+                    <select id="predictWeather">
+                        <option value="Clear">Clear</option>
+                        <option value="Clouds">Clouds</option>
+                        <option value="Rain">Rain</option>
+                        <option value="Snow">Snow</option>
+                        <option value="Mist">Mist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Temperature (K):</label>
+                    <input type="number" id="predictTemp" value="285" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label>Weekday (0-6):</label>
+                    <input type="number" id="predictWeekday" min="0" max="6" value="4">
+                </div>
+                <button onclick="predictTraffic()" class="predict-btn">
+                    <i class="fas fa-magic"></i> Predict Traffic
+                </button>
+            </div>
+            <div id="predictionResult" class="prediction-result" style="display: none;">
+                <h4>Prediction Result:</h4>
+                <div class="result-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Congestion Details -->
+    {% if congestion %}
+    <section class="congestion-section">
+        <h3 class="section-title">
+            <i class="fas fa-tachometer-alt section-icon"></i>
+            Detailed Congestion Analysis
+        </h3>
+
+        <div class="congestion-details">
+            <div class="congestion-card">
+                <h4>
+                    <i class="fas fa-chart-bar"></i>
+                    Hourly Congestion Rates
+                </h4>
+                <div class="congestion-list">
+                    {% for hour, rate in congestion.hourly_congestion.items() %}
+                    <div class="congestion-item">
+                        <span class="congestion-hour">
+                            <i class="far fa-clock"></i>
+                            {{ "%02d"|format(hour) }}:00
+                        </span>
+                        <div class="congestion-bar-container">
+                            <div class="congestion-bar"
+                                style="width: {{ rate }}%; background-color: {% if rate > 60 %}#FF6B00{% elif rate > 30 %}#FFA500{% else %}#2ECC71{% endif %};">
+                            </div>
+                        </div>
+                        <span class="congestion-rate">{{ "%.1f"|format(rate) }}%</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    <!-- API Information -->
+    <section class="api-section">
+        <h3 class="section-title">
+            <i class="fas fa-plug section-icon"></i>
+            API Endpoints
+        </h3>
+
+        <div class="api-grid">
+            <div class="api-card">
+                <div class="api-header">
+                    <i class="fas fa-server"></i>
+                    <h4 class="api-endpoint">GET /api/summary</h4>
+                </div>
+                <p class="api-description">Retrieve complete traffic summary statistics and congestion data</p>
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code class="api-example">curl http://localhost:5000/api/summary</code>
+                </div>
+            </div>
+
+            <div class="api-card">
+                <div class="api-header">
+                    <i class="fas fa-brain"></i>
+                    <h4 class="api-endpoint">GET /api/predict</h4>
+                </div>
+                <p class="api-description">Predict traffic volume based on hour, weather, and other parameters</p>
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code
+                        class="api-example">curl "http://localhost:5000/api/predict?hour=17&weather=Rain&temp=285"</code>
+                </div>
+            </div>
+
+            <div class="api-card">
+                <div class="api-header">
+                    <i class="fas fa-analytics"></i>
+                    <h4 class="api-endpoint">GET /api/analytics/{type}</h4>
+                </div>
+                <p class="api-description">Get specific analytics: peak_hours, weather_impact, monthly_trends,
+                    bottlenecks</p>
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code class="api-example">curl http://localhost:5000/api/analytics/peak_hours</code>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Traffic Prediction functionality
+    async function predictTraffic() {
+        const hour = document.getElementById('predictHour').value;
+        const weather = document.getElementById('predictWeather').value;
+        const temp = document.getElementById('predictTemp').value;
+        const weekday = document.getElementById('predictWeekday').value;
+
+        try {
+            const response = await fetch(`/api/predict?hour=${hour}&weather=${weather}&temp=${temp}&weekday=${weekday}`);
+            const data = await response.json();
+
+            if (data.status === 'success') {
+                const result = data.data;
+                const resultDiv = document.getElementById('predictionResult');
+                const resultContent = resultDiv.querySelector('.result-content');
+
+                resultContent.innerHTML = `
+                    <div class="result-item">
+                        <strong>Predicted Volume:</strong> ${result.predicted_volume.toLocaleString()} vehicles
+                    </div>
+                    <div class="result-item">
+                        <strong>Congestion Status:</strong> 
+                        <span class="badge ${result.is_congested ? 'badge-high' : 'badge-low'}">
+                            ${result.is_congested ? 'Congested' : 'Normal'}
+                        </span>
+                    </div>
+                    <div class="result-item">
+                        <strong>Threshold:</strong> ${result.congestion_threshold.toLocaleString()} vehicles
+                    </div>
+                `;
+
+                resultDiv.style.display = 'block';
+            } else {
+                alert('Error: ' + data.message);
+            }
+        } catch (error) {
+            alert('Error making prediction: ' + error.message);
+        }
+    }
+</script>
+{% endblock %}

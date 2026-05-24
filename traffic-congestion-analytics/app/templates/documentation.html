@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}Documentation - Traffic Congestion Analytics{% endblock %}
+
+{% block content %}
+<div class="documentation-page">
+    <section class="hero">
+        <h2 class="hero-title">API Documentation</h2>
+        <p class="hero-subtitle">Complete reference for developers and integrations</p>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-book section-icon"></i>
+            Getting Started
+        </h3>
+        <div class="doc-card">
+            <p>The Traffic Congestion Analytics API provides RESTful endpoints for accessing traffic data, predictions,
+                and analytics. All endpoints return JSON responses.</p>
+            <div class="doc-note">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>Base URL:</strong> <code>http://localhost:5000</code></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-database section-icon"></i>
+            Dataset Configuration
+        </h3>
+        <div class="doc-card">
+            <p>Select the dataset you want to use for API requests and predictions. The selected dataset will be used
+                for all analytics and prediction endpoints.</p>
+
+            <div class="dataset-selector-container">
+                <label for="dataset-select" class="dataset-label">
+                    <i class="fas fa-table"></i>
+                    Active Dataset:
+                </label>
+                <select id="dataset-select" class="dataset-select">
+                    <option value="metro" selected>Metro Interstate Traffic Volume Dataset (Default)</option>
+                    <option value="custom">Custom Dataset (Upload Required)</option>
+                </select>
+                <button class="dataset-apply-btn" onclick="applyDataset()">
+                    <i class="fas fa-check"></i>
+                    Apply Dataset
+                </button>
+            </div>
+
+            <div class="dataset-info" id="dataset-info">
+                <div class="dataset-success">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Dataset Active</strong>
+                        <p>Using: <strong>Metro Interstate Traffic Volume Dataset</strong></p>
+                        <p>All API endpoints are active with real traffic data from the Metro Interstate dataset.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dataset-stats" id="dataset-stats" style="display: block;">
+                <h5><i class="fas fa-chart-bar"></i> Dataset Statistics</h5>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Total Records:</span>
+                        <span class="stat-value" id="stat-records">48,613</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Date Range:</span>
+                        <span class="stat-value" id="stat-date">2012-2018</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">File Size:</span>
+                        <span class="stat-value" id="stat-size">3.8 MB</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Status:</span>
+                        <span class="stat-value stat-active" id="stat-status">Active</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-server section-icon"></i>
+            API Endpoints
+        </h3>
+
+        <div class="endpoint-card">
+            <div class="endpoint-header">
+                <span class="method-badge method-get">GET</span>
+                <h4>/api/summary</h4>
+            </div>
+            <p class="endpoint-desc">Retrieve complete traffic summary statistics and congestion data.</p>
+            <div class="endpoint-section">
+                <h5>Response Example:</h5>
+                <pre><code>{
+  "status": "success",
+  "data": {
+    "summary": {
+      "total_records": 48613,
+      "avg_traffic_volume": 3259.82,
+      "peak_hour": 17,
+      "busiest_day": "Friday"
+    },
+    "congestion": {
+      "overall_congestion_rate": 35.2,
+      "hourly_congestion": {...}
+    }
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="endpoint-card">
+            <div class="endpoint-header">
+                <span class="method-badge method-get">GET</span>
+                <h4>/api/predict</h4>
+            </div>
+            <p class="endpoint-desc">Predict traffic volume based on input parameters.</p>
+            <div class="endpoint-section">
+                <h5>Query Parameters:</h5>
+                <ul class="param-list">
+                    <li><code>hour</code> (required) - Hour of day (0-23)</li>
+                    <li><code>weather</code> (optional) - Weather condition (Clear, Rain, Snow, Clouds, Mist)</li>
+                    <li><code>temp</code> (optional) - Temperature in Kelvin (default: 280)</li>
+                    <li><code>weekday</code> (optional) - Day of week (0=Monday, 6=Sunday)</li>
+                    <li><code>month</code> (optional) - Month (1-12)</li>
+                </ul>
+            </div>
+            <div class="endpoint-section">
+                <h5>Example Request:</h5>
+                <pre><code>GET /api/predict?hour=17&weather=Rain&temp=285&weekday=4</code></pre>
+            </div>
+            <div class="endpoint-section">
+                <h5>Response Example:</h5>
+                <pre><code>{
+  "status": "success",
+  "data": {
+    "predicted_volume": 4523.45,
+    "is_congested": true,
+    "congestion_threshold": 4000,
+    "input_features": {
+      "hour": 17,
+      "weather": "Rain",
+      "temp": 285,
+      "weekday": 4,
+      "month": 1
+    }
+  }
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="endpoint-card">
+            <div class="endpoint-header">
+                <span class="method-badge method-get">GET</span>
+                <h4>/api/analytics/{type}</h4>
+            </div>
+            <p class="endpoint-desc">Get specific analytics type.</p>
+            <div class="endpoint-section">
+                <h5>Available Types:</h5>
+                <ul class="param-list">
+                    <li><code>peak_hours</code> - Peak traffic hours analysis</li>
+                    <li><code>weather_impact</code> - Weather impact statistics</li>
+                    <li><code>monthly_trends</code> - Monthly traffic trends</li>
+                    <li><code>bottlenecks</code> - Traffic bottleneck identification</li>
+                </ul>
+            </div>
+            <div class="endpoint-section">
+                <h5>Example Request:</h5>
+                <pre><code>GET /api/analytics/peak_hours</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-exclamation-circle section-icon"></i>
+            Error Handling
+        </h3>
+        <div class="doc-card">
+            <p>All API endpoints return standard HTTP status codes:</p>
+            <ul class="status-list">
+                <li><span class="status-code status-200">200</span> Success - Request completed successfully</li>
+                <li><span class="status-code status-400">400</span> Bad Request - Invalid parameters</li>
+                <li><span class="status-code status-404">404</span> Not Found - Resource not found</li>
+                <li><span class="status-code status-500">500</span> Server Error - Internal server error</li>
+            </ul>
+            <div class="endpoint-section">
+                <h5>Error Response Example:</h5>
+                <pre><code>{
+  "status": "error",
+  "message": "Missing required parameter: hour"
+}</code></pre>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    // Dataset selector functionality
+    function applyDataset() {
+        const select = document.getElementById('dataset-select');
+        const selectedValue = select.value;
+        const selectedText = select.options[select.selectedIndex].text;
+        const datasetInfo = document.getElementById('dataset-info');
+        const datasetStats = document.getElementById('dataset-stats');
+
+        // Clear previous info
+        datasetInfo.innerHTML = '';
+        datasetStats.style.display = 'none';
+
+        if (selectedValue === 'metro') {
+            // Show Metro dataset info
+            datasetInfo.innerHTML = `
+                <div class="dataset-success">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Dataset Applied Successfully!</strong>
+                        <p>Using: <strong>${selectedText}</strong></p>
+                        <p>All API endpoints are now active with real traffic data from the Metro Interstate dataset.</p>
+                    </div>
+                </div>
+            `;
+
+            // Show dataset statistics
+            datasetStats.style.display = 'block';
+            document.getElementById('stat-records').textContent = '48,613';
+            document.getElementById('stat-date').textContent = '2012-2018';
+            document.getElementById('stat-size').textContent = '3.8 MB';
+            document.getElementById('stat-status').textContent = 'Active';
+            document.getElementById('stat-status').className = 'stat-value stat-active';
+        } else if (selectedValue === 'custom') {
+            // Show custom dataset upload option
+            datasetInfo.innerHTML = `
+                <div class="dataset-info-box">
+                    <i class="fas fa-upload"></i>
+                    <div>
+                        <strong>Custom Dataset Upload</strong>
+                        <p>To use a custom dataset, please ensure your CSV file contains the following columns:</p>
+                        <ul>
+                            <li><code>traffic_volume</code> - Traffic volume (numeric)</li>
+                            <li><code>temp</code> - Temperature in Kelvin (numeric)</li>
+                            <li><code>weather_main</code> - Weather condition (categorical)</li>
+                            <li><code>date_time</code> - Timestamp (datetime)</li>
+                        </ul>
+                        <button class="upload-btn" onclick="alert('Upload functionality coming soon!')">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            Upload CSV File
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Show success notification
+        showNotification('Dataset configuration updated!', 'success');
+    }
+
+    // Show notification helper
+    function showNotification(message, type) {
+        const notification = document.createElement('div');
+        notification.className = `dataset-notification ${type}`;
+        notification.innerHTML = `
+            <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>
+            <span>${message}</span>
+        `;
+        document.body.appendChild(notification);
+
+        // Animate in
+        setTimeout(() => notification.classList.add('show'), 100);
+
+        // Remove after 3 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
+
+    // Auto-select on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const select = document.getElementById('dataset-select');
+        // Default to metro dataset
+        select.value = 'metro';
+    });
+</script>
+{% endblock %}

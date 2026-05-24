@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+
+{% block title %}Analytics - Traffic Congestion Analytics{% endblock %}
+
+{% block content %}
+<div class="analytics-page">
+    <section class="hero">
+        <h2 class="hero-title">Traffic Pattern Analysis & Visualizations</h2>
+        <p class="hero-subtitle">Comprehensive visual insights into traffic behavior and trends</p>
+    </section>
+
+    <!-- Traffic Visualizations -->
+    <section class="visualizations-section">
+        <h3 class="section-title">
+            <i class="fas fa-chart-line section-icon"></i>
+            Traffic Pattern Charts
+        </h3>
+
+        <div class="charts-grid">
+            {% if images.hourly_trend %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-clock chart-icon"></i>
+                    <h4 class="chart-title">Hourly Traffic Trends</h4>
+                </div>
+                <img src="{{ images.hourly_trend }}" alt="Hourly Traffic Trend" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    Peak traffic occurs during morning and evening rush hours
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+
+            {% if images.weekly_trend %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-calendar-week chart-icon"></i>
+                    <h4 class="chart-title">Weekly Traffic Patterns</h4>
+                </div>
+                <img src="{{ images.weekly_trend }}" alt="Weekly Traffic Trend" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    Weekday vs weekend traffic distribution analysis
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+
+            {% if images.monthly_trend %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-calendar chart-icon"></i>
+                    <h4 class="chart-title">Monthly Traffic Variations</h4>
+                </div>
+                <img src="{{ images.monthly_trend }}" alt="Monthly Traffic Trend" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    Seasonal traffic patterns throughout the year
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+
+            {% if images.weather_impact %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-cloud-sun chart-icon"></i>
+                    <h4 class="chart-title">Weather Impact Analysis</h4>
+                </div>
+                <img src="{{ images.weather_impact }}" alt="Weather Impact" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    How weather conditions affect traffic volume
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+
+            {% if images.congestion_distribution %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-chart-pie chart-icon"></i>
+                    <h4 class="chart-title">Congestion Distribution</h4>
+                </div>
+                <img src="{{ images.congestion_distribution }}" alt="Congestion Distribution" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    Proportion of congested vs normal traffic periods
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+
+            {% if images.correlation_heatmap %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-th chart-icon"></i>
+                    <h4 class="chart-title">Feature Correlation Heatmap</h4>
+                </div>
+                <img src="{{ images.correlation_heatmap }}" alt="Correlation Heatmap" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    Relationships between traffic factors
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+
+            {% if images.clustering %}
+            <div class="chart-card">
+                <div class="chart-header">
+                    <i class="fas fa-project-diagram chart-icon"></i>
+                    <h4 class="chart-title">Traffic Pattern Clustering</h4>
+                </div>
+                <img src="{{ images.clustering }}" alt="Clustering" class="chart-image">
+                <p class="chart-description">
+                    <i class="fas fa-info-circle"></i>
+                    K-Means clustering reveals distinct traffic patterns
+                </p>
+                <p class="chart-expand-hint">Click to expand</p>
+            </div>
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-clock section-icon"></i>
+            Peak Hours Analysis
+        </h3>
+        <div class="analytics-card">
+            <p class="analytics-description">Identify the busiest hours of the day and optimize traffic management
+                strategies.</p>
+            <div class="api-demo">
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code>GET /api/analytics/peak_hours</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-cloud-sun section-icon"></i>
+            Weather Impact Analysis
+        </h3>
+        <div class="analytics-card">
+            <p class="analytics-description">Understand how different weather conditions affect traffic volume and
+                congestion patterns.</p>
+            <div class="api-demo">
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code>GET /api/analytics/weather_impact</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-calendar-alt section-icon"></i>
+            Monthly Trends
+        </h3>
+        <div class="analytics-card">
+            <p class="analytics-description">Explore seasonal traffic variations and long-term patterns throughout the
+                year.</p>
+            <div class="api-demo">
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code>GET /api/analytics/monthly_trends</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <h3 class="section-title">
+            <i class="fas fa-exclamation-triangle section-icon"></i>
+            Bottleneck Detection
+        </h3>
+        <div class="analytics-card">
+            <p class="analytics-description">Automatically identify critical congestion points and receive prioritized
+                recommendations.</p>
+            <div class="api-demo">
+                <div class="api-code">
+                    <i class="fas fa-terminal"></i>
+                    <code>GET /api/analytics/bottlenecks</code>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-body">
+            <img id="modalImage" src="" alt="Chart view" class="modal-image">
+            <p id="modalTitle" class="modal-title"></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Modal functionality for chart images
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalClose = document.querySelector('.modal-close');
+    const modalBackdrop = document.querySelector('.modal-backdrop');
+    const chartImages = document.querySelectorAll('.chart-image');
+
+    // Open modal when chart is clicked
+    chartImages.forEach(img => {
+        img.addEventListener('click', function () {
+            const chartCard = this.closest('.chart-card');
+            const chartTitle = chartCard.querySelector('.chart-title');
+
+            modalImage.src = this.src;
+            modalImage.alt = this.alt;
+            modalTitle.textContent = chartTitle ? chartTitle.textContent : this.alt;
+
+            modal.classList.add('modal-active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+
+        // Add pointer cursor to indicate clickable
+        img.style.cursor = 'pointer';
+    });
+
+    // Close modal functions
+    function closeModal() {
+        modal.classList.remove('modal-active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modalBackdrop.addEventListener('click', closeModal);
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('modal-active')) {
+            closeModal();
+        }
+    });
+</script>
+{% endblock %}

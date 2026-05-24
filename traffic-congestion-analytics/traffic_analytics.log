@@ -1,0 +1,906 @@
+2026-03-04 13:28:47,758 - app - INFO - Flask application initialized
+2026-03-04 13:28:56,048 - matplotlib.font_manager - INFO - generated new fontManager
+2026-03-04 13:29:05,702 - __main__ - INFO - ============================================================
+2026-03-04 13:29:05,706 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:29:05,707 - __main__ - INFO - ============================================================
+2026-03-04 13:29:05,707 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:29:05,707 - __main__ - INFO - Debug mode: True
+2026-03-04 13:29:05,707 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:29:05,707 - __main__ - INFO - ============================================================
+2026-03-04 13:29:06,024 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.231.54:5000
+2026-03-04 13:29:06,026 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-04 13:29:06,034 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:29:06,448 - app - INFO - Flask application initialized
+2026-03-04 13:29:08,762 - __main__ - INFO - ============================================================
+2026-03-04 13:29:08,764 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:29:08,764 - __main__ - INFO - ============================================================
+2026-03-04 13:29:08,764 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:29:08,764 - __main__ - INFO - Debug mode: True
+2026-03-04 13:29:08,764 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:29:08,764 - __main__ - INFO - ============================================================
+2026-03-04 13:29:08,779 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:29:08,786 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:30:38,993 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:30:38,993 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:30:38,993 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'dataset_download'
+2026-03-04 13:30:38,993 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'dataset_download'
+2026-03-04 13:30:38,994 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'dataset_download'
+2026-03-04 13:30:38,995 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'dataset_download'
+2026-03-04 13:30:39,192 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:30:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:30:39,744 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:30:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 13:32:05,994 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\services\\data_loader.py', reloading
+2026-03-04 13:32:06,508 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:32:20,212 - app - INFO - Flask application initialized
+2026-03-04 13:32:25,580 - __main__ - INFO - ============================================================
+2026-03-04 13:32:25,580 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:32:25,580 - __main__ - INFO - ============================================================
+2026-03-04 13:32:25,580 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:32:25,581 - __main__ - INFO - Debug mode: True
+2026-03-04 13:32:25,581 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:32:25,581 - __main__ - INFO - ============================================================
+2026-03-04 13:32:25,604 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:32:25,610 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:36:46,280 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\services\\data_loader.py', reloading
+2026-03-04 13:36:48,461 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:36:49,507 - app - INFO - Flask application initialized
+2026-03-04 13:36:55,103 - __main__ - INFO - ============================================================
+2026-03-04 13:36:55,103 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:36:55,103 - __main__ - INFO - ============================================================
+2026-03-04 13:36:55,103 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:36:55,104 - __main__ - INFO - Debug mode: True
+2026-03-04 13:36:55,104 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:36:55,104 - __main__ - INFO - ============================================================
+2026-03-04 13:36:55,132 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:36:55,145 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:36:56,974 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:36:56,975 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:36:56,976 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:56,976 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:56,977 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:56,977 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:56,978 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:36:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:36:59,754 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:36:59,754 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:36:59,755 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:59,755 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:59,755 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:59,756 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:36:59,757 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:36:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:37:00,462 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:37:00,462 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:37:00,463 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,463 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,463 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,463 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,464 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:37:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:37:00,688 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:37:00,688 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:37:00,688 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,689 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,689 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,689 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:37:00,690 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:37:00] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:37:11,853 - app - INFO - Flask application initialized
+2026-03-04 13:37:14,810 - __main__ - INFO - ============================================================
+2026-03-04 13:37:14,810 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:37:14,810 - __main__ - INFO - ============================================================
+2026-03-04 13:37:14,811 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:37:14,811 - __main__ - INFO - Debug mode: True
+2026-03-04 13:37:14,811 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:37:14,811 - __main__ - INFO - ============================================================
+2026-03-04 13:37:14,848 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.231.54:5000
+2026-03-04 13:37:14,849 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-04 13:37:14,851 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:37:15,370 - app - INFO - Flask application initialized
+2026-03-04 13:37:19,265 - __main__ - INFO - ============================================================
+2026-03-04 13:37:19,266 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:37:19,266 - __main__ - INFO - ============================================================
+2026-03-04 13:37:19,266 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:37:19,266 - __main__ - INFO - Debug mode: True
+2026-03-04 13:37:19,267 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:37:19,267 - __main__ - INFO - ============================================================
+2026-03-04 13:37:19,291 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:37:19,307 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:38:39,057 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:38:39,057 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:38:39,058 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,058 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,058 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,059 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,060 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:38:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:38:39,855 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:38:39,856 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:38:39,856 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,856 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,857 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,857 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:39,858 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:38:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:38:40,069 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:38:40,069 - app.services.data_loader - INFO - Downloading dataset: galenchen/highway-traffic-volume
+2026-03-04 13:38:40,070 - app.services.data_loader - ERROR - Error downloading dataset: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:40,070 - app.services.data_loader - ERROR - Error loading data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:40,070 - app.routes - ERROR - Error in load_and_process_data: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:40,071 - app.routes - ERROR - Error in index route: module 'kagglehub' has no attribute 'download'
+2026-03-04 13:38:40,071 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:38:40] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:39:37,906 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\services\\data_loader.py', reloading
+2026-03-04 13:39:38,478 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:39:39,245 - app - INFO - Flask application initialized
+2026-03-04 13:39:43,249 - __main__ - INFO - ============================================================
+2026-03-04 13:39:43,250 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:39:43,250 - __main__ - INFO - ============================================================
+2026-03-04 13:39:43,250 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:39:43,251 - __main__ - INFO - Debug mode: True
+2026-03-04 13:39:43,251 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:39:43,251 - __main__ - INFO - ============================================================
+2026-03-04 13:39:43,272 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:39:43,280 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:39:49,032 - werkzeug - INFO -  * Detected change in 'D:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\services\\data_loader.py', reloading
+2026-03-04 13:39:49,409 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:39:49,815 - app - INFO - Flask application initialized
+2026-03-04 13:39:53,160 - __main__ - INFO - ============================================================
+2026-03-04 13:39:53,161 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:39:53,161 - __main__ - INFO - ============================================================
+2026-03-04 13:39:53,161 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:39:53,162 - __main__ - INFO - Debug mode: True
+2026-03-04 13:39:53,162 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:39:53,162 - __main__ - INFO - ============================================================
+2026-03-04 13:39:53,179 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:39:53,184 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:40:26,990 - werkzeug - INFO -  * Detected change in 'D:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\download_dataset.py', reloading
+2026-03-04 13:40:27,389 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:40:27,938 - app - INFO - Flask application initialized
+2026-03-04 13:40:32,054 - __main__ - INFO - ============================================================
+2026-03-04 13:40:32,054 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:40:32,055 - __main__ - INFO - ============================================================
+2026-03-04 13:40:32,056 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:40:32,056 - __main__ - INFO - Debug mode: True
+2026-03-04 13:40:32,056 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:40:32,057 - __main__ - INFO - ============================================================
+2026-03-04 13:40:32,088 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:40:32,098 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:42:50,785 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\download_dataset.py', reloading
+2026-03-04 13:43:10,071 - app - INFO - Flask application initialized
+2026-03-04 13:43:16,068 - __main__ - INFO - ============================================================
+2026-03-04 13:43:16,068 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:43:16,068 - __main__ - INFO - ============================================================
+2026-03-04 13:43:16,069 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:43:16,069 - __main__ - INFO - Debug mode: True
+2026-03-04 13:43:16,069 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:43:16,069 - __main__ - INFO - ============================================================
+2026-03-04 13:43:16,119 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.231.54:5000
+2026-03-04 13:43:16,119 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-04 13:43:16,123 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:43:16,542 - app - INFO - Flask application initialized
+2026-03-04 13:43:19,479 - __main__ - INFO - ============================================================
+2026-03-04 13:43:19,479 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:43:19,479 - __main__ - INFO - ============================================================
+2026-03-04 13:43:19,479 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:43:19,480 - __main__ - INFO - Debug mode: True
+2026-03-04 13:43:19,480 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:43:19,480 - __main__ - INFO - ============================================================
+2026-03-04 13:43:19,498 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:43:19,506 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:43:20,543 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:43:20,544 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-04 13:43:20,637 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-04 13:43:20,639 - app.routes - INFO - Processing data...
+2026-03-04 13:43:20,639 - app.services.data_processor - INFO - Cleaning data...
+2026-03-04 13:43:20,650 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-04 13:43:23,232 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-04 13:43:23,233 - app.services.data_processor - INFO - Engineering features...
+2026-03-04 13:43:24,315 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-04 13:43:24,382 - app.routes - INFO - Performing analytics...
+2026-03-04 13:43:24,383 - app.routes - INFO - Generating visualizations...
+2026-03-04 13:43:24,435 - app.routes - INFO - Training models...
+2026-03-04 13:43:24,478 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 33 features
+2026-03-04 13:43:24,478 - app.services.model - INFO - Training linear regression model...
+2026-03-04 13:43:24,551 - app.routes - ERROR - Error in load_and_process_data: could not convert string to float: 'Clear'
+2026-03-04 13:43:24,559 - app.routes - ERROR - Error in index route: could not convert string to float: 'Clear'
+2026-03-04 13:43:24,595 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:43:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:44:45,594 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:44:45,596 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-04 13:44:45,674 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-04 13:44:45,674 - app.routes - INFO - Processing data...
+2026-03-04 13:44:45,675 - app.services.data_processor - INFO - Cleaning data...
+2026-03-04 13:44:45,685 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-04 13:44:45,746 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-04 13:44:45,746 - app.services.data_processor - INFO - Engineering features...
+2026-03-04 13:44:45,788 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-04 13:44:45,816 - app.routes - INFO - Performing analytics...
+2026-03-04 13:44:45,817 - app.routes - INFO - Generating visualizations...
+2026-03-04 13:44:45,833 - app.routes - INFO - Training models...
+2026-03-04 13:44:45,853 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 33 features
+2026-03-04 13:44:45,853 - app.services.model - INFO - Training linear regression model...
+2026-03-04 13:44:45,870 - app.routes - ERROR - Error in load_and_process_data: could not convert string to float: 'Clear'
+2026-03-04 13:44:45,871 - app.routes - ERROR - Error in index route: could not convert string to float: 'Clear'
+2026-03-04 13:44:45,877 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:44:45] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2026-03-04 13:44:45,951 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:44:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 13:45:19,499 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\services\\data_processor.py', reloading
+2026-03-04 13:45:20,050 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:45:21,126 - app - INFO - Flask application initialized
+2026-03-04 13:45:27,950 - __main__ - INFO - ============================================================
+2026-03-04 13:45:27,950 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:45:27,951 - __main__ - INFO - ============================================================
+2026-03-04 13:45:27,951 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:45:27,952 - __main__ - INFO - Debug mode: True
+2026-03-04 13:45:27,952 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:45:27,952 - __main__ - INFO - ============================================================
+2026-03-04 13:45:27,983 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:45:27,992 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:46:03,467 - werkzeug - INFO -  * Detected change in 'D:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\services\\data_processor.py', reloading
+2026-03-04 13:46:03,954 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:46:08,754 - app - INFO - Flask application initialized
+2026-03-04 13:46:12,962 - __main__ - INFO - ============================================================
+2026-03-04 13:46:12,962 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:46:12,963 - __main__ - INFO - ============================================================
+2026-03-04 13:46:12,963 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:46:12,963 - __main__ - INFO - Debug mode: True
+2026-03-04 13:46:12,963 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:46:12,964 - __main__ - INFO - ============================================================
+2026-03-04 13:46:13,011 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.231.54:5000
+2026-03-04 13:46:13,011 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-04 13:46:13,013 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 13:46:13,583 - app - INFO - Flask application initialized
+2026-03-04 13:46:16,418 - __main__ - INFO - ============================================================
+2026-03-04 13:46:16,418 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 13:46:16,418 - __main__ - INFO - ============================================================
+2026-03-04 13:46:16,419 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 13:46:16,419 - __main__ - INFO - Debug mode: True
+2026-03-04 13:46:16,419 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 13:46:16,419 - __main__ - INFO - ============================================================
+2026-03-04 13:46:16,439 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 13:46:16,446 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 13:46:27,366 - app.routes - INFO - Loading traffic data...
+2026-03-04 13:46:27,367 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-04 13:46:27,542 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-04 13:46:27,542 - app.routes - INFO - Processing data...
+2026-03-04 13:46:27,543 - app.services.data_processor - INFO - Cleaning data...
+2026-03-04 13:46:27,560 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-04 13:46:27,763 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-04 13:46:27,763 - app.services.data_processor - INFO - Engineering features...
+2026-03-04 13:46:27,821 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-04 13:46:27,860 - app.routes - INFO - Performing analytics...
+2026-03-04 13:46:27,860 - app.routes - INFO - Generating visualizations...
+2026-03-04 13:46:27,892 - app.routes - INFO - Training models...
+2026-03-04 13:46:27,908 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 10 features
+2026-03-04 13:46:27,908 - app.services.model - INFO - Training linear regression model...
+2026-03-04 13:46:27,972 - app.services.model - INFO - Model trained: MAE=818.37, RMSE=1011.68, R²=0.326
+2026-03-04 13:46:27,974 - app.routes - INFO - Regression model trained: MAE=818.37
+2026-03-04 13:46:27,976 - app.services.model - INFO - Training KMeans clustering with 4 clusters...
+2026-03-04 13:46:34,530 - app.services.model - INFO - Clustering complete: Inertia=6181632051.94
+2026-03-04 13:46:34,531 - app.services.visualization - INFO - Generating all visualizations...
+2026-03-04 13:46:35,785 - app.services.visualization - INFO - Saved hourly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\hourly_trend.png
+2026-03-04 13:46:36,231 - app.services.visualization - INFO - Saved weekly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weekly_trend.png
+2026-03-04 13:46:36,866 - app.services.visualization - INFO - Saved monthly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\monthly_trend.png
+2026-03-04 13:46:37,380 - app.services.visualization - INFO - Saved weather impact chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weather_impact.png
+2026-03-04 13:46:37,686 - app.services.visualization - INFO - Saved congestion distribution chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\congestion_distribution.png
+2026-03-04 13:46:38,696 - app.services.visualization - INFO - Saved correlation heatmap to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\correlation_heatmap.png
+2026-03-04 13:46:40,809 - app.services.visualization - INFO - Saved clustering chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\clustering.png
+2026-03-04 13:46:40,810 - app.services.visualization - INFO - All visualizations generated successfully
+2026-03-04 13:46:40,811 - app.routes - INFO - Data loaded and processed successfully
+2026-03-04 13:46:40,817 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 13:46:40,822 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 13:46:41,075 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET / HTTP/1.1" 200 -
+2026-03-04 13:46:41,341 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 13:46:41,347 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 13:46:41,347 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 13:46:41,364 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 13:46:41,376 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 13:46:41,381 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 13:46:41,394 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 13:46:41,405 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:46:41] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 13:49:54,933 - app.routes - INFO - Using cached data
+2026-03-04 13:49:54,937 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 13:49:54,944 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 13:49:55,536 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "GET / HTTP/1.1" 200 -
+2026-03-04 13:49:55,553 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 13:49:55,561 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 13:49:55,562 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 13:49:55,594 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 13:49:55,598 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-04 13:49:55,610 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-04 13:49:55,616 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-04 13:49:55,625 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:49:55] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:43,118 - app.routes - INFO - Using cached data
+2026-03-04 13:59:43,653 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 13:59:43,694 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 13:59:44,064 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "GET / HTTP/1.1" 200 -
+2026-03-04 13:59:44,120 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 13:59:44,123 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 13:59:44,128 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:44,130 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:44,165 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:44,168 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:44,176 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:44,185 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-04 13:59:44,188 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 13:59:44] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,149 - app.routes - INFO - Using cached data
+2026-03-04 14:00:41,153 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:00:41,161 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:00:41,243 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "GET / HTTP/1.1" 200 -
+2026-03-04 14:00:41,280 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,345 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:00:41,358 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,372 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,374 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,386 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,402 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,527 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-04 14:00:41,548 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:00:41] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-04 14:05:01,985 - app.routes - INFO - Using cached data
+2026-03-04 14:05:01,990 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:05:01,998 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:05:02,138 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET / HTTP/1.1" 200 -
+2026-03-04 14:05:02,162 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:05:02,172 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:05:02,178 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,179 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,214 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,214 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,220 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,220 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,225 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 14:05:02,706 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:05:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:08:37,025 - app.routes - INFO - Using cached data
+2026-03-04 14:08:37,031 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:08:37,042 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:08:37,406 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET / HTTP/1.1" 200 -
+2026-03-04 14:08:37,439 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:08:37,446 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:08:37,460 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,460 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,492 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,500 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,500 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,509 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,511 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 14:08:37,973 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:08:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:09:11,951 - app.routes - INFO - Using cached data
+2026-03-04 14:09:11,956 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:09:11,965 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:09:12,003 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET / HTTP/1.1" 200 -
+2026-03-04 14:09:12,034 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:09:12,041 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:09:12,045 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,076 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,081 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,084 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,103 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,114 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,119 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 14:09:12,516 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:09:22,238 - app.routes - INFO - Using cached data
+2026-03-04 14:09:22,241 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:09:22,250 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:09:22,273 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:09:22] "GET /api/summary HTTP/1.1" 200 -
+2026-03-04 14:11:20,034 - werkzeug - INFO -  * Detected change in 'D:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\routes.py', reloading
+2026-03-04 14:11:29,466 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 14:11:30,467 - app - INFO - Flask application initialized
+2026-03-04 14:11:35,895 - __main__ - INFO - ============================================================
+2026-03-04 14:11:35,896 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 14:11:35,897 - __main__ - INFO - ============================================================
+2026-03-04 14:11:35,897 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 14:11:35,898 - __main__ - INFO - Debug mode: True
+2026-03-04 14:11:35,898 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 14:11:35,899 - __main__ - INFO - ============================================================
+2026-03-04 14:11:35,938 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 14:11:35,965 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 14:15:18,957 - werkzeug - INFO -  * Detected change in 'D:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\routes.py', reloading
+2026-03-04 14:15:19,985 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 14:15:20,928 - app - INFO - Flask application initialized
+2026-03-04 14:15:25,126 - __main__ - INFO - ============================================================
+2026-03-04 14:15:25,127 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 14:15:25,127 - __main__ - INFO - ============================================================
+2026-03-04 14:15:25,127 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 14:15:25,128 - __main__ - INFO - Debug mode: True
+2026-03-04 14:15:25,128 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 14:15:25,128 - __main__ - INFO - ============================================================
+2026-03-04 14:15:25,154 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 14:15:25,160 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 14:15:25,294 - app.routes - INFO - Loading traffic data...
+2026-03-04 14:15:25,298 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-04 14:15:25,411 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-04 14:15:25,411 - app.routes - INFO - Processing data...
+2026-03-04 14:15:25,411 - app.services.data_processor - INFO - Cleaning data...
+2026-03-04 14:15:25,424 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-04 14:15:25,602 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-04 14:15:25,602 - app.services.data_processor - INFO - Engineering features...
+2026-03-04 14:15:25,667 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-04 14:15:25,705 - app.routes - INFO - Performing analytics...
+2026-03-04 14:15:25,706 - app.routes - INFO - Generating visualizations...
+2026-03-04 14:15:25,738 - app.routes - INFO - Training models...
+2026-03-04 14:15:25,756 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 10 features
+2026-03-04 14:15:25,756 - app.services.model - INFO - Training linear regression model...
+2026-03-04 14:15:25,838 - app.services.model - INFO - Model trained: MAE=818.37, RMSE=1011.68, R²=0.326
+2026-03-04 14:15:25,840 - app.routes - INFO - Regression model trained: MAE=818.37
+2026-03-04 14:15:25,843 - app.services.model - INFO - Training KMeans clustering with 4 clusters...
+2026-03-04 14:15:29,674 - app.services.model - INFO - Clustering complete: Inertia=6181632051.94
+2026-03-04 14:15:29,676 - app.services.visualization - INFO - Generating all visualizations...
+2026-03-04 14:15:30,750 - app.services.visualization - INFO - Saved hourly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\hourly_trend.png
+2026-03-04 14:15:31,294 - app.services.visualization - INFO - Saved weekly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weekly_trend.png
+2026-03-04 14:15:32,012 - app.services.visualization - INFO - Saved monthly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\monthly_trend.png
+2026-03-04 14:15:32,532 - app.services.visualization - INFO - Saved weather impact chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weather_impact.png
+2026-03-04 14:15:32,863 - app.services.visualization - INFO - Saved congestion distribution chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\congestion_distribution.png
+2026-03-04 14:15:33,867 - app.services.visualization - INFO - Saved correlation heatmap to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\correlation_heatmap.png
+2026-03-04 14:15:36,013 - app.services.visualization - INFO - Saved clustering chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\clustering.png
+2026-03-04 14:15:36,013 - app.services.visualization - INFO - All visualizations generated successfully
+2026-03-04 14:15:36,013 - app.routes - INFO - Data loaded and processed successfully
+2026-03-04 14:15:36,020 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:15:36,029 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:15:36,115 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET / HTTP/1.1" 200 -
+2026-03-04 14:15:36,508 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:15:36,526 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 14:15:36,534 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:15:36,550 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,562 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,597 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,607 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,614 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,657 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,700 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 14:15:36,934 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:15:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:18:08,847 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:08] "GET /analytics HTTP/1.1" 200 -
+2026-03-04 14:18:08,860 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:08,862 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:08] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:08,866 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:08] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:14,885 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:14] "GET /about HTTP/1.1" 200 -
+2026-03-04 14:18:14,898 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:14,905 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:14] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:14,913 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:14] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:18,465 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:18] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 14:18:18,477 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:18,482 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:18] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:18,489 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:18] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:21,804 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:21] "GET /analytics HTTP/1.1" 200 -
+2026-03-04 14:18:21,831 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:21,832 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:21] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:21,841 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:21] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,771 - app.routes - INFO - Using cached data
+2026-03-04 14:18:22,776 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:18:22,784 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:18:22,833 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "GET / HTTP/1.1" 200 -
+2026-03-04 14:18:22,854 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,871 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,879 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,886 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,890 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,899 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,905 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,921 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,927 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:22,933 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:22] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:31,615 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:31] "GET /analytics HTTP/1.1" 200 -
+2026-03-04 14:18:31,646 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:31,656 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:31] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:31,666 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:31] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,797 - app.routes - INFO - Using cached data
+2026-03-04 14:18:43,800 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:18:43,810 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:18:43,864 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "GET / HTTP/1.1" 200 -
+2026-03-04 14:18:43,880 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,886 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,903 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,904 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,919 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,934 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,935 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,950 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,952 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-04 14:18:43,981 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:18:43] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-04 14:21:15,253 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\routes.py', reloading
+2026-03-04 14:21:16,070 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 14:21:17,117 - app - INFO - Flask application initialized
+2026-03-04 14:21:22,595 - __main__ - INFO - ============================================================
+2026-03-04 14:21:22,596 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 14:21:22,596 - __main__ - INFO - ============================================================
+2026-03-04 14:21:22,596 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 14:21:22,596 - __main__ - INFO - Debug mode: True
+2026-03-04 14:21:22,597 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 14:21:22,597 - __main__ - INFO - ============================================================
+2026-03-04 14:21:22,623 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 14:21:22,634 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 14:23:53,501 - app.routes - INFO - Loading traffic data...
+2026-03-04 14:23:53,501 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-04 14:23:53,709 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-04 14:23:53,709 - app.routes - INFO - Processing data...
+2026-03-04 14:23:53,710 - app.services.data_processor - INFO - Cleaning data...
+2026-03-04 14:23:53,726 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-04 14:23:54,025 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-04 14:23:54,025 - app.services.data_processor - INFO - Engineering features...
+2026-03-04 14:23:54,087 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-04 14:23:54,134 - app.routes - INFO - Performing analytics...
+2026-03-04 14:23:54,134 - app.routes - INFO - Generating visualizations...
+2026-03-04 14:23:54,162 - app.routes - INFO - Training models...
+2026-03-04 14:23:54,179 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 10 features
+2026-03-04 14:23:54,179 - app.services.model - INFO - Training linear regression model...
+2026-03-04 14:23:54,250 - app.services.model - INFO - Model trained: MAE=818.37, RMSE=1011.68, R²=0.326
+2026-03-04 14:23:54,251 - app.routes - INFO - Regression model trained: MAE=818.37
+2026-03-04 14:23:54,257 - app.services.model - INFO - Training KMeans clustering with 4 clusters...
+2026-03-04 14:23:57,829 - app.services.model - INFO - Clustering complete: Inertia=6181632051.94
+2026-03-04 14:23:57,829 - app.services.visualization - INFO - Generating all visualizations...
+2026-03-04 14:23:59,213 - app.services.visualization - INFO - Saved hourly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\hourly_trend.png
+2026-03-04 14:23:59,974 - app.services.visualization - INFO - Saved weekly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weekly_trend.png
+2026-03-04 14:24:00,722 - app.services.visualization - INFO - Saved monthly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\monthly_trend.png
+2026-03-04 14:24:01,231 - app.services.visualization - INFO - Saved weather impact chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weather_impact.png
+2026-03-04 14:24:01,553 - app.services.visualization - INFO - Saved congestion distribution chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\congestion_distribution.png
+2026-03-04 14:24:02,550 - app.services.visualization - INFO - Saved correlation heatmap to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\correlation_heatmap.png
+2026-03-04 14:24:04,891 - app.services.visualization - INFO - Saved clustering chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\clustering.png
+2026-03-04 14:24:04,892 - app.services.visualization - INFO - All visualizations generated successfully
+2026-03-04 14:24:04,892 - app.routes - INFO - Data loaded and processed successfully
+2026-03-04 14:24:04,906 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:24:04,921 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:24:05,265 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:05] "GET / HTTP/1.1" 200 -
+2026-03-04 14:24:05,515 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:05] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:24:05,519 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:24:05,519 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:05] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 14:24:05,570 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:24:10,015 - app.routes - INFO - Using cached data
+2026-03-04 14:24:10,027 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /analytics HTTP/1.1" 200 -
+2026-03-04 14:24:10,044 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:10,049 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:10,055 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:10,118 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 14:24:10,118 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:24:10,120 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 14:24:10,121 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:24:10,125 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:24:10,131 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 14:24:10,193 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:10] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 14:24:17,481 - app.routes - INFO - Using cached data
+2026-03-04 14:24:17,486 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:24:17,491 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:24:17,543 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:17] "GET / HTTP/1.1" 200 -
+2026-03-04 14:24:17,560 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:17,563 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:17] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:17,576 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:17] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,668 - app.routes - INFO - Using cached data
+2026-03-04 14:24:40,669 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "GET /analytics HTTP/1.1" 200 -
+2026-03-04 14:24:40,693 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,697 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,716 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,725 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,737 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,740 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,754 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,755 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,763 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:40,776 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:40] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-04 14:24:52,648 - app.routes - INFO - Using cached data
+2026-03-04 14:24:52,853 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:24:52] "GET /api/predict?hour=17&weather=Clear&temp=285&weekday=4 HTTP/1.1" 200 -
+2026-03-04 14:25:01,499 - app.routes - INFO - Using cached data
+2026-03-04 14:25:01,503 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:25:01,508 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:25:01,566 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:25:01] "GET / HTTP/1.1" 200 -
+2026-03-04 14:25:01,586 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:25:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:25:01,600 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:25:01] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:25:01,608 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:25:01] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:29:44,398 - werkzeug - INFO -  * Detected change in 'd:\\Kalvium\\SimulationDec\\Sprint #3\\demo\\traffic-congestion-analytics\\app\\routes.py', reloading
+2026-03-04 14:29:47,061 - werkzeug - INFO -  * Restarting with stat
+2026-03-04 14:29:49,286 - app - INFO - Flask application initialized
+2026-03-04 14:29:58,916 - __main__ - INFO - ============================================================
+2026-03-04 14:29:58,917 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-04 14:29:58,919 - __main__ - INFO - ============================================================
+2026-03-04 14:29:58,921 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-04 14:29:58,923 - __main__ - INFO - Debug mode: True
+2026-03-04 14:29:58,923 - __main__ - INFO - Press CTRL+C to quit
+2026-03-04 14:29:58,924 - __main__ - INFO - ============================================================
+2026-03-04 14:29:58,983 - werkzeug - WARNING -  * Debugger is active!
+2026-03-04 14:29:59,003 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-04 14:29:59,393 - app.routes - INFO - Loading traffic data...
+2026-03-04 14:29:59,396 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-04 14:29:59,724 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-04 14:29:59,725 - app.routes - INFO - Processing data...
+2026-03-04 14:29:59,726 - app.services.data_processor - INFO - Cleaning data...
+2026-03-04 14:29:59,772 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-04 14:30:00,146 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-04 14:30:00,146 - app.services.data_processor - INFO - Engineering features...
+2026-03-04 14:30:00,291 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-04 14:30:00,382 - app.routes - INFO - Performing analytics...
+2026-03-04 14:30:00,382 - app.routes - INFO - Generating visualizations...
+2026-03-04 14:30:00,431 - app.routes - INFO - Training models...
+2026-03-04 14:30:00,476 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 10 features
+2026-03-04 14:30:00,477 - app.services.model - INFO - Training linear regression model...
+2026-03-04 14:30:00,645 - app.services.model - INFO - Model trained: MAE=818.37, RMSE=1011.68, R²=0.326
+2026-03-04 14:30:00,649 - app.routes - INFO - Regression model trained: MAE=818.37
+2026-03-04 14:30:00,665 - app.services.model - INFO - Training KMeans clustering with 4 clusters...
+2026-03-04 14:30:04,840 - app.services.model - INFO - Clustering complete: Inertia=6181632051.94
+2026-03-04 14:30:04,841 - app.services.visualization - INFO - Generating all visualizations...
+2026-03-04 14:30:08,930 - app.services.visualization - INFO - Saved hourly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\hourly_trend.png
+2026-03-04 14:30:11,234 - app.services.visualization - INFO - Saved weekly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weekly_trend.png
+2026-03-04 14:30:13,459 - app.services.visualization - INFO - Saved monthly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\monthly_trend.png
+2026-03-04 14:30:15,315 - app.services.visualization - INFO - Saved weather impact chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weather_impact.png
+2026-03-04 14:30:16,300 - app.services.visualization - INFO - Saved congestion distribution chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\congestion_distribution.png
+2026-03-04 14:30:20,764 - app.services.visualization - INFO - Saved correlation heatmap to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\correlation_heatmap.png
+2026-03-04 14:30:28,285 - app.services.visualization - INFO - Saved clustering chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\clustering.png
+2026-03-04 14:30:28,286 - app.services.visualization - INFO - All visualizations generated successfully
+2026-03-04 14:30:28,286 - app.routes - INFO - Data loaded and processed successfully
+2026-03-04 14:30:28,300 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:30:28,307 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:30:28,411 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:28] "GET / HTTP/1.1" 200 -
+2026-03-04 14:30:28,801 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:28] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:30:28,811 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:30:28,821 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:28] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 14:30:29,209 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:30:38,758 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:38] "GET /about HTTP/1.1" 200 -
+2026-03-04 14:30:38,821 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:38] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:38,823 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:38,835 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:38] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:52,608 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:52] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 14:30:52,669 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:52,681 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:52] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:52,769 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:52] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:59,738 - app.routes - INFO - Using cached data
+2026-03-04 14:30:59,763 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "GET /analytics HTTP/1.1" 200 -
+2026-03-04 14:30:59,790 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:59,795 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:59,813 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:30:59,858 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:30:59,863 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:30:59,880 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-04 14:30:59,961 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:30:59] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-04 14:31:00,004 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:00] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-04 14:31:00,037 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:00] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-04 14:31:00,057 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:00] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-04 14:31:04,442 - app.routes - INFO - Using cached data
+2026-03-04 14:31:04,455 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:31:04,483 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:31:04,619 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:04] "GET / HTTP/1.1" 200 -
+2026-03-04 14:31:04,657 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:31:04,668 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:04] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:31:04,672 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:31:04] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:36:50,321 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:36:50] "GET /about HTTP/1.1" 200 -
+2026-03-04 14:36:50,360 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:36:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:36:50,370 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:36:50] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:36:50,384 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:36:50] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 14:40:10,380 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:10] "GET /about HTTP/1.1" 200 -
+2026-03-04 14:40:10,478 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:40:10,528 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:10] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:40:10,528 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:10] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 14:40:10,816 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:40:22,087 - app.routes - INFO - Using cached data
+2026-03-04 14:40:22,261 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:40:22,333 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:40:22,536 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:22] "GET / HTTP/1.1" 200 -
+2026-03-04 14:40:22,570 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:40:22,582 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:22] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:40:22,602 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:22] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:40:40,187 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:40] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 14:40:40,252 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:40:40,262 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:40] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:40:40,283 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:40:40] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:58:26,525 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:26] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 14:58:26,584 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 14:58:26,611 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:26] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 14:58:26,683 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:26] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 14:58:27,120 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 14:58:58,633 - app.routes - INFO - Using cached data
+2026-03-04 14:58:58,657 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:58:58,700 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:58:58,794 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:58] "GET / HTTP/1.1" 200 -
+2026-03-04 14:58:58,825 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:58:58,838 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:58] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:58:58,846 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:58:58] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:02,791 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:02] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 14:59:02,863 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:02,888 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:02] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:02,890 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:02] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:25,611 - app.routes - INFO - Using cached data
+2026-03-04 14:59:25,625 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 14:59:25,652 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 14:59:25,760 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:25] "GET / HTTP/1.1" 200 -
+2026-03-04 14:59:25,815 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:25,826 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:25] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:25,836 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:25] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:53,903 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:53] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 14:59:53,963 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:53,976 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:53] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 14:59:53,987 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 14:59:53] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 15:01:58,275 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:01:58] "GET /documentation HTTP/1.1" 200 -
+2026-03-04 15:01:58,356 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:01:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 15:01:58,368 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:01:58] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 15:01:58,424 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:01:58] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 15:01:58,855 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:01:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-04 15:02:05,109 - app.routes - INFO - Using cached data
+2026-03-04 15:02:05,128 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 15:02:05,188 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 15:02:05,320 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:02:05] "GET / HTTP/1.1" 200 -
+2026-03-04 15:02:05,405 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:02:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-04 15:02:05,464 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:02:05] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-04 15:02:05,468 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:02:05] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-04 15:07:29,616 - app.routes - INFO - Using cached data
+2026-03-04 15:07:29,629 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-04 15:07:29,662 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-04 15:07:29,877 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:07:29] "GET / HTTP/1.1" 200 -
+2026-03-04 15:07:29,943 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:07:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-04 15:07:29,994 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:07:29] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-04 15:07:30,020 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:07:30] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-04 15:07:30,454 - werkzeug - INFO - 127.0.0.1 - - [04/Mar/2026 15:07:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 16:34:27,767 - app - INFO - Flask application initialized
+2026-03-12 16:34:33,718 - __main__ - ERROR - Error starting application: No module named 'kagglehub'
+2026-03-12 16:36:07,090 - app - INFO - Flask application initialized
+2026-03-12 16:36:54,214 - __main__ - INFO - ============================================================
+2026-03-12 16:36:54,214 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-12 16:36:54,215 - __main__ - INFO - ============================================================
+2026-03-12 16:36:54,215 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-12 16:36:54,215 - __main__ - INFO - Debug mode: True
+2026-03-12 16:36:54,215 - __main__ - INFO - Press CTRL+C to quit
+2026-03-12 16:36:54,215 - __main__ - INFO - ============================================================
+2026-03-12 16:36:54,329 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.79.254.133:5000
+2026-03-12 16:36:54,331 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-12 16:36:54,335 - werkzeug - INFO -  * Restarting with stat
+2026-03-12 16:36:55,076 - app - INFO - Flask application initialized
+2026-03-12 16:36:58,588 - __main__ - INFO - ============================================================
+2026-03-12 16:36:58,588 - __main__ - INFO - Traffic Congestion Analytics System
+2026-03-12 16:36:58,589 - __main__ - INFO - ============================================================
+2026-03-12 16:36:58,589 - __main__ - INFO - Starting server on http://0.0.0.0:5000
+2026-03-12 16:36:58,590 - __main__ - INFO - Debug mode: True
+2026-03-12 16:36:58,590 - __main__ - INFO - Press CTRL+C to quit
+2026-03-12 16:36:58,590 - __main__ - INFO - ============================================================
+2026-03-12 16:36:58,612 - werkzeug - WARNING -  * Debugger is active!
+2026-03-12 16:36:58,630 - werkzeug - INFO -  * Debugger PIN: 723-318-196
+2026-03-12 16:39:27,322 - app.routes - INFO - Loading traffic data...
+2026-03-12 16:39:27,336 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-12 16:39:27,720 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-12 16:39:27,720 - app.routes - INFO - Processing data...
+2026-03-12 16:39:27,723 - app.services.data_processor - INFO - Cleaning data...
+2026-03-12 16:39:27,747 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-12 16:39:28,665 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-12 16:39:28,665 - app.services.data_processor - INFO - Engineering features...
+2026-03-12 16:39:28,744 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-12 16:39:28,780 - app.routes - INFO - Performing analytics...
+2026-03-12 16:39:28,781 - app.routes - INFO - Generating visualizations...
+2026-03-12 16:39:28,811 - app.routes - INFO - Training models...
+2026-03-12 16:39:28,822 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 10 features
+2026-03-12 16:39:28,824 - app.services.model - INFO - Training linear regression model...
+2026-03-12 16:39:28,904 - app.services.model - INFO - Model trained: MAE=818.37, RMSE=1011.68, R²=0.326
+2026-03-12 16:39:28,907 - app.routes - INFO - Regression model trained: MAE=818.37
+2026-03-12 16:39:28,909 - app.services.model - INFO - Training KMeans clustering with 4 clusters...
+2026-03-12 16:39:36,031 - app.services.model - INFO - Clustering complete: Inertia=6181632051.94
+2026-03-12 16:39:36,032 - app.services.visualization - INFO - Generating all visualizations...
+2026-03-12 16:39:37,587 - app.services.visualization - INFO - Saved hourly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\hourly_trend.png
+2026-03-12 16:39:38,204 - app.services.visualization - INFO - Saved weekly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weekly_trend.png
+2026-03-12 16:39:38,797 - app.services.visualization - INFO - Saved monthly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\monthly_trend.png
+2026-03-12 16:39:39,327 - app.services.visualization - INFO - Saved weather impact chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weather_impact.png
+2026-03-12 16:39:39,747 - app.services.visualization - INFO - Saved congestion distribution chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\congestion_distribution.png
+2026-03-12 16:39:40,899 - app.services.visualization - INFO - Saved correlation heatmap to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\correlation_heatmap.png
+2026-03-12 16:39:43,436 - app.routes - INFO - Loading traffic data...
+2026-03-12 16:39:43,437 - app.services.data_loader - INFO - Loading data from: D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\data\Metro_Interstate_Traffic_Volume.csv
+2026-03-12 16:39:43,549 - app.services.visualization - INFO - Saved clustering chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\clustering.png
+2026-03-12 16:39:43,549 - app.services.visualization - INFO - All visualizations generated successfully
+2026-03-12 16:39:43,551 - app.routes - INFO - Data loaded and processed successfully
+2026-03-12 16:39:43,571 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:39:43,591 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:39:43,701 - app.services.data_loader - INFO - Data loaded successfully. Shape: (48000, 8)
+2026-03-12 16:39:43,701 - app.routes - INFO - Processing data...
+2026-03-12 16:39:43,702 - app.services.data_processor - INFO - Cleaning data...
+2026-03-12 16:39:43,720 - app.services.data_processor - INFO - Removed 0 rows with null values
+2026-03-12 16:39:43,819 - app.services.data_processor - INFO - Converted date_time to datetime format
+2026-03-12 16:39:43,819 - app.services.data_processor - INFO - Engineering features...
+2026-03-12 16:39:43,884 - app.services.data_processor - INFO - Engineered 8 new features
+2026-03-12 16:39:43,936 - app.routes - INFO - Performing analytics...
+2026-03-12 16:39:43,936 - app.routes - INFO - Generating visualizations...
+2026-03-12 16:39:43,987 - app.routes - INFO - Training models...
+2026-03-12 16:39:44,005 - app.services.data_processor - INFO - Prepared model data: 48000 samples, 10 features
+2026-03-12 16:39:44,005 - app.services.model - INFO - Training linear regression model...
+2026-03-12 16:39:44,072 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:39:44] "GET / HTTP/1.1" 200 -
+2026-03-12 16:39:44,082 - app.services.model - INFO - Model trained: MAE=818.37, RMSE=1011.68, R²=0.326
+2026-03-12 16:39:44,084 - app.routes - INFO - Regression model trained: MAE=818.37
+2026-03-12 16:39:44,088 - app.services.model - INFO - Training KMeans clustering with 4 clusters...
+2026-03-12 16:39:44,782 - app.services.model - INFO - Clustering complete: Inertia=6181632051.94
+2026-03-12 16:39:44,783 - app.services.visualization - INFO - Generating all visualizations...
+2026-03-12 16:39:46,140 - app.services.visualization - INFO - Saved hourly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\hourly_trend.png
+2026-03-12 16:39:46,945 - app.services.visualization - INFO - Saved weekly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weekly_trend.png
+2026-03-12 16:39:47,879 - app.services.visualization - INFO - Saved monthly trend chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\monthly_trend.png
+2026-03-12 16:39:48,800 - app.services.visualization - INFO - Saved weather impact chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\weather_impact.png
+2026-03-12 16:39:49,303 - app.services.visualization - INFO - Saved congestion distribution chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\congestion_distribution.png
+2026-03-12 16:39:50,630 - app.services.visualization - INFO - Saved correlation heatmap to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\correlation_heatmap.png
+2026-03-12 16:39:53,596 - app.services.visualization - INFO - Saved clustering chart to D:\Kalvium\SimulationDec\Sprint #3\demo\traffic-congestion-analytics\app\static\images\clustering.png
+2026-03-12 16:39:53,597 - app.services.visualization - INFO - All visualizations generated successfully
+2026-03-12 16:39:53,598 - app.routes - INFO - Data loaded and processed successfully
+2026-03-12 16:39:53,613 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:39:53,629 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:39:53,708 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:39:53] "GET / HTTP/1.1" 200 -
+2026-03-12 16:39:53,896 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:39:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-03-12 16:39:54,051 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:39:54] "GET /static/css/modal.css HTTP/1.1" 200 -
+2026-03-12 16:39:54,053 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:39:54] "GET /static/css/pages.css HTTP/1.1" 200 -
+2026-03-12 16:39:55,288 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:39:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-12 16:40:37,260 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:40:37] "GET /documentation HTTP/1.1" 200 -
+2026-03-12 16:40:37,281 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:40:37] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:40:37,590 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:40:37] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:40:37,592 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:40:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:42:57,871 - app.routes - INFO - Using cached data
+2026-03-12 16:42:57,916 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:42:57,929 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:42:57,980 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:42:57] "GET / HTTP/1.1" 200 -
+2026-03-12 16:42:58,109 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:42:58] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:42:58,130 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:42:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:42:58,299 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:42:58] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:43:01,016 - app.routes - INFO - Using cached data
+2026-03-12 16:43:01,390 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "GET /analytics HTTP/1.1" 200 -
+2026-03-12 16:43:01,402 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:43:01,712 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:43:01,716 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:43:01,744 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "GET /static/images/hourly_trend.png HTTP/1.1" 200 -
+2026-03-12 16:43:01,749 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "GET /static/images/weekly_trend.png HTTP/1.1" 200 -
+2026-03-12 16:43:01,773 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "GET /static/images/monthly_trend.png HTTP/1.1" 200 -
+2026-03-12 16:43:01,773 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:01] "GET /static/images/weather_impact.png HTTP/1.1" 200 -
+2026-03-12 16:43:02,035 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:02] "GET /static/images/congestion_distribution.png HTTP/1.1" 200 -
+2026-03-12 16:43:02,051 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:02] "GET /static/images/correlation_heatmap.png HTTP/1.1" 200 -
+2026-03-12 16:43:02,146 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:02] "GET /static/images/clustering.png HTTP/1.1" 200 -
+2026-03-12 16:43:14,091 - app.routes - INFO - Using cached data
+2026-03-12 16:43:14,096 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:43:14,101 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:43:14,135 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:14] "GET / HTTP/1.1" 200 -
+2026-03-12 16:43:14,324 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:43:14,357 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:14] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:43:14,465 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:43:14] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:44:15,651 - app.routes - INFO - Using cached data
+2026-03-12 16:44:15,771 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:15] "GET /api/predict?hour=17&weather=Clear&temp=285&weekday=4 HTTP/1.1" 200 -
+2026-03-12 16:44:58,223 - app.routes - INFO - Using cached data
+2026-03-12 16:44:58,225 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "GET /analytics HTTP/1.1" 200 -
+2026-03-12 16:44:58,532 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,564 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,569 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,576 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,579 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,589 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,843 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,877 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,892 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-12 16:44:58,900 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:44:58] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-12 16:45:17,215 - app.routes - INFO - Using cached data
+2026-03-12 16:45:17,218 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:45:17,224 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:45:17,265 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:17] "GET / HTTP/1.1" 200 -
+2026-03-12 16:45:17,451 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:17,482 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:17] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:17,593 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:17] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:47,849 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:47] "GET /documentation HTTP/1.1" 200 -
+2026-03-12 16:45:48,160 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:48,169 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:48] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:48,172 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:48] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:57,869 - app.routes - INFO - Using cached data
+2026-03-12 16:45:57,872 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:45:57,876 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:45:57,912 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:57] "GET / HTTP/1.1" 200 -
+2026-03-12 16:45:58,101 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:58,131 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:58] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:45:58,243 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:45:58] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:01,696 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:01] "GET /about HTTP/1.1" 200 -
+2026-03-12 16:46:01,922 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:02,017 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:02] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:02,021 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:02] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:09,527 - app.routes - INFO - Using cached data
+2026-03-12 16:46:09,529 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "GET /analytics HTTP/1.1" 200 -
+2026-03-12 16:46:09,776 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:09,853 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:09,854 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:09,860 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "[36mGET /static/images/hourly_trend.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:09,877 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "[36mGET /static/images/weekly_trend.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:09,882 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:09] "[36mGET /static/images/monthly_trend.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,086 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/images/weather_impact.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,164 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/images/congestion_distribution.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,165 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/images/correlation_heatmap.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,182 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/images/clustering.png HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,585 - app.routes - INFO - Using cached data
+2026-03-12 16:46:10,587 - app.services.analytics - INFO - Peak hour: 19 with avg volume 4893
+2026-03-12 16:46:10,594 - app.services.analytics - INFO - Busiest day: Thursday with avg volume 3752
+2026-03-12 16:46:10,623 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "GET / HTTP/1.1" 200 -
+2026-03-12 16:46:10,832 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,836 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/css/modal.css HTTP/1.1[0m" 304 -
+2026-03-12 16:46:10,942 - werkzeug - INFO - 127.0.0.1 - - [12/Mar/2026 16:46:10] "[36mGET /static/css/pages.css HTTP/1.1[0m" 304 -
